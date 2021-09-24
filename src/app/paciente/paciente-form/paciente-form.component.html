@@ -6,7 +6,7 @@
 
     <!-- -----------------------------ID------------------------------------------- -->
 
-    <form #m="ngForm">
+    <form #pacienteForm="ngForm" (ngSubmit)="onSubmit()">
         <div class="row" *ngIf="">
             <div class="col-md-3">
                 <div class="form-group">
@@ -24,212 +24,189 @@
         </div>
         <!-- ----------------------------------NOME-------------------------------------- -->
         <div class="row">
+
             <div class="col-md-5">
-                <div class="form-group">
-                    <label>Nome *</label>
-                    <input type="text" class="form-control" name="nome">
-                </div>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Nome</mat-label>
+                    <input matInput placeholder="Nome Completo" value="" name="nomePaciente" [(ngModel)]="paciente.nomePaciente">
+                </mat-form-field>
             </div>
             <!-- ----------------------------NASCIMENTO------------------------------ -->
             <div class="col-md-3">
-                <div class="form-group">
-                    <label>Data de Nascimento </label>
-                    <input type="date" class="form-control" name="nascimento">
-                </div>
+                <mat-form-field appearance="fill">
+                    <mat-label>Data de Nascimento</mat-label>
+                    <input matInput [matDatepicker]="picker" name="dataNascimento" [(ngModel)]="paciente.dataNascimento">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
             </div>
 
             <!-- ----------------------------EMAIL------------------------------ -->
             <div class="col-md-4">
-                <div class="form-group">
-                    <label>e-Mail</label>
-                    <input type="text" class="form-control" name="email">
-                </div>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>E-Mail</mat-label>
+                    <input matInput placeholder="exemplo@exemplo.com" value="" name="eMail" [(ngModel)]="paciente.eMail">
+                </mat-form-field>
             </div>
 
             <!-- ----------------------------ENDEREÇO------------------------------ -->
             <div class="col-md-5">
-                <div class="form-group">
-                    <label>Endereço</label>
-                    <input type="text" class="form-control" name="endereco">
-                </div>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Endereço</mat-label>
+                    <input matInput placeholder="" value="" name="logradouro" [(ngModel)]="paciente.logradouro">
+                </mat-form-field>
             </div>
 
             <!-- ----------------------------NUMERO------------------------------ -->
             <div class="col-md-1">
-                <div class="form-group">
-                    <label>Número</label>
-                    <input type="text" class="form-control" name="numero">
-                </div>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Nº</mat-label>
+                    <input matInput placeholder="00" value="" name="numeroLogradouro" [(ngModel)]="paciente.numeroLogradouro">
+                </mat-form-field>
             </div>
 
             <!-- ----------------------------COMPLEMENTO------------------------------ -->
             <div class="col-md-4">
-                <div class="form-group">
-                    <label>Complemento</label>
-                    <input type="text" class="form-control" name="complemento">
-                </div>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Complemento</mat-label>
+                    <input matInput placeholder="" value="" name="complemento" [(ngModel)]="paciente.complemento">
+                </mat-form-field>
             </div>
 
             <!-- ----------------------------CEP------------------------------ -->
             <div class="col-md-2">
-                <div class="form-group">
-                    <label>CEP</label>
-                    <input type="text" class="form-control" name="cep">
-                </div>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>CEP</mat-label>
+                    <input matInput placeholder="" value="" name="cep" [(ngModel)]="paciente.cep">
+                </mat-form-field>
             </div>
 
             <!-- ----------------------------BAIRRO------------------------------ -->
             <div class="col-md-3">
-                <div class="form-group">
-                    <label>Bairro</label>
-                    <input type="text" class="form-control" name="cidade">
-                </div>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Bairro</mat-label>
+                    <input matInput placeholder="" value="" name="bairro" [(ngModel)]="paciente.bairro">
+                </mat-form-field>
             </div>
 
             <!-- ----------------------------CIDADE------------------------------ -->
             <div class="col-md-2">
-                <div class="form-group">
-                    <label>Cidade</label>
-                    <input type="text" class="form-control" name="cidade">
-                </div>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Cidade</mat-label>
+                    <input matInput placeholder="" value="" name="municipio" [(ngModel)]="paciente.municipio">
+                </mat-form-field>
             </div>
 
             <!-- ----------------------------UF------------------------------ -->
             <div class="col-md-1">
-                <div class="form-group">
-                    <label>UF</label>
-                    <input type="text" class="form-control" name="uf">
-                </div>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>UF</mat-label>
+                    <input matInput placeholder="" value="" name="uf" [(ngModel)]="paciente.uf">
+                </mat-form-field>
             </div>
 
             <!-- ----------------------------TELEFONE------------------------------ -->
             <div class="col-md-2">
-                <div class="form-group">
-                    <label>Telefone</label>
-                    <input type="text" class="form-control" name="telefone">
-                </div>
-            </div>
-
-            <!-- ----------------------------COMERCIAL------------------------------ -->
-            <div class="col-md-2">
-                <div class="form-group">
-                    <label>Comercial</label>
-                    <input type="text" class="form-control" name="comercial">
-                </div>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Telefone</mat-label>
+                    <input matInput placeholder="" value="" name="telefone" [(ngModel)]="paciente.telefone"> 
+                </mat-form-field>
             </div>
 
             <!-- ----------------------------CELULAR------------------------------ -->
             <div class="col-md-2">
-                <div class="form-group">
-                    <label>Celular</label>
-                    <input type="text" class="form-control" name="celular">
-                </div>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Celular</mat-label>
+                    <input matInput placeholder="" value="" name="telefoneCelular" [(ngModel)]="paciente.telefoneCelular">
+                </mat-form-field>
+            </div>
+
+            <!-- ----------------------------SEXO------------------------------ -->
+            <div class="col-md-2">
+                <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="genero" name="sexo" ngDefaultControl [(ngModel)]="sexo" *ngFor="let genero of genero"> {{genero}} </mat-radio-button>
+                    
+                </mat-radio-group>
             </div>
 
             <!-- ----------------------------RG------------------------------ -->
             <div class="col-md-3">
-                <div class="form-group">
-                    <label>RG</label>
-                    <input type="text" class="form-control" name="rg">
-                </div>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>RG</mat-label>
+                    <input matInput placeholder="" value="" name="rg" [(ngModel)]="paciente.rg">
+                </mat-form-field>
             </div>
 
             <!-- ----------------------------CPF------------------------------ -->
             <div class="col-md-3">
-                <div class="form-group">
-                    <label>CPF</label>
-                    <input type="text" class="form-control" name="cpf">
-                </div>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>CPF</mat-label>
+                    <input matInput placeholder="" value="" name="cpf" [(ngModel)]="paciente.cpf">
+                </mat-form-field>
             </div>
 
-            <!-- ----------------------------PIS/PASEP------------------------------ -->
+            <!-- ----------------------------ESTADO CIVIL------------------------------ -->
             <div class="col-md-3">
-                <div class="form-group">
-                    <label>PIS/PASEP</label>
-                    <input type="text" class="form-control" name="pis">
-                </div>
+                <mat-form-field appearance="fill">
+                    <mat-label>Estado Civil</mat-label>
+                    <mat-select>
+                        <mat-option *ngFor="let estadocivil of estadocivis" [value]="estadocivil.value" name="estadoCivil" ngDefaultControl [(ngModel)]="paciente.estadoCivil">
+                            {{estadocivil.viewValue}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
             </div>
 
-            <!-- ----------------------------CTPS------------------------------ -->
+            <!-- ----------------------------Raça------------------------------ -->
             <div class="col-md-3">
-                <div class="form-group">
-                    <label>CTPS</label>
-                    <input type="text" class="form-control" name="ctps">
-                </div>
+                <mat-form-field appearance="fill">
+                    <mat-label>Raça</mat-label>
+                    <mat-select>
+                        <mat-option *ngFor="let raca of racas" [value]="raca.value" name="racaPaciente" ngDefaultControl [(ngModel)]="paciente.racaPaciente">
+                            {{raca.viewValue}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
             </div>
 
-            <!-- ----------------------------AREA------------------------------ -->
+            <!-- ----------------------------Convenio------------------------------ -->
             <div class="col-md-3">
-                <div class="form-group">
-                    <label>Área</label>
-                    <input type="text" class="form-control" name="area">
-                </div>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Convênio</mat-label>
+                    <input matInput placeholder="" value="" name="nomeConvenio" [(ngModel)]="paciente.nomeConvenio">
+                </mat-form-field>
             </div>
 
-            <!-- ----------------------------FUNÇÃO------------------------------ -->
+            <!-- ----------------------------Carteirinha------------------------------ -->
             <div class="col-md-3">
-                <div class="form-group">
-                    <label>Função</label>
-                    <input type="text" class="form-control" name="funcao">
-                </div>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Nº Carteira do Convênio</mat-label>
+                    <input matInput placeholder="" value="" name="carteiraConvenio" [(ngModel)]="paciente.carteiraConvenio">
+                </mat-form-field>
             </div>
 
-            <!-- ----------------------------ADMISSÃO------------------------------ -->
+            <!-- ----------------------------Data ve Validade------------------------------ -->
             <div class="col-md-3">
-                <div class="form-group">
-                    <label>Data de Admissão</label>
-                    <input type="date" class="form-control" name="admissao">
-                </div>
+                <mat-form-field appearance="fill">
+                    <mat-label>Data de Validade</mat-label>
+                    <input matInput [matDatepicker]="picker1" name="validadeCarteiraConvenio" [(ngModel)]="paciente.validadeCarteiraConvenio">
+                    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                    <mat-datepicker #picker1></mat-datepicker>
+                </mat-form-field>
             </div>
 
-            <!-- ----------------------------DEMISSÃO------------------------------ -->
+            <!-- ----------------------------Nacionalidade------------------------------ -->
             <div class="col-md-3">
-                <div class="form-group">
-                    <label>Data de Demissão</label>
-                    <input type="date" class="form-control" name="demissao">
-                </div>
+                <mat-form-field appearance="fill">
+                    <mat-label>Nacionalidade</mat-label>
+                    <mat-select>
+                        <mat-option *ngFor="let nacionalidade of nacionalidade " [value]="" name="nacionalidade" ngDefaultControl [(ngModel)]="nacionalidade.nomeNacao">
+                            {{nacionalidade.nomeNacao}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
             </div>
-
-            <!-- ----------------------------ESTAVO CIVIL------------------------------ -->
-            <div class="col-md-3">
-                <div class="form-group">
-                    <label>Estado Civil</label>
-                    <input type="text" class="form-control" name="civil">
-                </div>
-            </div>
-
-            <!-- ----------------------------GÊNERO------------------------------ -->
-            <div class="col-md-3">
-                <div class="form-group">
-                    <label>Gênero</label>
-                    <input type="text" class="form-control" name="genero">
-                </div>
-            </div>
-
-            <!-- ----------------------------NATURALIDADE------------------------------ -->
-            <div class="col-md-3">
-                <div class="form-group">
-                    <label>Naturalidade</label>
-                    <input type="text" class="form-control" name="naturalidade">
-                </div>
-            </div>
-
-            <!-- ----------------------------INCLUIDO------------------------------ -->
-            <div class="col-md-3">
-                <div class="form-group">
-                    <label>Incluido por:</label>
-                    <input type="text" class="form-control" name="incluido">
-                </div>
-            </div>
-
-
-
         </div>
-
-
-
-
-
 
         <!-- -------------------------------------------------------------------------- -->
         <!-- ---------------------------Botões----------------------------------------- -->
@@ -240,7 +217,7 @@
                 <!-- ---------------------------Botão Salvar----------------------------------------- -->
 
                 <button type="submit" class="btn ml-3" style="background-color: rgb(70, 211, 70); color: white;"
-                    mat-raised-button color="primary">
+                    mat-raised-button color="primary" *ngIf="!paciente.idPaciente">
                     <i class="icone fa fa-save"> </i> Salvar
                 </button>
 
