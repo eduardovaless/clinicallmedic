@@ -19,6 +19,7 @@ import { PacienteFormComponent } from './paciente-form/paciente-form.component';
 
 
 
+
 @NgModule({
   declarations: [PacienteComponent, PacienteFormComponent],
 

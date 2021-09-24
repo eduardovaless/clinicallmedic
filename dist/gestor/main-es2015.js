@@ -890,7 +890,9 @@ const MY_FORMATS = {
     },
     display: {
         dateInput: 'DD/MM/YYYY',
-        dateA11yLabel: 'LL',
+        monthYearLabel: 'MMMM Y',
+        dateA11yLabel: 'L',
+        monthYearA11yLabel: 'MMMM Y'
     },
 };
 class AppModule {

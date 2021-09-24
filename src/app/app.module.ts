@@ -49,7 +49,10 @@ export const MY_FORMATS = {
     display: {
       dateInput: 'DD/MM/YYYY',
       
-      dateA11yLabel: 'LL',
+    monthYearLabel: 'MMMM Y',
+    dateA11yLabel: 'L',
+    monthYearA11yLabel: 'MMMM Y'
+      
      
     },
   };
@@ -95,6 +98,7 @@ export const MY_FORMATS = {
     },
     { provide: MAT_DATE_LOCALE, useValue: 'pt-BR' },
     {provide: MAT_DATE_FORMATS, useValue: MY_FORMATS},
+    
   ],
   bootstrap: [AppComponent]
 })

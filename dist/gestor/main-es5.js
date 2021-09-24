@@ -1488,7 +1488,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       },
       display: {
         dateInput: 'DD/MM/YYYY',
-        dateA11yLabel: 'LL'
+        monthYearLabel: 'MMMM Y',
+        dateA11yLabel: 'L',
+        monthYearA11yLabel: 'MMMM Y'
       }
     };
 
