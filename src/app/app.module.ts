@@ -25,7 +25,34 @@ import { HttpClientModule } from '@angular/common/http';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login/login.component';
 import { LayoutComponent } from './layout/layout.component';
+import { registerLocaleData } from '@angular/common';
+import localeBr from '@angular/common/locales/pt';
+import localeBrExtra from '@angular/common/locales/extra/pt';
 
+import {MomentDateAdapter, MAT_MOMENT_DATE_ADAPTER_OPTIONS} from '@angular/material-moment-adapter';
+import {DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE} from '@angular/material/core';
+import {MatDatepicker} from '@angular/material/datepicker';
+import * as moment from 'moment';
+
+// Depending on whether rollup is used, moment needs to be imported differently.
+// Since Moment.js doesn't have a default export, we normally need to import using the `* as`
+// syntax. However, rollup creates a synthetic default module and we thus need to import it using
+// the `default as` syntax.
+import * as _moment from 'moment';
+// tslint:disable-next-line:no-duplicate-imports
+import {defaultFormat as _rollupMoment, Moment} from 'moment';
+registerLocaleData(localeBr, 'pt', localeBrExtra)
+export const MY_FORMATS = {
+    parse: {
+      dateInput: 'DD/MM/YYYY',
+    },
+    display: {
+      dateInput: 'DD/MM/YYYY',
+      
+      dateA11yLabel: 'LL',
+     
+    },
+  };
 
 
 
@@ -52,14 +79,22 @@ import { LayoutComponent } from './layout/layout.component';
     FormsModule,
     AgendaModule,
     PacienteModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    
     
   ],
   providers: [   
     ServiceEmpresaService,
     SnackBarService,
     AuthGuardService,
-    AuthService
+    AuthService,
+    {
+      provide: DateAdapter,
+      useClass: MomentDateAdapter,
+      deps: [MAT_DATE_LOCALE, MAT_MOMENT_DATE_ADAPTER_OPTIONS]
+    },
+    { provide: MAT_DATE_LOCALE, useValue: 'pt-BR' },
+    {provide: MAT_DATE_FORMATS, useValue: MY_FORMATS},
   ],
   bootstrap: [AppComponent]
 })

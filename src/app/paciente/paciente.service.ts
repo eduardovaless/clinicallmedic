@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 })
 export class PacienteService {
 
-  apiURL: string = environment.apiURL + '/datasnap/rest/TPatientController/paciente';
+  apiURL: string = environment.apiURL + '/datasnap/rest/TPatientController/paciente'
   apiURLNac: string = environment.apiURL + '/datasnap/rest/TDomainController/nacionalidade'
   constructor(
     private http: HttpClient
@@ -24,6 +24,10 @@ export class PacienteService {
 
     getNac():Observable<Nacionalidade[]>{
       return this.http.get<Nacionalidade[]>(this.apiURLNac)
+    }
+
+    getPacie():Observable<Paciente[]>{
+      return this.http.get<Paciente[]>(this.apiURL)
     }
 
 }

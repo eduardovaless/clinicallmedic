@@ -4,6 +4,7 @@ import { PacienteService } from './../paciente.service';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { Paciente } from '../paciente';
+import moment from 'moment';
 
 //SELECT DE ESTADO CIVIL
 interface EstadoCivil {
@@ -76,12 +77,13 @@ export class PacienteFormComponent implements OnInit {
   }
 
   onSubmit() {
-
+    this.paciente.dataNascimento= moment().format('YYYY-MM-DD')
+    this.paciente.validadeCarteiraConvenio= moment().format('YYYY-MM-DD')
     this.service.salvar(this.paciente).subscribe( response =>{
       console.log(response);       
       this.paciente= response;
       this.snackBar.successMessage('Paciente criado com sucesso!')
-      this.router.navigate(["/paciente-list"])
+      this.router.navigate(["/paciente/list"])
     }, errorResponse =>{
       this.snackBar.errorMessage('Não foi possível criar o Paciente!')      
       console.log(errorResponse.error.errors);            
