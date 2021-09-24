@@ -413,9 +413,9 @@ module.exports = exported;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\eduar\Desktop\focus\Front\gestor\node_modules\@angular\material\prebuilt-themes\indigo-pink.css */"./node_modules/@angular/material/prebuilt-themes/indigo-pink.css");
-__webpack_require__(/*! C:\Users\eduar\Desktop\focus\Front\gestor\src\styles.css */"./src/styles.css");
-module.exports = __webpack_require__(/*! C:\Users\eduar\Desktop\focus\Front\gestor\node_modules\bootstrap\dist\css\bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
+__webpack_require__(/*! C:\Users\eduar\Desktop\focus medic web\Front\clinicallmedic\node_modules\@angular\material\prebuilt-themes\indigo-pink.css */"./node_modules/@angular/material/prebuilt-themes/indigo-pink.css");
+__webpack_require__(/*! C:\Users\eduar\Desktop\focus medic web\Front\clinicallmedic\src\styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! C:\Users\eduar\Desktop\focus medic web\Front\clinicallmedic\node_modules\bootstrap\dist\css\bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
 
 
 /***/ })

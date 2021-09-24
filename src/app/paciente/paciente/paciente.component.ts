@@ -27,7 +27,11 @@ export class PacienteComponent implements OnInit {
   }
 
   getPacie(){
-    this.service.getPacie().subscribe(resposta => this.paciente = resposta);
+    this.service.getPacie().subscribe(resposta => {
+      console.log(resposta),
+      this.paciente = resposta
+      });
+   
   }
 
 }

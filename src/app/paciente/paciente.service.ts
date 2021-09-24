@@ -12,6 +12,7 @@ import { Observable } from 'rxjs';
 export class PacienteService {
 
   apiURL: string = environment.apiURL + '/datasnap/rest/TPatientController/paciente'
+  apiURLp: string = environment.apiURL + '/datasnap/rest/TPatientController/pacientes'
   apiURLNac: string = environment.apiURL + '/datasnap/rest/TDomainController/nacionalidade'
   constructor(
     private http: HttpClient
@@ -27,7 +28,7 @@ export class PacienteService {
     }
 
     getPacie():Observable<Paciente[]>{
-      return this.http.get<Paciente[]>(this.apiURL)
+      return this.http.get<Paciente[]>(this.apiURLp)      
     }
 
 }
