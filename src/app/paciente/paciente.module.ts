@@ -12,10 +12,11 @@ import {MatSelectModule} from '@angular/material/select';
 import { MatDatepickerModule, MatDatepickerInput } from '@angular/material/datepicker';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatButtonModule} from '@angular/material/button';
 import { PacienteFormComponent } from './paciente-form/paciente-form.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -25,9 +26,9 @@ import { PacienteFormComponent } from './paciente-form/paciente-form.component';
 
   imports: [
     BrowserAnimationsModule,
-    CommonModule,     
+    CommonModule,
     FormsModule,
-    MatButtonModule,    
+    MatButtonModule,
     MatTabsModule,
     MatTableModule,
     MatInputModule,
@@ -37,14 +38,15 @@ import { PacienteFormComponent } from './paciente-form/paciente-form.component';
     PacienteRoutingModule,
     MatSelectModule,
     MatDatepickerModule,
-    
-    
+    MatAutocompleteModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   exports:[
     PacienteComponent,
     PacienteFormComponent,
     MatTabsModule
-    
+
   ],
   providers:[
     { provide: MAT_DATE_LOCALE, useValue: 'pt-BR' }

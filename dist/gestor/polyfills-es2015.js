@@ -3033,7 +3033,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\eduar\Desktop\focus medic web\Front\clinicallmedic\src\polyfills.ts */"./src/polyfills.ts");
+module.exports = __webpack_require__(/*! C:\Users\supor\OneDrive\Área de Trabalho\Focus\front\clinicallmedic\src\polyfills.ts */"./src/polyfills.ts");
 
 
 /***/ })
