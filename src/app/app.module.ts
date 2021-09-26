@@ -41,6 +41,8 @@ import * as moment from 'moment';
 import * as _moment from 'moment';
 // tslint:disable-next-line:no-duplicate-imports
 import {defaultFormat as _rollupMoment, Moment} from 'moment';
+import { ProntuarioComponent } from './prontuario/prontuario/prontuario.component';
+import { ProntuarioModule } from './prontuario/prontuario.module';
 registerLocaleData(localeBr, 'pt', localeBrExtra)
 export const MY_FORMATS = {
     parse: {
@@ -48,12 +50,12 @@ export const MY_FORMATS = {
     },
     display: {
       dateInput: 'DD/MM/YYYY',
-      
+
     monthYearLabel: 'MMMM Y',
     dateA11yLabel: 'L',
     monthYearA11yLabel: 'MMMM Y'
-      
-     
+
+
     },
   };
 
@@ -66,16 +68,17 @@ export const MY_FORMATS = {
     HomeComponent,
     LoginComponent,
     LayoutComponent,
-    
- 
-        
-        
-    
+
+
+
+
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    TemplateModule,     
+    TemplateModule,
     NoopAnimationsModule,
     HttpClientModule,
     UsuarioModule,
@@ -83,10 +86,10 @@ export const MY_FORMATS = {
     AgendaModule,
     PacienteModule,
     MatSnackBarModule,
-    
-    
+    ProntuarioModule
+
   ],
-  providers: [   
+  providers: [
     ServiceEmpresaService,
     SnackBarService,
     AuthGuardService,
@@ -98,7 +101,7 @@ export const MY_FORMATS = {
     },
     { provide: MAT_DATE_LOCALE, useValue: 'pt-BR' },
     {provide: MAT_DATE_FORMATS, useValue: MY_FORMATS},
-    
+
   ],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,93 @@
+<div class="container">
+  <h1 class="mt-4" style="color: rgb(0, 100, 100)">Prontuário do Paciente</h1>
+  <ol class="breadcrumb mb-4">
+    <li class="breadcrum-bitem active">Visualização de Prontuário</li>
+  </ol>
+<br>
+
+  <mat-form-field class="example-full-width" id="nomep" appearance="fill">
+    <mat-label>Nome do Paciente</mat-label>
+    <input
+      matInput
+      placeholder="Nome Completo"
+      value=""
+      disabled
+      name="nomePaciente"
+    />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width" id="conve" appearance="fill">
+    <mat-label>Convênio</mat-label>
+    <input
+      matInput
+      placeholder="Convênio"
+      value=""
+      disabled
+      name="nomePaciente"
+    />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width" id="nasci" appearance="fill">
+    <mat-label>Nascimento</mat-label>
+    <input
+      matInput
+      placeholder="Nascimento"
+      value=""
+      disabled
+      name="nomePaciente"
+    />
+  </mat-form-field>
+
+  <mat-tab-group>
+
+    <!--FICHA-->
+    <mat-tab label="Ficha">
+      <br />
+
+      <button mat-button style="color: rgb(255, 255, 255); background-color: rgb(38, 95, 105)">
+        Nova Ficha
+        <mat-icon>add</mat-icon>
+      </button>
+    </mat-tab>
+
+    <!--Laudos-->
+    <mat-tab label="Laudos">
+<br>
+
+      <button mat-button style="color: rgb(255, 255, 255); background-color: rgb(38, 95, 105)">
+        Novo Laudo
+        <mat-icon>add</mat-icon>
+      </button>
+    </mat-tab>
+
+    <!--Atestado e Relatorios-->
+    <mat-tab label="Atestado e Relatórios">
+<br>
+
+      <button mat-button style="color: rgb(255, 255, 255); background-color: rgb(38, 95, 105)">
+        Novo Atestado ou Relatório
+        <mat-icon>add</mat-icon>
+      </button>
+    </mat-tab>
+
+    <!--Receituario-->
+    <mat-tab label="Receituário">
+<br>
+
+      <button mat-button style="color: rgb(255, 255, 255); background-color: rgb(38, 95, 105)">
+        Nova Receita
+        <mat-icon>add</mat-icon>
+      </button>
+    </mat-tab>
+
+    <!--Solicitação de Exames-->
+    <mat-tab label="Solicitação de Exames">
+<br>
+
+      <button mat-button style="color: rgb(255, 255, 255); background-color: rgb(38, 95, 105)">
+        Nova Solicitação de Exame
+        <mat-icon>add</mat-icon>
+      </button>
+    </mat-tab>
+  </mat-tab-group>
+</div>

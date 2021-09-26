@@ -2,16 +2,16 @@
     <h1 class="mt-4" style="color: rgb(0, 100, 100);">Agenda</h1>
     <ol class="breadcrumb mb-4">
         <li class="breadcrum-bitem active">Agenda Médica</li>
-    
-    </ol>   
-        
- <br>      
+
+    </ol>
+
+ <br>
     <div class="container" id="agenda">
-        
+
         <div>
             <mat-card class="demo-inline-calendar-card">
-                <mat-calendar  class="calendar" (selectedChange)="searchScheduleProfessional($event)"></mat-calendar>                           
-                  <p><span>{{dataAgenda}}</span>  </p>   
+                <mat-calendar  class="calendar" (selectedChange)="searchScheduleProfessional($event)"></mat-calendar>
+                  <p><span>{{dataAgenda}}</span>  </p>
             </mat-card>
 
             <mat-card style="margin-top:10px;">
@@ -20,14 +20,14 @@
 
             </mat-card>
         </div>
-          
 
 
-        
+
+
      <!----------------------------------- TABELA ---------------------------- -->
                 <table mat-table [dataSource]="agenda" class="mat-elevation-z8">
-        
-        
+
+
                     <!-- numero de guia Column -->
                     <ng-container matColumnDef="status">
                         <th mat-header-cell *matHeaderCellDef> Status </th>
@@ -39,30 +39,30 @@
                         <th mat-header-cell *matHeaderCellDef> Hora </th>
                         <td mat-cell *matCellDef="let element"> {{element.horaAgenda ? element.horaAgenda : '----'}} </td>
                     </ng-container>
-        
+
                     <!-- data de encaminhamento Column -->
                     <ng-container matColumnDef="paciente">
                         <th mat-header-cell *matHeaderCellDef> Paciente </th>
                         <td mat-cell *matCellDef="let element"> {{element.paciente.nomePaciente ? element.paciente.nomePaciente : '----'}} </td>
                     </ng-container>
-        
+
                     <!-- colaborador Column -->
                     <ng-container matColumnDef="convenio">
                         <th mat-header-cell *matHeaderCellDef> Convênio </th>
                         <td mat-cell *matCellDef="let element"> {{element.paciente.nomeConvenio ? element.paciente.nomeConvenio : '----'}} </td>
                     </ng-container>
-        
+
                     <!-- tipo de exame Column -->
                     <ng-container matColumnDef="servico">
                         <th mat-header-cell *matHeaderCellDef> Serviço </th>
                         <td mat-cell *matCellDef="let element"> {{element.nomeProcedimento ? element.nomeProcedimento : '----'}} </td>
                     </ng-container>
-        
+
                     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
                     <tr mat-row
                     *matRowDef="let row; columns: displayedColumns;"></tr>
                 </table>
-        
+
     </div>
-    
-    
+
+

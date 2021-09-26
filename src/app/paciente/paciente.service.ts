@@ -36,6 +36,8 @@ export class PacienteService {
       return this.http.get<Paciente>(this.apiURLp)
     }
 
+
+
     getPatientList(name: string): Observable<Paciente[]> {
       return this.http.get<Paciente[]>(`${this.apiURLp}/${name}`)
   }

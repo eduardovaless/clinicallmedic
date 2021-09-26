@@ -56,7 +56,7 @@ export class PacienteFormComponent implements OnInit {
   ];
   //-----------------------------------
 
-
+  statusPaciente: string;
   paciente: Paciente;
   nacionalidade: Nacionalidade[] = [];
 
@@ -67,26 +67,27 @@ export class PacienteFormComponent implements OnInit {
   ) {
 
     this.paciente = new Paciente();
-    
+    this.statusPaciente= "Ativo"
   }
 
   ngOnInit(): void {
     this.sexo= this.paciente.sexo
+    this.paciente.situacao= this.statusPaciente
     this.getNac();
-    
+
   }
 
   onSubmit() {
     this.paciente.dataNascimento= moment().format('YYYY-MM-DD')
     this.paciente.validadeCarteiraConvenio= moment().format('YYYY-MM-DD')
     this.service.salvar(this.paciente).subscribe( response =>{
-      console.log(response);       
+      console.log(response);
       this.paciente= response;
       this.snackBar.successMessage('Paciente criado com sucesso!')
       this.router.navigate(["/paciente/list"])
     }, errorResponse =>{
-      this.snackBar.errorMessage('Não foi possível criar o Paciente!')      
-      console.log(errorResponse.error.errors);            
+      this.snackBar.errorMessage('Não foi possível criar o Paciente!')
+      console.log(errorResponse.error.errors);
     }
     )
   }

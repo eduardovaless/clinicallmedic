@@ -6,6 +6,7 @@ import { map, startWith } from 'rxjs/operators';
 import {FormControl} from '@angular/forms';
 import {Observable, Subscriber} from 'rxjs';
 import {MatTableDataSource} from '@angular/material/table';
+import moment from 'moment';
 
 
 
@@ -24,8 +25,9 @@ export class PacienteComponent implements OnInit {
 
   patientList = [];
 
+  nascimento: string;
 
-
+  pacientes: Paciente
 
 
 
@@ -47,11 +49,16 @@ dataSource = new MatTableDataSource<Paciente>();
 //-----------------------------------
   constructor(
     private service: PacienteService
-  ) { }
+  ) {
+
+
+
+   }
 
   ngOnInit(): void {
-    //this.getPacie()
+    this.getPacie()
     this.initialTable();
+
 
 
 

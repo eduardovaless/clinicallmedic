@@ -15,7 +15,7 @@
     margin: 0 auto;
   max-height: 100%;
   margin-top: 55px ;
-  
+
 }
 
 .example-sidenav2{
@@ -25,20 +25,20 @@
     margin: 0 auto;
   max-height: 100%;
   margin-top: 55px ;
-  
+  position: fixed;
 }
 
 .menu{
   color: white;
   margin-top: 5px;
-  
+
 }
 
 .menu:hover{
   background-color: rgb(8, 113, 121);
   border-radius: 10px;
   display: flex;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 
@@ -57,21 +57,21 @@
 }
 
 .icon2{
-  margin-top: 20px; 
-   
-  
+  margin-top: 20px;
+
+
 }
 .icon2:hover{
   background-color: rgb(8, 113, 121);
-  border-radius: 10px;  
+  border-radius: 10px;
   display: flex;
-  cursor: pointer; 
+  cursor: pointer;
   font-size: 25px;
   background: 30px;
-  
+
 }
 
 .menu1{
-  color: white;   
+  color: white;
 }
 
