@@ -619,6 +619,9 @@ function AgendamedicaComponent_tr_37_Template(rf, ctx) { if (rf & 1) {
 } }
 function AgendamedicaComponent_tr_38_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "tr", 22);
+} if (rf & 2) {
+    const paciente_r62 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate1"]("routerLink", "/prontuario/form/", paciente_r62.idPaciente, "");
 } }
 class AgendamedicaComponent {
     constructor(router, activatedRoute, service) {
@@ -655,7 +658,7 @@ class AgendamedicaComponent {
 AgendamedicaComponent.ɵfac = function AgendamedicaComponent_Factory(t) { return new (t || AgendamedicaComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_agenda_service__WEBPACK_IMPORTED_MODULE_4__["AgendaService"])); };
 AgendamedicaComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AgendamedicaComponent, selectors: [["app-agendamedica"]], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([
             { provide: _angular_common_locales_pt__WEBPACK_IMPORTED_MODULE_2___default.a, useValue: 'pt' },
-        ])], decls: 39, vars: 4, consts: [[1, "container"], [1, "mt-4", 2, "color", "rgb(0, 100, 100)"], [1, "breadcrumb", "mb-4"], [1, "breadcrum-bitem", "active"], ["id", "agenda", 1, "container"], [1, "demo-inline-calendar-card"], [1, "calendar", 3, "selectedChange"], [2, "margin-top", "10px"], [2, "text-align", "center"], ["mat-table", "", 1, "mat-elevation-z8", 3, "dataSource"], ["matColumnDef", "status"], ["mat-header-cell", "", 4, "matHeaderCellDef"], ["mat-cell", "", 4, "matCellDef"], ["matColumnDef", "hora"], ["matColumnDef", "paciente"], ["matColumnDef", "convenio"], ["matColumnDef", "servico"], ["mat-header-row", "", 4, "matHeaderRowDef"], ["mat-row", "", 4, "matRowDef", "matRowDefColumns"], ["mat-header-cell", ""], ["mat-cell", ""], ["mat-header-row", ""], ["mat-row", ""]], template: function AgendamedicaComponent_Template(rf, ctx) { if (rf & 1) {
+        ])], decls: 39, vars: 4, consts: [[1, "container"], [1, "mt-4", 2, "color", "rgb(0, 100, 100)"], [1, "breadcrumb", "mb-4"], [1, "breadcrum-bitem", "active"], ["id", "agenda", 1, "container"], [1, "demo-inline-calendar-card"], [1, "calendar", 3, "selectedChange"], [2, "margin-top", "10px"], [2, "text-align", "center"], ["mat-table", "", 1, "mat-elevation-z8", 3, "dataSource"], ["matColumnDef", "status"], ["mat-header-cell", "", 4, "matHeaderCellDef"], ["mat-cell", "", 4, "matCellDef"], ["matColumnDef", "hora"], ["matColumnDef", "paciente"], ["matColumnDef", "convenio"], ["matColumnDef", "servico"], ["mat-header-row", "", 4, "matHeaderRowDef"], ["mat-row", "", 3, "routerLink", 4, "matRowDef", "matRowDefColumns"], ["mat-header-cell", ""], ["mat-cell", ""], ["mat-header-row", ""], ["mat-row", "", 3, "routerLink"]], template: function AgendamedicaComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Agenda");
@@ -711,7 +714,7 @@ AgendamedicaComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](36, AgendamedicaComponent_td_36_Template, 2, 1, "td", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](37, AgendamedicaComponent_tr_37_Template, 1, 0, "tr", 17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](38, AgendamedicaComponent_tr_38_Template, 1, 0, "tr", 18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](38, AgendamedicaComponent_tr_38_Template, 1, 1, "tr", 18);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -724,7 +727,7 @@ AgendamedicaComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("matHeaderRowDef", ctx.displayedColumns);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("matRowDefColumns", ctx.displayedColumns);
-    } }, directives: [_angular_material_card__WEBPACK_IMPORTED_MODULE_5__["MatCard"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_6__["MatCalendar"], _angular_material_table__WEBPACK_IMPORTED_MODULE_7__["MatTable"], _angular_material_table__WEBPACK_IMPORTED_MODULE_7__["MatColumnDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_7__["MatHeaderCellDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_7__["MatCellDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_7__["MatHeaderRowDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_7__["MatRowDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_7__["MatHeaderCell"], _angular_material_table__WEBPACK_IMPORTED_MODULE_7__["MatCell"], _angular_material_table__WEBPACK_IMPORTED_MODULE_7__["MatHeaderRow"], _angular_material_table__WEBPACK_IMPORTED_MODULE_7__["MatRow"]], styles: ["table[_ngcontent-%COMP%] {\r\n    \r\n    width: 80%;\r\n    background-color: rgb(227, 235, 234);\r\n    margin-left: 50px;\r\n    border-collapse: separate;\r\n       border-spacing: 0 8px;\r\n  }\r\n  td[_ngcontent-%COMP%]{\r\n    border: 3px solid rgb(227, 235, 234);\r\n  border-left-width: 0;\r\n  min-width: 120px;\r\n  height: 18px;\r\n  }\r\n  .td[_ngcontent-%COMP%]:hover{\r\n    background: rgb(15, 140, 150);\r\n    border: rgb(227, 235, 234);   \r\n    cursor: default;\r\n  }\r\n  .mat-row[_ngcontent-%COMP%]:hover {\r\n    background: rgb(227, 235, 260);     \r\n    cursor: default;\r\n  }\r\n  .demo-inline-calendar-card[_ngcontent-%COMP%] {\r\n    width: 250px;\r\n    \r\n  }\r\n  #agenda[_ngcontent-%COMP%]{\r\n\r\n    display: flex;\r\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWdlbmRhL2FnZW5kYW1lZGljYS9hZ2VuZGFtZWRpY2EuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7SUFFSSxVQUFVO0lBQ1Ysb0NBQW9DO0lBQ3BDLGlCQUFpQjtJQUNqQix5QkFBeUI7T0FDdEIscUJBQXFCO0VBQzFCO0VBQ0E7SUFDRSxvQ0FBb0M7RUFDdEMsb0JBQW9CO0VBQ3BCLGdCQUFnQjtFQUNoQixZQUFZO0VBQ1o7RUFHQTtJQUNFLDZCQUE2QjtJQUM3QiwwQkFBMEI7SUFDMUIsZUFBZTtFQUNqQjtFQUVBO0lBQ0UsOEJBQThCO0lBQzlCLGVBQWU7RUFDakI7RUFFQTtJQUNFLFlBQVk7O0VBRWQ7RUFHQTs7SUFFRSxhQUFhO0VBQ2YiLCJmaWxlIjoic3JjL2FwcC9hZ2VuZGEvYWdlbmRhbWVkaWNhL2FnZW5kYW1lZGljYS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsidGFibGUge1xyXG4gICAgXHJcbiAgICB3aWR0aDogODAlO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIyNywgMjM1LCAyMzQpO1xyXG4gICAgbWFyZ2luLWxlZnQ6IDUwcHg7XHJcbiAgICBib3JkZXItY29sbGFwc2U6IHNlcGFyYXRlO1xyXG4gICAgICAgYm9yZGVyLXNwYWNpbmc6IDAgOHB4O1xyXG4gIH1cclxuICB0ZHtcclxuICAgIGJvcmRlcjogM3B4IHNvbGlkIHJnYigyMjcsIDIzNSwgMjM0KTtcclxuICBib3JkZXItbGVmdC13aWR0aDogMDtcclxuICBtaW4td2lkdGg6IDEyMHB4O1xyXG4gIGhlaWdodDogMThweDtcclxuICB9XHJcblxyXG5cclxuICAudGQ6aG92ZXJ7XHJcbiAgICBiYWNrZ3JvdW5kOiByZ2IoMTUsIDE0MCwgMTUwKTtcclxuICAgIGJvcmRlcjogcmdiKDIyNywgMjM1LCAyMzQpOyAgIFxyXG4gICAgY3Vyc29yOiBkZWZhdWx0O1xyXG4gIH1cclxuXHJcbiAgLm1hdC1yb3c6aG92ZXIge1xyXG4gICAgYmFja2dyb3VuZDogcmdiKDIyNywgMjM1LCAyNjApOyAgICAgXHJcbiAgICBjdXJzb3I6IGRlZmF1bHQ7XHJcbiAgfVxyXG5cclxuICAuZGVtby1pbmxpbmUtY2FsZW5kYXItY2FyZCB7XHJcbiAgICB3aWR0aDogMjUwcHg7XHJcbiAgICBcclxuICB9XHJcblxyXG5cclxuICAjYWdlbmRhe1xyXG5cclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgfSJdfQ== */"] });
+    } }, directives: [_angular_material_card__WEBPACK_IMPORTED_MODULE_5__["MatCard"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_6__["MatCalendar"], _angular_material_table__WEBPACK_IMPORTED_MODULE_7__["MatTable"], _angular_material_table__WEBPACK_IMPORTED_MODULE_7__["MatColumnDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_7__["MatHeaderCellDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_7__["MatCellDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_7__["MatHeaderRowDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_7__["MatRowDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_7__["MatHeaderCell"], _angular_material_table__WEBPACK_IMPORTED_MODULE_7__["MatCell"], _angular_material_table__WEBPACK_IMPORTED_MODULE_7__["MatHeaderRow"], _angular_material_table__WEBPACK_IMPORTED_MODULE_7__["MatRow"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterLink"]], styles: ["table[_ngcontent-%COMP%] {\r\n    \r\n    width: 80%;\r\n    background-color: rgb(227, 235, 234);\r\n    margin-left: 50px;\r\n    border-collapse: separate;\r\n       border-spacing: 0 8px;\r\n  }\r\n  td[_ngcontent-%COMP%]{\r\n    border: 3px solid rgb(227, 235, 234);\r\n  border-left-width: 0;\r\n  min-width: 120px;\r\n  height: 18px;\r\n  }\r\n  .td[_ngcontent-%COMP%]:hover{\r\n    background: rgb(15, 140, 150);\r\n    border: rgb(227, 235, 234);   \r\n    cursor: default;\r\n  }\r\n  .mat-row[_ngcontent-%COMP%]:hover {\r\n    background: rgb(227, 235, 260);     \r\n    cursor: default;\r\n  }\r\n  .demo-inline-calendar-card[_ngcontent-%COMP%] {\r\n    width: 250px;\r\n    \r\n  }\r\n  #agenda[_ngcontent-%COMP%]{\r\n\r\n    display: flex;\r\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWdlbmRhL2FnZW5kYW1lZGljYS9hZ2VuZGFtZWRpY2EuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7SUFFSSxVQUFVO0lBQ1Ysb0NBQW9DO0lBQ3BDLGlCQUFpQjtJQUNqQix5QkFBeUI7T0FDdEIscUJBQXFCO0VBQzFCO0VBQ0E7SUFDRSxvQ0FBb0M7RUFDdEMsb0JBQW9CO0VBQ3BCLGdCQUFnQjtFQUNoQixZQUFZO0VBQ1o7RUFHQTtJQUNFLDZCQUE2QjtJQUM3QiwwQkFBMEI7SUFDMUIsZUFBZTtFQUNqQjtFQUVBO0lBQ0UsOEJBQThCO0lBQzlCLGVBQWU7RUFDakI7RUFFQTtJQUNFLFlBQVk7O0VBRWQ7RUFHQTs7SUFFRSxhQUFhO0VBQ2YiLCJmaWxlIjoic3JjL2FwcC9hZ2VuZGEvYWdlbmRhbWVkaWNhL2FnZW5kYW1lZGljYS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsidGFibGUge1xyXG4gICAgXHJcbiAgICB3aWR0aDogODAlO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIyNywgMjM1LCAyMzQpO1xyXG4gICAgbWFyZ2luLWxlZnQ6IDUwcHg7XHJcbiAgICBib3JkZXItY29sbGFwc2U6IHNlcGFyYXRlO1xyXG4gICAgICAgYm9yZGVyLXNwYWNpbmc6IDAgOHB4O1xyXG4gIH1cclxuICB0ZHtcclxuICAgIGJvcmRlcjogM3B4IHNvbGlkIHJnYigyMjcsIDIzNSwgMjM0KTtcclxuICBib3JkZXItbGVmdC13aWR0aDogMDtcclxuICBtaW4td2lkdGg6IDEyMHB4O1xyXG4gIGhlaWdodDogMThweDtcclxuICB9XHJcblxyXG5cclxuICAudGQ6aG92ZXJ7XHJcbiAgICBiYWNrZ3JvdW5kOiByZ2IoMTUsIDE0MCwgMTUwKTtcclxuICAgIGJvcmRlcjogcmdiKDIyNywgMjM1LCAyMzQpOyAgIFxyXG4gICAgY3Vyc29yOiBkZWZhdWx0O1xyXG4gIH1cclxuXHJcbiAgLm1hdC1yb3c6aG92ZXIge1xyXG4gICAgYmFja2dyb3VuZDogcmdiKDIyNywgMjM1LCAyNjApOyAgICAgXHJcbiAgICBjdXJzb3I6IGRlZmF1bHQ7XHJcbiAgfVxyXG5cclxuICAuZGVtby1pbmxpbmUtY2FsZW5kYXItY2FyZCB7XHJcbiAgICB3aWR0aDogMjUwcHg7XHJcbiAgICBcclxuICB9XHJcblxyXG5cclxuICAjYWdlbmRhe1xyXG5cclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgfSJdfQ== */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AgendamedicaComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -1579,7 +1582,7 @@ class PacienteFormComponent {
     }
 }
 PacienteFormComponent.ɵfac = function PacienteFormComponent_Factory(t) { return new (t || PacienteFormComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_paciente_service__WEBPACK_IMPORTED_MODULE_4__["PacienteService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_snackbar_service__WEBPACK_IMPORTED_MODULE_5__["SnackBarService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"])); };
-PacienteFormComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: PacienteFormComponent, selectors: [["app-paciente-form"]], decls: 132, vars: 26, consts: [[1, "container"], [1, "mt-4", 2, "color", "rgb(0, 100, 100)"], [1, "breadcrumb", "mb-4"], [1, "breadcrum-bitem", "active"], [3, "ngSubmit"], ["pacienteForm", "ngForm"], ["class", "row", 4, "ngIf"], [1, "row"], [1, "col-md-5"], ["appearance", "fill", 1, "example-full-width"], ["matInput", "", "placeholder", "Nome Completo", "value", "", "name", "nomePaciente", 3, "ngModel", "ngModelChange"], [1, "col-md-3"], ["appearance", "fill"], ["matInput", "", "name", "dataNascimento", 3, "matDatepicker", "ngModel", "ngModelChange"], ["matSuffix", "", 3, "for"], ["picker", ""], [1, "col-md-4"], ["matInput", "", "placeholder", "exemplo@exemplo.com", "value", "", "name", "eMail", 3, "ngModel", "ngModelChange"], ["matInput", "", "placeholder", "", "value", "", "name", "logradouro", 3, "ngModel", "ngModelChange"], [1, "col-md-1"], ["matInput", "", "placeholder", "00", "value", "", "name", "numeroLogradouro", 3, "ngModel", "ngModelChange"], ["matInput", "", "placeholder", "", "value", "", "name", "complemento", 3, "ngModel", "ngModelChange"], [1, "col-md-2"], ["matInput", "", "placeholder", "", "value", "", "name", "cep", 3, "ngModel", "ngModelChange"], ["matInput", "", "placeholder", "", "value", "", "name", "bairro", 3, "ngModel", "ngModelChange"], ["matInput", "", "placeholder", "", "value", "", "name", "municipio", 3, "ngModel", "ngModelChange"], ["matInput", "", "placeholder", "", "value", "", "name", "uf", 3, "ngModel", "ngModelChange"], ["matInput", "", "placeholder", "", "value", "", "name", "telefone", 3, "ngModel", "ngModelChange"], ["matInput", "", "placeholder", "", "value", "", "name", "telefoneCelular", 3, "ngModel", "ngModelChange"], ["appearance", "fill", 2, "width", "154px"], ["name", "sexo", "ngDefaultControl", "", 3, "value", "ngModel", "ngModelChange", 4, "ngFor", "ngForOf"], ["matInput", "", "placeholder", "", "value", "", "name", "rg", 3, "ngModel", "ngModelChange"], ["matInput", "", "placeholder", "", "value", "", "name", "cpf", 3, "ngModel", "ngModelChange"], ["name", "estadoCivil", "ngDefaultControl", "", 3, "value", "ngModel", "ngModelChange", 4, "ngFor", "ngForOf"], ["name", "racaPaciente", "ngDefaultControl", "", 3, "value", "ngModel", "ngModelChange", 4, "ngFor", "ngForOf"], ["appearance", "fill", 2, "width", "340px"], ["name", "convenio", "ngDefaultControl", "", 3, "value", "ngModel", "ngModelChange", 4, "ngFor", "ngForOf"], ["matInput", "", "placeholder", "", "value", "", "name", "carteiraConvenio", 3, "ngModel", "ngModelChange"], ["matInput", "", "name", "validadeCarteiraConvenio", 3, "matDatepicker", "ngModel", "ngModelChange"], ["picker1", ""], ["name", "nacionalidade", "ngDefaultControl", "", 3, "value", "ngModel", "ngModelChange", 4, "ngFor", "ngForOf"], [1, "col-md-0"], ["type", "submit", "class", "btn ml-3", "style", "background-color: rgb(70, 211, 70); color: white;", "mat-raised-button", "", "color", "primary", 4, "ngIf"], ["type", "button", "mat-raised-button", "", "color", "primary", "routerLink", "/paciente/list", 1, "btn", "ml-3", 2, "background-color", "rgb(192, 100, 13)"], [1, "icone", "fa", "fa-reply"], [1, "form-group"], ["type", "text", "name", "id", "disabled", "true", 1, "form-control", 3, "ngModel"], ["type", "text", "name", "dataCadastro", "disabled", "true", 1, "form-control", 3, "ngModel"], ["name", "sexo", "ngDefaultControl", "", 3, "value", "ngModel", "ngModelChange"], ["name", "estadoCivil", "ngDefaultControl", "", 3, "value", "ngModel", "ngModelChange"], ["name", "racaPaciente", "ngDefaultControl", "", 3, "value", "ngModel", "ngModelChange"], ["name", "convenio", "ngDefaultControl", "", 3, "value", "ngModel", "ngModelChange"], ["name", "nacionalidade", "ngDefaultControl", "", 3, "value", "ngModel", "ngModelChange"], ["type", "submit", "mat-raised-button", "", "color", "primary", 1, "btn", "ml-3", 2, "background-color", "rgb(70, 211, 70)", "color", "white"], [1, "icone", "fa", "fa-save"]], template: function PacienteFormComponent_Template(rf, ctx) { if (rf & 1) {
+PacienteFormComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: PacienteFormComponent, selectors: [["app-paciente-form"]], decls: 132, vars: 26, consts: [[1, "container"], [1, "mt-4", 2, "color", "rgb(0, 100, 100)"], [1, "breadcrumb", "mb-4"], [1, "breadcrum-bitem", "active"], [3, "ngSubmit"], ["pacienteForm", "ngForm"], ["class", "row", 4, "ngIf"], [1, "row"], [1, "col-md-5"], ["appearance", "fill", 1, "example-full-width"], ["matInput", "", "placeholder", "Nome Completo", "value", "", "name", "nomePaciente", 3, "ngModel", "ngModelChange"], [1, "col-md-3"], ["appearance", "fill"], ["matInput", "", "name", "dataNascimento", 3, "matDatepicker", "ngModel", "ngModelChange"], ["matSuffix", "", 3, "for"], ["picker", ""], [1, "col-md-4"], ["matInput", "", "placeholder", "exemplo@exemplo.com", "value", "", "name", "eMail", 3, "ngModel", "ngModelChange"], ["matInput", "", "placeholder", "", "value", "", "name", "logradouro", 3, "ngModel", "ngModelChange"], [1, "col-md-1"], ["matInput", "", "placeholder", "00", "value", "", "name", "numeroLogradouro", 3, "ngModel", "ngModelChange"], ["matInput", "", "placeholder", "", "value", "", "name", "complemento", 3, "ngModel", "ngModelChange"], [1, "col-md-2"], ["matInput", "", "placeholder", "", "value", "", "name", "cep", 3, "ngModel", "ngModelChange"], ["matInput", "", "placeholder", "", "value", "", "name", "bairro", 3, "ngModel", "ngModelChange"], ["matInput", "", "placeholder", "", "value", "", "name", "municipio", 3, "ngModel", "ngModelChange"], ["matInput", "", "placeholder", "", "value", "", "name", "uf", 3, "ngModel", "ngModelChange"], ["matInput", "", "placeholder", "", "value", "", "name", "telefone", 3, "ngModel", "ngModelChange"], ["matInput", "", "placeholder", "", "value", "", "name", "telefoneCelular", 3, "ngModel", "ngModelChange"], ["appearance", "fill", 2, "width", "154px"], ["name", "sexo", "ngDefaultControl", "", 3, "value", "ngModel", "ngModelChange", 4, "ngFor", "ngForOf"], ["matInput", "", "placeholder", "", "value", "", "name", "rg", 3, "ngModel", "ngModelChange"], ["matInput", "", "placeholder", "", "value", "", "name", "cpf", 3, "ngModel", "ngModelChange"], ["name", "estadoCivil", "ngDefaultControl", "", 3, "value", "ngModel", "ngModelChange", 4, "ngFor", "ngForOf"], ["name", "racaPaciente", "ngDefaultControl", "", 3, "value", "ngModel", "ngModelChange", 4, "ngFor", "ngForOf"], ["appearance", "fill", 2, "width", "340px"], ["name", "convenio", "ngDefaultControl", "", 3, "value", "ngModel", "ngModelChange", 4, "ngFor", "ngForOf"], ["matInput", "", "placeholder", "", "value", "", "name", "carteiraConvenio", 3, "ngModel", "ngModelChange"], ["matInput", "", "name", "validadeCarteiraConvenio", 3, "matDatepicker", "ngModel", "ngModelChange"], ["picker1", ""], ["name", "nacionalidade", "ngDefaultControl", "", 3, "value", "ngModel", "ngModelChange", 4, "ngFor", "ngForOf"], [1, "col-md-0"], ["type", "submit", "class", "btn ml-3", "style", "background-color: rgb(70, 211, 70); color: white;", "mat-raised-button", "", "color", "primary", 4, "ngIf"], ["type", "button", "mat-raised-button", "", "color", "primary", "routerLink", "/paciente/list", 1, "btn", "ml-3", 2, "background-color", "rgb(22, 61, 97)"], [1, "icone", "fa", "fa-reply"], [1, "form-group"], ["type", "text", "name", "id", "disabled", "true", 1, "form-control", 3, "ngModel"], ["type", "text", "name", "dataCadastro", "disabled", "true", 1, "form-control", 3, "ngModel"], ["name", "sexo", "ngDefaultControl", "", 3, "value", "ngModel", "ngModelChange"], ["name", "estadoCivil", "ngDefaultControl", "", 3, "value", "ngModel", "ngModelChange"], ["name", "racaPaciente", "ngDefaultControl", "", 3, "value", "ngModel", "ngModelChange"], ["name", "convenio", "ngDefaultControl", "", 3, "value", "ngModel", "ngModelChange"], ["name", "nacionalidade", "ngDefaultControl", "", 3, "value", "ngModel", "ngModelChange"], ["type", "submit", "mat-raised-button", "", "color", "primary", 1, "btn", "ml-3", 2, "background-color", "rgb(70, 211, 70)", "color", "white"], [1, "icone", "fa", "fa-save"]], template: function PacienteFormComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Pacientes");
@@ -2110,6 +2113,7 @@ class PacienteService {
     getConvenio() {
         return this.http.get(this.apiURLConvenio);
     }
+    //PEGAR POR ID
     getPacieById(id) {
         return this.http.get(`${this.apiURL}/${id}`);
     }
@@ -2275,8 +2279,8 @@ function PacienteComponent_tr_32_Template(rf, ctx) { if (rf & 1) {
 function PacienteComponent_tr_33_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "tr", 23);
 } if (rf & 2) {
-    const ctx_r37 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate1"]("routerLink", "/paciente-form/", ctx_r37.pacientes.idPaciente, "");
+    const paciente_r44 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate1"]("routerLink", "/prontuario/form/", paciente_r44.idPaciente, "");
 } }
 function PacienteComponent_tr_34_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "tr", 24);
@@ -2453,13 +2457,13 @@ const routes = [
 class ProntuarioRoutingModule {
 }
 ProntuarioRoutingModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: ProntuarioRoutingModule });
-ProntuarioRoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function ProntuarioRoutingModule_Factory(t) { return new (t || ProntuarioRoutingModule)(); }, imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)],
+ProntuarioRoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function ProntuarioRoutingModule_Factory(t) { return new (t || ProntuarioRoutingModule)(); }, imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forChild(routes)],
         _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](ProntuarioRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](ProntuarioRoutingModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
-                imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)],
+                imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forChild(routes)],
                 exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
             }]
     }], null, null); })();
@@ -2601,11 +2605,19 @@ ProntuarioModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineI
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProntuarioComponent", function() { return ProntuarioComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material/form-field */ "./node_modules/@angular/material/fesm2015/form-field.js");
-/* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/input */ "./node_modules/@angular/material/fesm2015/input.js");
-/* harmony import */ var _angular_material_tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/tabs */ "./node_modules/@angular/material/fesm2015/tabs.js");
-/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/fesm2015/button.js");
-/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/icon */ "./node_modules/@angular/material/fesm2015/icon.js");
+/* harmony import */ var src_app_paciente_paciente__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/paciente/paciente */ "./src/app/paciente/paciente.ts");
+/* harmony import */ var _paciente_paciente_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../paciente/paciente.service */ "./src/app/paciente/paciente.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+/* harmony import */ var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/form-field */ "./node_modules/@angular/material/fesm2015/form-field.js");
+/* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/input */ "./node_modules/@angular/material/fesm2015/input.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
+/* harmony import */ var _angular_material_tabs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/tabs */ "./node_modules/@angular/material/fesm2015/tabs.js");
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/fesm2015/button.js");
+/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/icon */ "./node_modules/@angular/material/fesm2015/icon.js");
+
+
+
+
 
 
 
@@ -2614,12 +2626,24 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class ProntuarioComponent {
-    constructor() { }
+    constructor(service, activatedRoute) {
+        this.service = service;
+        this.activatedRoute = activatedRoute;
+        this.paciente = new src_app_paciente_paciente__WEBPACK_IMPORTED_MODULE_1__["Paciente"]();
+    }
     ngOnInit() {
+        let params = this.activatedRoute.params;
+        params.subscribe(urlParams => {
+            this.id = urlParams['id'];
+            if (this.id) {
+                this.service.getPacieById(this.id)
+                    .subscribe(response => this.paciente = response, errorResponse => this.paciente = new src_app_paciente_paciente__WEBPACK_IMPORTED_MODULE_1__["Paciente"]());
+            }
+        });
     }
 }
-ProntuarioComponent.ɵfac = function ProntuarioComponent_Factory(t) { return new (t || ProntuarioComponent)(); };
-ProntuarioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ProntuarioComponent, selectors: [["app-prontuario"]], decls: 50, vars: 0, consts: [[1, "container"], [1, "mt-4", 2, "color", "rgb(0, 100, 100)"], [1, "breadcrumb", "mb-4"], [1, "breadcrum-bitem", "active"], ["id", "nomep", "appearance", "fill", 1, "example-full-width"], ["matInput", "", "placeholder", "Nome Completo", "value", "", "disabled", "", "name", "nomePaciente"], ["id", "conve", "appearance", "fill", 1, "example-full-width"], ["matInput", "", "placeholder", "Conv\u00EAnio", "value", "", "disabled", "", "name", "nomePaciente"], ["id", "nasci", "appearance", "fill", 1, "example-full-width"], ["matInput", "", "placeholder", "Nascimento", "value", "", "disabled", "", "name", "nomePaciente"], ["label", "Ficha"], ["mat-button", "", 2, "color", "rgb(255, 255, 255)", "background-color", "rgb(38, 95, 105)"], ["label", "Laudos"], ["label", "Atestado e Relat\u00F3rios"], ["label", "Receitu\u00E1rio"], ["label", "Solicita\u00E7\u00E3o de Exames"]], template: function ProntuarioComponent_Template(rf, ctx) { if (rf & 1) {
+ProntuarioComponent.ɵfac = function ProntuarioComponent_Factory(t) { return new (t || ProntuarioComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_paciente_paciente_service__WEBPACK_IMPORTED_MODULE_2__["PacienteService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"])); };
+ProntuarioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ProntuarioComponent, selectors: [["app-prontuario"]], decls: 68, vars: 3, consts: [[1, "container"], [1, "mt-4", 2, "color", "rgb(0, 100, 100)"], [1, "breadcrumb", "mb-4"], [1, "breadcrum-bitem", "active"], ["id", "nomep", "appearance", "fill", 1, "example-full-width", 2, "background-color", "rgb(250, 250, 250)"], [2, "font-size", "15px", "color", "rgb(5, 70, 61)", "background-color", "rgb(250, 250, 250)"], ["matInput", "", "disabled", "", "name", "nomePaciente", 1, "form-control", 2, "color", "rgb(5, 70, 61)", "background-color", "rgb(250, 250, 250)", 3, "ngModel", "ngModelChange"], ["id", "conve", "appearance", "fill", 1, "example-full-width", 2, "background-color", "rgb(250, 250, 250)"], ["matInput", "", "disabled", "", "name", "nomeConvenio", 1, "form-control", 2, "color", "rgb(5, 70, 61)", "background-color", "rgb(250, 250, 250)", 3, "ngModel", "ngModelChange"], ["id", "nasci", "appearance", "fill", 1, "example-full-width", 2, "background-color", "rgb(250, 250, 250)"], ["matInput", "", "disabled", "", "name", "dataNascimento", 1, "form-control", 2, "color", "rgb(5, 70, 61)", "background-color", "rgb(250, 250, 250)", 3, "ngModel", "ngModelChange"], ["label", "Ficha"], ["mat-button", "", 2, "color", "rgb(255, 255, 255)", "background-color", "rgb(38, 95, 105)"], ["type", "button", "mat-raised-button", "", "color", "primary", "routerLink", "/paciente/list", 1, "btn", "ml-3", 2, "background-color", "rgb(22, 61, 97)"], [1, "icone", "fa", "fa-reply"], ["label", "Laudos"], ["label", "Atestado e Relat\u00F3rios"], ["label", "Receitu\u00E1rio"], ["label", "Solicita\u00E7\u00E3o de Exames"]], template: function ProntuarioComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Prontu\u00E1rio do Paciente");
@@ -2631,72 +2655,111 @@ ProntuarioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "br");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "mat-form-field", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "mat-label");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "Nome do Paciente");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](10, "input", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "mat-form-field", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "mat-label");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "Conv\u00EAnio");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](14, "input", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "mat-form-field", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "mat-label");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "Nascimento");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](18, "input", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "mat-tab-group");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "mat-tab", 10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](21, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "button", 11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, " Nova Ficha ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "mat-icon");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, "add");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "mat-label", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "b");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "Nome do Paciente");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "mat-tab", 12);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](27, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "button", 11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, " Novo Laudo ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "mat-icon");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, "add");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "input", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function ProntuarioComponent_Template_input_ngModelChange_11_listener($event) { return ctx.paciente.nomePaciente = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "mat-form-field", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "mat-label", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "b");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, "Conv\u00EAnio");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "mat-tab", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "input", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function ProntuarioComponent_Template_input_ngModelChange_16_listener($event) { return ctx.paciente.nomeConvenio = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "mat-form-field", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "mat-label", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "b");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "Nascimento");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "input", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function ProntuarioComponent_Template_input_ngModelChange_21_listener($event) { return ctx.paciente.dataNascimento = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "mat-tab-group");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "mat-tab", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](24, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "button", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, " Nova Ficha ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "mat-icon");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, "add");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "button", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](30, "i", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, " Voltar ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "mat-tab", 15);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](33, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "button", 11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, " Novo Atestado ou Relat\u00F3rio ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "button", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, " Novo Laudo ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "mat-icon");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, "add");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "mat-tab", 14);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](39, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "button", 11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](41, " Nova Receita ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](42, "mat-icon");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](43, "add");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "button", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](39, "i", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](40, " Voltar ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](44, "mat-tab", 15);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](45, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](46, "button", 11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](47, " Nova Solicita\u00E7\u00E3o de Exame ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](48, "mat-icon");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](49, "add");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "mat-tab", 16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](42, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "button", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](44, " Novo Atestado ou Relat\u00F3rio ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](45, "mat-icon");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](46, "add");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](47, "button", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](48, "i", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](49, " Voltar ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, directives: [_angular_material_form_field__WEBPACK_IMPORTED_MODULE_1__["MatFormField"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_1__["MatLabel"], _angular_material_input__WEBPACK_IMPORTED_MODULE_2__["MatInput"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_3__["MatTabGroup"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_3__["MatTab"], _angular_material_button__WEBPACK_IMPORTED_MODULE_4__["MatButton"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_5__["MatIcon"]], styles: [".example-full-width[_ngcontent-%COMP%]{\r\n  margin-left: 6px;\r\n}\r\n\r\n#nomep[_ngcontent-%COMP%]{\r\n  width: 50%;\r\n}\r\n\r\n#conve[_ngcontent-%COMP%]{\r\n  width: 25%;\r\n}\r\n\r\n#nasci[_ngcontent-%COMP%]{\r\n  width: 20%;\r\n}\r\n\r\nbutton[_ngcontent-%COMP%]{\r\n  margin-left: 7px;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcHJvbnR1YXJpby9wcm9udHVhcmlvL3Byb250dWFyaW8uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLFVBQVU7QUFDWjs7QUFFQTtFQUNFLFVBQVU7QUFDWjs7QUFFQTtFQUNFLFVBQVU7QUFDWjs7QUFFQTtFQUNFLGdCQUFnQjtBQUNsQiIsImZpbGUiOiJzcmMvYXBwL3Byb250dWFyaW8vcHJvbnR1YXJpby9wcm9udHVhcmlvLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhhbXBsZS1mdWxsLXdpZHRoe1xyXG4gIG1hcmdpbi1sZWZ0OiA2cHg7XHJcbn1cclxuXHJcbiNub21lcHtcclxuICB3aWR0aDogNTAlO1xyXG59XHJcblxyXG4jY29udmV7XHJcbiAgd2lkdGg6IDI1JTtcclxufVxyXG5cclxuI25hc2Npe1xyXG4gIHdpZHRoOiAyMCU7XHJcbn1cclxuXHJcbmJ1dHRvbntcclxuICBtYXJnaW4tbGVmdDogN3B4O1xyXG59XHJcbiJdfQ== */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](50, "mat-tab", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](51, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](52, "button", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](53, " Nova Receita ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](54, "mat-icon");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](55, "add");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](56, "button", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](57, "i", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](58, " Voltar ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](59, "mat-tab", 18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](60, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](61, "button", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](62, " Nova Solicita\u00E7\u00E3o de Exame ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](63, "mat-icon");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](64, "add");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](65, "button", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](66, "i", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](67, " Voltar ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.paciente.nomePaciente);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.paciente.nomeConvenio);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.paciente.dataNascimento);
+    } }, directives: [_angular_material_form_field__WEBPACK_IMPORTED_MODULE_4__["MatFormField"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_4__["MatLabel"], _angular_material_input__WEBPACK_IMPORTED_MODULE_5__["MatInput"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["NgModel"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_7__["MatTabGroup"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_7__["MatTab"], _angular_material_button__WEBPACK_IMPORTED_MODULE_8__["MatButton"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_9__["MatIcon"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterLink"]], styles: [".example-full-width[_ngcontent-%COMP%]{\r\n  margin-left: 6px;\r\n}\r\n\r\n#nomep[_ngcontent-%COMP%]{\r\n  width: 50%;\r\n}\r\n\r\n#conve[_ngcontent-%COMP%]{\r\n  width: 25%;\r\n}\r\n\r\n#nasci[_ngcontent-%COMP%]{\r\n  width: 20%;\r\n}\r\n\r\nbutton[_ngcontent-%COMP%]{\r\n  margin-left: 7px;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcHJvbnR1YXJpby9wcm9udHVhcmlvL3Byb250dWFyaW8uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLFVBQVU7QUFDWjs7QUFFQTtFQUNFLFVBQVU7QUFDWjs7QUFFQTtFQUNFLFVBQVU7QUFDWjs7QUFFQTtFQUNFLGdCQUFnQjtBQUNsQiIsImZpbGUiOiJzcmMvYXBwL3Byb250dWFyaW8vcHJvbnR1YXJpby9wcm9udHVhcmlvLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhhbXBsZS1mdWxsLXdpZHRoe1xyXG4gIG1hcmdpbi1sZWZ0OiA2cHg7XHJcbn1cclxuXHJcbiNub21lcHtcclxuICB3aWR0aDogNTAlO1xyXG59XHJcblxyXG4jY29udmV7XHJcbiAgd2lkdGg6IDI1JTtcclxufVxyXG5cclxuI25hc2Npe1xyXG4gIHdpZHRoOiAyMCU7XHJcbn1cclxuXHJcbmJ1dHRvbntcclxuICBtYXJnaW4tbGVmdDogN3B4O1xyXG59XHJcbiJdfQ== */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ProntuarioComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -2704,7 +2767,7 @@ ProntuarioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
                 templateUrl: './prontuario.component.html',
                 styleUrls: ['./prontuario.component.css']
             }]
-    }], function () { return []; }, null); })();
+    }], function () { return [{ type: _paciente_paciente_service__WEBPACK_IMPORTED_MODULE_2__["PacienteService"] }, { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"] }]; }, null); })();
 
 
 /***/ }),
@@ -3285,7 +3348,7 @@ _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["platformBrowser"]().boot
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\supor\OneDrive\Área de Trabalho\Focus\front\clinicallmedic\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\eduar\Desktop\focus medic web\Front\clinicallmedic\src\main.ts */"./src/main.ts");
 
 
 /***/ })

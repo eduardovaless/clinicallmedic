@@ -3,40 +3,33 @@
   <ol class="breadcrumb mb-4">
     <li class="breadcrum-bitem active">Visualização de Prontuário</li>
   </ol>
-<br>
+  <br>
 
-  <mat-form-field class="example-full-width" id="nomep" appearance="fill">
-    <mat-label>Nome do Paciente</mat-label>
-    <input
-      matInput
-      placeholder="Nome Completo"
-      value=""
-      disabled
-      name="nomePaciente"
-    />
+
+
+  <mat-form-field style="background-color:rgb(250, 250, 250)" class="example-full-width" id="nomep" appearance="fill">
+    <mat-label style="font-size:15px; color:rgb(5, 70, 61); background-color:rgb(250, 250, 250)"><b>Nome do Paciente</b></mat-label>
+    <input matInput style="color:rgb(5, 70, 61); background-color:rgb(250, 250, 250)" class="form-control" disabled
+      [(ngModel)]="paciente.nomePaciente" name="nomePaciente" />
   </mat-form-field>
 
-  <mat-form-field class="example-full-width" id="conve" appearance="fill">
-    <mat-label>Convênio</mat-label>
-    <input
-      matInput
-      placeholder="Convênio"
-      value=""
-      disabled
-      name="nomePaciente"
-    />
+  <mat-form-field style="background-color:rgb(250, 250, 250)" class="example-full-width" id="conve" appearance="fill">
+    <mat-label style="font-size:15px; color:rgb(5, 70, 61); background-color:rgb(250, 250, 250)"><b>Convênio</b></mat-label>
+    <input matInput style="color:rgb(5, 70, 61); background-color:rgb(250, 250, 250)" class="form-control" disabled
+      [(ngModel)]="paciente.nomeConvenio" name="nomeConvenio" />
   </mat-form-field>
 
-  <mat-form-field class="example-full-width" id="nasci" appearance="fill">
-    <mat-label>Nascimento</mat-label>
-    <input
-      matInput
-      placeholder="Nascimento"
-      value=""
-      disabled
-      name="nomePaciente"
-    />
+  <mat-form-field style="background-color:rgb(250, 250, 250)" class="example-full-width" id="nasci" appearance="fill">
+    
+    <mat-label style="font-size:15px; color:rgb(5, 70, 61); background-color:rgb(250, 250, 250)"><b>Nascimento</b></mat-label>
+    
+    <input matInput style="color:rgb(5, 70, 61); background-color:rgb(250, 250, 250)" class="form-control" disabled
+      [(ngModel)]="paciente.dataNascimento" name="dataNascimento" />
+
+
   </mat-form-field>
+
+
 
   <mat-tab-group>
 
@@ -48,45 +41,70 @@
         Nova Ficha
         <mat-icon>add</mat-icon>
       </button>
+
+      <button type="button" class="btn ml-3" style="background-color: rgb(22, 61, 97);" mat-raised-button
+        color="primary" routerLink="/paciente/list">
+        <i class="icone fa fa-reply"> </i> Voltar
+      </button>
     </mat-tab>
 
     <!--Laudos-->
     <mat-tab label="Laudos">
-<br>
+      <br>
 
       <button mat-button style="color: rgb(255, 255, 255); background-color: rgb(38, 95, 105)">
         Novo Laudo
         <mat-icon>add</mat-icon>
       </button>
+
+      <button type="button" class="btn ml-3" style="background-color: rgb(22, 61, 97);" mat-raised-button
+        color="primary" routerLink="/paciente/list">
+        <i class="icone fa fa-reply"> </i> Voltar
+      </button>
     </mat-tab>
 
     <!--Atestado e Relatorios-->
     <mat-tab label="Atestado e Relatórios">
-<br>
+      <br>
 
       <button mat-button style="color: rgb(255, 255, 255); background-color: rgb(38, 95, 105)">
         Novo Atestado ou Relatório
         <mat-icon>add</mat-icon>
       </button>
+
+      <button type="button" class="btn ml-3" style="background-color: rgb(22, 61, 97);" mat-raised-button
+        color="primary" routerLink="/paciente/list">
+        <i class="icone fa fa-reply"> </i> Voltar
+      </button>
     </mat-tab>
 
     <!--Receituario-->
     <mat-tab label="Receituário">
-<br>
+      <br>
 
       <button mat-button style="color: rgb(255, 255, 255); background-color: rgb(38, 95, 105)">
         Nova Receita
         <mat-icon>add</mat-icon>
       </button>
+
+      <button type="button" class="btn ml-3" style="background-color: rgb(22, 61, 97);" mat-raised-button
+        color="primary" routerLink="/paciente/list">
+        <i class="icone fa fa-reply"> </i> Voltar
+      </button>
     </mat-tab>
 
     <!--Solicitação de Exames-->
     <mat-tab label="Solicitação de Exames">
-<br>
+      <br>
 
       <button mat-button style="color: rgb(255, 255, 255); background-color: rgb(38, 95, 105)">
         Nova Solicitação de Exame
         <mat-icon>add</mat-icon>
+      </button>
+
+      <button type="button" class="btn ml-3" style="background-color: rgb(22, 61, 97);" mat-raised-button
+        color="primary" routerLink="/paciente/list">
+        <i class="icone fa fa-reply"> </i> Voltar
       </button>
     </mat-tab>
   </mat-tab-group>

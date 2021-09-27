@@ -57,7 +57,7 @@ export class PacienteService {
     getConvenio():Observable<Convenio[]>{
       return this.http.get<Convenio[]>(this.apiURLConvenio)
     }
-
+    //PEGAR POR ID
     getPacieById(id: number): Observable<Paciente> {
       return this.http.get<Paciente>(`${this.apiURL}/${id}`);
     }

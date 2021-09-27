@@ -1,7 +1,7 @@
 export class Paciente{
 
     idPaciente: number;
-    nomePaciente: string;
+    nomePaciente?: string;
     prontuario: string;
     dataNascimento: string;
     nomeMae: string;
