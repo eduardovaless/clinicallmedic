@@ -17,3 +17,8 @@
 button{
   margin-left: 7px;
 }
+
+pdf-viewer {
+  display: block;
+  height: 100vh;
+}

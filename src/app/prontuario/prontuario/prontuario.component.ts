@@ -1,8 +1,10 @@
+import { ProntuarioService } from './../prontuario.service';
 import { ActivatedRoute } from '@angular/router';
 import { PacienteService } from './../../paciente/paciente.service';
 import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { Paciente } from 'src/app/paciente/paciente';
+import { pdfDefaultOptions } from 'ngx-extended-pdf-viewer';
 
 @Component({
   selector: 'app-prontuario',
@@ -10,15 +12,19 @@ import { Paciente } from 'src/app/paciente/paciente';
   styleUrls: ['./prontuario.component.css']
 })
 export class ProntuarioComponent implements OnInit {
+  
   id:number;
   paciente: Paciente;
 
   constructor(
    private service:PacienteService,
+   private servicep: ProntuarioService,
    private activatedRoute: ActivatedRoute,
+   
 
   ) {
     this.paciente=new Paciente();
+    pdfDefaultOptions.assetsFolder = 'bleeding-edge';
    }
 
   ngOnInit(): void {
@@ -32,6 +38,11 @@ export class ProntuarioComponent implements OnInit {
       errorResponse => this.paciente = new Paciente()
       )}})
 
+
+     
+
   }
+
+  
 
 }

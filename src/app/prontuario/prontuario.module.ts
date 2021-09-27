@@ -1,3 +1,4 @@
+
 import { MAT_DATE_LOCALE } from '@angular/material/core';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -19,10 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProntuarioComponent } from './prontuario/prontuario.component';
 import { ProntuarioRoutingModule } from './prontuario-routing.module';
 import { PacienteService } from '../paciente/paciente.service';
-
-
-
-
+import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 
 @NgModule({
   declarations: [ProntuarioComponent],
@@ -44,15 +42,20 @@ import { PacienteService } from '../paciente/paciente.service';
     ReactiveFormsModule,
     HttpClientModule,
     ProntuarioRoutingModule,
-
+    NgxExtendedPdfViewerModule
+   
+    
   ],
   exports:[
     MatTabsModule,
-    ProntuarioComponent
+    ProntuarioComponent,
+    
 
   ],
   providers:[
     PacienteService
   ]
 })
-export class ProntuarioModule { }
+export class ProntuarioModule { 
+  
+}

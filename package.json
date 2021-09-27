@@ -29,9 +29,11 @@
     "g": "^2.0.1",
     "jquery": "^3.6.0",
     "jsdom": "^17.0.0",
+    "lodash.deburr": "^4.1.0",
     "moment": "^2.29.1",
+    "ngx-extended-pdf-viewer": "^10.0.1",
     "rxjs": "~6.5.4",
-    "tslib": "^1.10.0",
+    "tslib": "^1.14.1",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {

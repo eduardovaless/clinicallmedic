@@ -29,10 +29,11 @@ export class PacienteService {
     private http: HttpClient
   ) { }
 
-
+    //POST
     salvar(paciente:Paciente):Observable<Paciente>{
       return this.http.post<Paciente>(this.apiURL, paciente);
     }
+
     //PEGAR NACIONALIDADE
     getNac():Observable<Nacionalidade[]>{
       return this.http.get<Nacionalidade[]>(this.apiURLNac)

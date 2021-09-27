@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" style="height:100%">
   <h1 class="mt-4" style="color: rgb(0, 100, 100)">Prontuário do Paciente</h1>
   <ol class="breadcrumb mb-4">
     <li class="breadcrum-bitem active">Visualização de Prontuário</li>
@@ -30,8 +30,9 @@
   </mat-form-field>
 
 
-
-  <mat-tab-group>
+<!------------------------------------------------------------------------------------------------------------->
+  
+<mat-tab-group>
 
     <!--FICHA-->
     <mat-tab label="Ficha">
@@ -46,21 +47,34 @@
         color="primary" routerLink="/paciente/list">
         <i class="icone fa fa-reply"> </i> Voltar
       </button>
+
+      <!--View Ficha-->
+      <ngx-extended-pdf-viewer [src]="'assets/API.pdf'" useBrowserLocale="true" height="80vh">
+      </ngx-extended-pdf-viewer>
     </mat-tab>
 
     <!--Laudos-->
-    <mat-tab label="Laudos">
+    <mat-tab label="Laudos" style="height:100%">
       <br>
 
-      <button mat-button style="color: rgb(255, 255, 255); background-color: rgb(38, 95, 105)">
+      <button mat-button 
+      style="color: rgb(255, 255, 255); background-color: rgb(38, 95, 105);">
         Novo Laudo
         <mat-icon>add</mat-icon>
       </button>
 
-      <button type="button" class="btn ml-3" style="background-color: rgb(22, 61, 97);" mat-raised-button
+      <button type="button" class="btn ml-3" 
+      style="background-color: rgb(22, 61, 97); " mat-raised-button
         color="primary" routerLink="/paciente/list">
         <i class="icone fa fa-reply"> </i> Voltar
       </button>
+      <br>
+  
+      <!--View Laudos-->
+      <ngx-extended-pdf-viewer [src]="'assets/API.pdf'" useBrowserLocale="true" height="80vh">
+      </ngx-extended-pdf-viewer>
+
+
     </mat-tab>
 
     <!--Atestado e Relatorios-->
@@ -76,7 +90,13 @@
         color="primary" routerLink="/paciente/list">
         <i class="icone fa fa-reply"> </i> Voltar
       </button>
+
+      <!--View Atest/rel-->
+      <ngx-extended-pdf-viewer [src]="'assets/API.pdf'" useBrowserLocale="true" height="80vh">
+      </ngx-extended-pdf-viewer>
     </mat-tab>
+
+ 
 
     <!--Receituario-->
     <mat-tab label="Receituário">
@@ -91,7 +111,14 @@
         color="primary" routerLink="/paciente/list">
         <i class="icone fa fa-reply"> </i> Voltar
       </button>
+
+      <!--View Receituario-->
+      <ngx-extended-pdf-viewer [src]="'assets/API.pdf'" useBrowserLocale="true" height="80vh">
+      </ngx-extended-pdf-viewer>
+
     </mat-tab>
+
+   
 
     <!--Solicitação de Exames-->
     <mat-tab label="Solicitação de Exames">
@@ -106,6 +133,10 @@
         color="primary" routerLink="/paciente/list">
         <i class="icone fa fa-reply"> </i> Voltar
       </button>
+
+      <!--View Exames-->
+      <ngx-extended-pdf-viewer [src]="'assets/API.pdf'" useBrowserLocale="true" height="80vh">
+      </ngx-extended-pdf-viewer>
     </mat-tab>
   </mat-tab-group>
 </div>

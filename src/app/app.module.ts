@@ -1,3 +1,6 @@
+
+
+
 import { AuthService } from './login/auth.service';
 import { AuthGuardService } from './login/auth-guard.service';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
@@ -11,12 +14,12 @@ import { FormsModule } from '@angular/forms';
 import { UsuarioModule } from './usuario/usuario.module';
 
 
-import { BrowserModule } from '@angular/platform-browser';
+
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { BrowserModule } from '@angular/platform-browser';
 import { TemplateModule } from './template/template.module';
 import { HomeComponent } from './home/home.component'
 
@@ -87,8 +90,10 @@ export const MY_FORMATS = {
     AgendaModule,
     PacienteModule,
     MatSnackBarModule,
-    ProntuarioModule
+    ProntuarioModule,
 
+    
+    
   ],
   providers: [
     PacienteService,
@@ -107,4 +112,6 @@ export const MY_FORMATS = {
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  
+ }
