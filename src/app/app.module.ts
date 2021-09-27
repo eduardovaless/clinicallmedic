@@ -43,6 +43,7 @@ import * as _moment from 'moment';
 import {defaultFormat as _rollupMoment, Moment} from 'moment';
 import { ProntuarioComponent } from './prontuario/prontuario/prontuario.component';
 import { ProntuarioModule } from './prontuario/prontuario.module';
+import { PacienteService } from './paciente/paciente.service';
 registerLocaleData(localeBr, 'pt', localeBrExtra)
 export const MY_FORMATS = {
     parse: {
@@ -90,6 +91,7 @@ export const MY_FORMATS = {
 
   ],
   providers: [
+    PacienteService,
     ServiceEmpresaService,
     SnackBarService,
     AuthGuardService,

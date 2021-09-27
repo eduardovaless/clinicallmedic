@@ -1,22 +1,18 @@
 import { Nacionalidade } from './../nacionalidade';
 import { SnackBarService } from './../../services/snackbar.service';
 import { PacienteService } from './../paciente.service';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { Paciente } from '../paciente';
 import moment from 'moment';
+import { Sexo } from '../sexo';
 
-//SELECT DE ESTADO CIVIL
-interface EstadoCivil {
-  value: string;
-  viewValue: string;
-}
-//-----------------------------------
-//SELECT DE ESTADO CIVIL
-interface Raca {
-  value: string;
-  viewValue: string;
-}
+import { EstadoCivil } from '../estadocivil';
+import { Raca } from '../raca';
+import { Convenio } from '../convenio';
+import { Observable } from 'rxjs';
+
+
 //-----------------------------------
 
 
@@ -30,40 +26,25 @@ interface Raca {
 
 
 export class PacienteFormComponent implements OnInit {
-//SEXO
-  sexo: string;
-  genero: string[] = ['Feminino', 'Masculino'];
-//----------------------------
-  //SELECT DE ESTADO CIVIL
-  estadocivis: EstadoCivil[] = [
-    { value: '', viewValue: '' },
-    { value: 'solteiro-1', viewValue: 'Solteiro' },
-    { value: 'casado-2', viewValue: 'Casado' },
-    { value: 'separado-3', viewValue: 'Separado' },
-    { value: 'viuvo-4', viewValue: 'Viúvo' },
-    { value: 'outro-5', viewValue: 'Outro' }
-  ];
-  //-----------------------------------
-   //SELECT DE ESTADO CIVIL
-   racas: Raca[] = [
-    { value: '', viewValue: '' },
-    { value: 'branca-1', viewValue: 'Branca' },
-    { value: 'preta-2', viewValue: 'Preta' },
-    { value: 'parda-3', viewValue: 'Parda' },
-    { value: 'amarela-4', viewValue: 'Amarela' },
-    { value: 'ingigena-5', viewValue: 'Indigena' },
-    { value: 'seminform-5', viewValue: 'Sem Informação' }
-  ];
+
+
   //-----------------------------------
 
+  id: number;
   statusPaciente: string;
   paciente: Paciente;
   nacionalidade: Nacionalidade[] = [];
+  pegarsexo: Sexo[] = [];
+  estadoCivil: EstadoCivil[] = [];
+  raca: Raca[] = [];
+  convenio: Convenio[] = [];
+
 
   constructor(
     private router: Router,
     private service: PacienteService,
-    private snackBar: SnackBarService
+    private snackBar: SnackBarService,
+    private activatedRoute: ActivatedRoute
   ) {
 
     this.paciente = new Paciente();
@@ -71,9 +52,16 @@ export class PacienteFormComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.sexo= this.paciente.sexo
+
     this.paciente.situacao= this.statusPaciente
+
     this.getNac();
+    this.getSexo();
+    this.getEstadoCivil();
+    this.getRaca();
+    this.getConvenio();
+
+
 
   }
 
@@ -96,7 +84,21 @@ getNac(){
   this.service.getNac().subscribe(resposta => this.nacionalidade = resposta)
 }
 
+getSexo(){
+  this.service.getSexo().subscribe(resposta => this.pegarsexo = resposta)
+}
 
+getEstadoCivil(){
+  this.service.getEstadoCivil().subscribe(resposta => this.estadoCivil = resposta)
+}
+
+getRaca(){
+  this.service.getRaca().subscribe(resposta => this.raca = resposta)
+}
+
+getConvenio(){
+  this.service.getConvenio().subscribe(resposta => this.convenio = resposta)
+}
 
 
 

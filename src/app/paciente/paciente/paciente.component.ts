@@ -1,6 +1,6 @@
 import { PacienteService } from './../paciente.service';
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { Paciente } from '../paciente';
 import { map, startWith } from 'rxjs/operators';
 import {FormControl} from '@angular/forms';
@@ -29,6 +29,8 @@ export class PacienteComponent implements OnInit {
 
   pacientes: Paciente
 
+  idPaciente:number;
+
 
 
 
@@ -48,7 +50,9 @@ dataSource = new MatTableDataSource<Paciente>();
 
 //-----------------------------------
   constructor(
-    private service: PacienteService
+    private service: PacienteService,
+    private router: Router,
+    private activatedRoute: ActivatedRoute
   ) {
 
 
@@ -63,7 +67,14 @@ dataSource = new MatTableDataSource<Paciente>();
 
 
     //teste-------------------------
-
+    let params : Observable<any> = this.activatedRoute.params
+   params.subscribe(urlParams => {
+     this.idPaciente = urlParams ['id'];
+     if(this.idPaciente){
+     this.service.getPacieById(this.idPaciente)
+     .subscribe(response => this.pacientes = response,
+      errorResponse => this.pacientes = new Paciente()
+      )}})
 
 
   }
@@ -95,6 +106,7 @@ dataSource = new MatTableDataSource<Paciente>();
     })
 
   }
+
 
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;

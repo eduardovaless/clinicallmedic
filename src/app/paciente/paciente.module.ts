@@ -40,7 +40,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatDatepickerModule,
     MatAutocompleteModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+
   ],
   exports:[
     PacienteComponent,

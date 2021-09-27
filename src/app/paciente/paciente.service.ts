@@ -6,6 +6,10 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { Sexo } from './sexo';
+import { EstadoCivil } from './estadocivil';
+import { Raca } from './raca';
+import { Convenio } from './convenio';
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +19,12 @@ export class PacienteService {
   apiURL: string = environment.apiURL + '/datasnap/rest/TPatientController/paciente'
   apiURLp: string = environment.apiURL + '/datasnap/rest/TPatientController/pacientes'
   apiURLNac: string = environment.apiURL + '/datasnap/rest/TDomainController/nacionalidade'
+  apiURLSexo: string = environment.apiURL + '/datasnap/rest/TDomainController/sexo'
+  apiURLEstCivil: string = environment.apiURL + '/datasnap/rest/TDomainController/estadocivil'
+  apiURLRaca: string = environment.apiURL + '/datasnap/rest/TDomainController/raca'
+  apiURLConvenio: string = environment.apiURL + '/datasnap/rest/TEntityController/convenios'
+
+
   constructor(
     private http: HttpClient
   ) { }
@@ -23,9 +33,33 @@ export class PacienteService {
     salvar(paciente:Paciente):Observable<Paciente>{
       return this.http.post<Paciente>(this.apiURL, paciente);
     }
-
+    //PEGAR NACIONALIDADE
     getNac():Observable<Nacionalidade[]>{
       return this.http.get<Nacionalidade[]>(this.apiURLNac)
+    }
+
+    //PEGAR SEXO
+    getSexo():Observable<Sexo[]>{
+      return this.http.get<Sexo[]>(this.apiURLSexo)
+    }
+
+    //PEGAR ESTADO CIVIL
+    getEstadoCivil():Observable<EstadoCivil[]>{
+      return this.http.get<EstadoCivil[]>(this.apiURLEstCivil)
+    }
+
+    //PEGAR RAÇA
+    getRaca():Observable<Raca[]>{
+      return this.http.get<Raca[]>(this.apiURLRaca)
+    }
+
+    //PEGAR CONVENIO
+    getConvenio():Observable<Convenio[]>{
+      return this.http.get<Convenio[]>(this.apiURLConvenio)
+    }
+
+    getPacieById(id: number): Observable<Paciente> {
+      return this.http.get<Paciente>(`${this.apiURL}/${id}`);
     }
 
     getPacie():Observable<Paciente[]>{

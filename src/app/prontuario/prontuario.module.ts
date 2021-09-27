@@ -18,6 +18,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
 import { ProntuarioComponent } from './prontuario/prontuario.component';
 import { ProntuarioRoutingModule } from './prontuario-routing.module';
+import { PacienteService } from '../paciente/paciente.service';
+
 
 
 
@@ -41,7 +43,8 @@ import { ProntuarioRoutingModule } from './prontuario-routing.module';
     MatAutocompleteModule,
     ReactiveFormsModule,
     HttpClientModule,
-    ProntuarioRoutingModule
+    ProntuarioRoutingModule,
+
   ],
   exports:[
     MatTabsModule,
@@ -49,7 +52,7 @@ import { ProntuarioRoutingModule } from './prontuario-routing.module';
 
   ],
   providers:[
-
+    PacienteService
   ]
 })
 export class ProntuarioModule { }

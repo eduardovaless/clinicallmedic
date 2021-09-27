@@ -11,8 +11,9 @@ const routes: Routes = [
   {
     path: 'paciente', component: LayoutComponent, children: [
       { path: 'list', component: PacienteComponent },
-      { path: 'form', component: PacienteFormComponent },
-      
+
+      { path: 'form', component: PacienteFormComponent }
+
     ]
   }
 

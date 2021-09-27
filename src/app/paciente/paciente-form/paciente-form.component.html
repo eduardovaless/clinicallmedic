@@ -109,7 +109,7 @@
             <div class="col-md-2">
                 <mat-form-field class="example-full-width" appearance="fill">
                     <mat-label>Telefone</mat-label>
-                    <input matInput placeholder="" value="" name="telefone" [(ngModel)]="paciente.telefone"> 
+                    <input matInput placeholder="" value="" name="telefone" [(ngModel)]="paciente.telefone">
                 </mat-form-field>
             </div>
 
@@ -123,14 +123,18 @@
 
             <!-- ----------------------------SEXO------------------------------ -->
             <div class="col-md-2">
-                <mat-radio-group aria-label="Select an option">
-                    <mat-radio-button value="genero" name="sexo" ngDefaultControl [(ngModel)]="sexo" *ngFor="let genero of genero"> {{genero}} </mat-radio-button>
-                    
-                </mat-radio-group>
+              <mat-form-field style="width: 154px;" appearance="fill">
+                <mat-label>Sexo</mat-label>
+                <mat-select>
+                    <mat-option *ngFor="let sexo of pegarsexo " [value]="sexo" name="sexo" ngDefaultControl [(ngModel)]="paciente.sexo">
+                        {{sexo.sexo}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
             </div>
 
             <!-- ----------------------------RG------------------------------ -->
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <mat-form-field class="example-full-width" appearance="fill">
                     <mat-label>RG</mat-label>
                     <input matInput placeholder="" value="" name="rg" [(ngModel)]="paciente.rg">
@@ -138,7 +142,7 @@
             </div>
 
             <!-- ----------------------------CPF------------------------------ -->
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <mat-form-field class="example-full-width" appearance="fill">
                     <mat-label>CPF</mat-label>
                     <input matInput placeholder="" value="" name="cpf" [(ngModel)]="paciente.cpf">
@@ -146,39 +150,43 @@
             </div>
 
             <!-- ----------------------------ESTADO CIVIL------------------------------ -->
-            <div class="col-md-3">
-                <mat-form-field appearance="fill">
+            <div class="col-md-2">
+                <mat-form-field style="width: 154px;" appearance="fill">
                     <mat-label>Estado Civil</mat-label>
                     <mat-select>
-                        <mat-option *ngFor="let estadocivil of estadocivis" [value]="estadocivil.value" name="estadoCivil" ngDefaultControl [(ngModel)]="paciente.estadoCivil">
-                            {{estadocivil.viewValue}}
+                        <mat-option *ngFor="let estadocivil of estadoCivil" [value]="estadocivil" name="estadoCivil" ngDefaultControl [(ngModel)]="paciente.estadoCivil">
+                            {{estadocivil.estadoCivil}}
                         </mat-option>
                     </mat-select>
                 </mat-form-field>
             </div>
 
             <!-- ----------------------------Raça------------------------------ -->
-            <div class="col-md-3">
-                <mat-form-field appearance="fill">
+            <div class="col-md-2">
+                <mat-form-field style="width: 154px;" appearance="fill">
                     <mat-label>Raça</mat-label>
                     <mat-select>
-                        <mat-option *ngFor="let raca of racas" [value]="raca.value" name="racaPaciente" ngDefaultControl [(ngModel)]="paciente.racaPaciente">
-                            {{raca.viewValue}}
+                        <mat-option *ngFor="let raca of raca" [value]="raca" name="racaPaciente" ngDefaultControl [(ngModel)]="paciente.racaPaciente">
+                            {{raca.descricaoRaca}}
                         </mat-option>
                     </mat-select>
                 </mat-form-field>
             </div>
 
             <!-- ----------------------------Convenio------------------------------ -->
-            <div class="col-md-3">
-                <mat-form-field class="example-full-width" appearance="fill">
-                    <mat-label>Convênio</mat-label>
-                    <input matInput placeholder="" value="" name="nomeConvenio" [(ngModel)]="paciente.nomeConvenio">
-                </mat-form-field>
+            <div class="col-md-4">
+              <mat-form-field style="width: 340px;" appearance="fill">
+                <mat-label>Convênio</mat-label>
+                <mat-select>
+                    <mat-option *ngFor="let convenio of convenio " [value]="convenio" name="convenio" ngDefaultControl [(ngModel)]="paciente.nomeConvenio">
+                        {{convenio.nomeConvenio}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
             </div>
 
             <!-- ----------------------------Carteirinha------------------------------ -->
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <mat-form-field class="example-full-width" appearance="fill">
                     <mat-label>Nº Carteira do Convênio</mat-label>
                     <input matInput placeholder="" value="" name="carteiraConvenio" [(ngModel)]="paciente.carteiraConvenio">
@@ -186,8 +194,8 @@
             </div>
 
             <!-- ----------------------------Data ve Validade------------------------------ -->
-            <div class="col-md-3">
-                <mat-form-field appearance="fill">
+            <div class="col-md-2">
+                <mat-form-field style="width: 154px;" appearance="fill">
                     <mat-label>Data de Validade</mat-label>
                     <input matInput [matDatepicker]="picker1" name="validadeCarteiraConvenio" [(ngModel)]="paciente.validadeCarteiraConvenio">
                     <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
@@ -196,11 +204,11 @@
             </div>
 
             <!-- ----------------------------Nacionalidade------------------------------ -->
-            <div class="col-md-3">
-                <mat-form-field appearance="fill">
+            <div class="col-md-2">
+                <mat-form-field style="width: 154px;" appearance="fill">
                     <mat-label>Nacionalidade</mat-label>
                     <mat-select>
-                        <mat-option *ngFor="let nacionalidade of nacionalidade " [value]="" name="nacionalidade" ngDefaultControl [(ngModel)]="nacionalidade.nomeNacao">
+                        <mat-option *ngFor="let nacionalidade of nacionalidade " [value]="nacionalidade" name="nacionalidade" ngDefaultControl [(ngModel)]="paciente.nacionalidade">
                             {{nacionalidade.nomeNacao}}
                         </mat-option>
                     </mat-select>
