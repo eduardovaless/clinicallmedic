@@ -62,8 +62,12 @@
             </button>
           </mat-list-item>
         </mat-nav-list>
-        <!--View Laudos-->
-        <pdf-viewer [src]="pdfSrc"></pdf-viewer>
+        <!--View Fichas-->
+        <pdf-viewer [src]="pdfSrc"
+        [show-borders]="true"
+        
+        [zoom]="0.8">        
+        ></pdf-viewer>
       </div>
     </mat-tab>
 
@@ -94,7 +98,12 @@
           </mat-list-item>
         </mat-nav-list>
         <!--View Laudos-->
-        <pdf-viewer [src]="pdfSrc"></pdf-viewer>
+        <pdf-viewer [src]="pdfSrc" 
+        [show-borders]="true"
+        
+        [zoom]="0.8">
+
+      </pdf-viewer>
       </div>
     </mat-tab>
 
@@ -124,7 +133,10 @@
           </mat-list-item>
         </mat-nav-list>
         <!--View Laudos-->
-        <pdf-viewer [src]="pdfSrc"></pdf-viewer>
+        <pdf-viewer [src]="pdfSrc"
+        [show-borders]="true"
+        
+        [zoom]="0.8"></pdf-viewer>
       </div>
             </mat-tab>
       
@@ -157,7 +169,10 @@
           </mat-list-item>
         </mat-nav-list>
         <!--View Laudos-->
-        <pdf-viewer [src]="pdfSrc"></pdf-viewer>
+        <pdf-viewer [src]="pdfSrc"
+        [show-borders]="true"
+        
+        [zoom]="0.8">></pdf-viewer>
       </div>
 
     </mat-tab>
@@ -190,7 +205,10 @@
           </mat-list-item>
         </mat-nav-list>
         <!--View Solicitação de Exames-->
-        <pdf-viewer [src]="pdfSrc"></pdf-viewer>
+        <pdf-viewer [src]="pdfSrc"
+        [show-borders]="true"
+        
+        [zoom]="0.8">></pdf-viewer>
       </div>
     </mat-tab>
   </mat-tab-group>
