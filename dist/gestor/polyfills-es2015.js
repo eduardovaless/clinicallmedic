@@ -3026,7 +3026,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 2:
+/***/ 8:
 /*!********************************!*\
   !*** multi ./src/polyfills.ts ***!
   \********************************/
@@ -3038,5 +3038,5 @@ module.exports = __webpack_require__(/*! C:\Users\eduar\Desktop\focus medic web\
 
 /***/ })
 
-},[[2,"runtime"]]]);
+},[[8,"runtime"]]]);
 //# sourceMappingURL=polyfills-es2015.js.map

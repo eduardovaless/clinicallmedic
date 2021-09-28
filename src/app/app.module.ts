@@ -1,3 +1,6 @@
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { MatListModule } from '@angular/material/list';
+
 
 
 
@@ -91,7 +94,8 @@ export const MY_FORMATS = {
     PacienteModule,
     MatSnackBarModule,
     ProntuarioModule,
-
+    PdfViewerModule,
+    MatListModule
     
     
   ],

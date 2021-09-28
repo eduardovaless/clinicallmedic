@@ -14,7 +14,7 @@ import { Login } from '../login';
 })
 export class LoginComponent implements OnInit{
 
- 
+  userName= ""
   login = document.getElementById('login');
   senha = document.getElementById('senha');
 
@@ -37,9 +37,10 @@ export class LoginComponent implements OnInit{
   ngOnInit(): void {
 
     this.usuario = new Login();
-
+    
     this.getClinica()
     this.getLogin()
+    
   }
 
   onSubmit() {  
@@ -51,6 +52,7 @@ export class LoginComponent implements OnInit{
 
     this.servicelogin.fazerLogin(this.usuario).subscribe((resposta)=>{
       console.log(resposta)
+      
       this.router.navigate(['/home/home'])
     },
     error =>{

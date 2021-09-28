@@ -1,4 +1,5 @@
 
+
 import { MAT_DATE_LOCALE } from '@angular/material/core';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -15,7 +16,9 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatButtonModule} from '@angular/material/button';
-
+import {MatDividerModule} from '@angular/material/divider';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import {MatListModule} from '@angular/material/list';
 import { HttpClientModule } from '@angular/common/http';
 import { ProntuarioComponent } from './prontuario/prontuario.component';
 import { ProntuarioRoutingModule } from './prontuario-routing.module';
@@ -42,9 +45,11 @@ import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
     ReactiveFormsModule,
     HttpClientModule,
     ProntuarioRoutingModule,
-    NgxExtendedPdfViewerModule
+    NgxExtendedPdfViewerModule,
+    MatListModule,
+    MatDividerModule,
+    PdfViewerModule
    
-    
   ],
   exports:[
     MatTabsModule,

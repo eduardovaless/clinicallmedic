@@ -12,8 +12,8 @@ import { Observable } from 'rxjs';
 })
 export class ProntuarioService {
 
-  apiURL: string = environment.apiURL + 'datasnap/rest/TDocumentController/listaDocumento'
- 
+  apiURL: string = environment.apiURL + '/datasnap/rest/TDocumentController/listaDocumento'
+  apiURLpdf: string = environment.apiURL + '/datasnap/rest/TDocumentController/documento'
 
 
   constructor(
@@ -21,8 +21,14 @@ export class ProntuarioService {
   ) { }
 
     //POST
-    getPront(id: number): Observable<Paciente> {
-      return this.http.get<Paciente>(`${this.apiURL}/${id}`);
+    getPront(id: number): Observable<any> {
+      return this.http.get<any>(`${this.apiURL}/${id}`);
+    }
+
+    
+
+    getProntPDF(id: number, documento: number, origem: string): Observable<any> {
+      return this.http.get<any>(`${this.apiURLpdf}/${id}/${documento}/${origem}`);
     }
   
   }

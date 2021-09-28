@@ -19,6 +19,13 @@ button{
 }
 
 pdf-viewer {
-  display: block;
-  height: 100vh;
+  display: flex;
+  height: 180vh;
+  margin-left: -25px;
+  left: -100px;
+  
+}
+
+mat-tab {
+  width: 150%;
 }

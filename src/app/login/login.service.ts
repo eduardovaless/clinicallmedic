@@ -24,5 +24,9 @@ export class LoginService {
         tap((loginResponse)=> this.authService.loginResponse= loginResponse ));
     }
 
+    getLogin(){
+      return this.http.get<Login>(this.apiURL);
+    }
+
 
 }
