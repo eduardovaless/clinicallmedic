@@ -27,7 +27,7 @@ import { TemplateModule } from './template/template.module';
 import { HomeComponent } from './home/home.component'
 
 import { HttpClientModule } from '@angular/common/http';
-
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login/login.component';
 import { LayoutComponent } from './layout/layout.component';
@@ -95,7 +95,8 @@ export const MY_FORMATS = {
     MatSnackBarModule,
     ProntuarioModule,
     PdfViewerModule,
-    MatListModule
+    MatListModule,
+    CKEditorModule
     
     
   ],

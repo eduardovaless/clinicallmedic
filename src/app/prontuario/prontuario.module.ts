@@ -1,3 +1,4 @@
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 
 
 import { MAT_DATE_LOCALE } from '@angular/material/core';
@@ -48,7 +49,9 @@ import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
     NgxExtendedPdfViewerModule,
     MatListModule,
     MatDividerModule,
-    PdfViewerModule
+    PdfViewerModule,
+    CKEditorModule,
+    
    
   ],
   exports:[

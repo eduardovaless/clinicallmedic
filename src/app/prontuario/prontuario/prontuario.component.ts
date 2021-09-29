@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { Paciente } from 'src/app/paciente/paciente';
 import { pdfDefaultOptions } from 'ngx-extended-pdf-viewer';
-
+import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 @Component({
   selector: 'app-prontuario',
@@ -13,6 +13,11 @@ import { pdfDefaultOptions } from 'ngx-extended-pdf-viewer';
   styleUrls: ['./prontuario.component.css']
 })
 export class ProntuarioComponent implements OnInit {
+  public Editor = ClassicEditor;
+  public isDisabled = false;
+  public edited: boolean;
+  public cancel: boolean;
+  public novo: boolean = true;
   pdfSrc: any
   pdf= "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf"
   id:number;
@@ -56,7 +61,7 @@ export class ProntuarioComponent implements OnInit {
       errorResponse => this.paciente = new Paciente()
       )}})
 
-
+      
       this.getPront();
 
   }
@@ -88,4 +93,22 @@ export class ProntuarioComponent implements OnInit {
     })
 }
 
+toggleDisabled() {  
+  this.edited = true; 
+  this.cancel = true; 
+  this.novo = false;  
 }
+
+toggleCancel(){
+  this.edited = false;
+  this.novo = true; 
+  this.cancel = false;
+}
+
+
+
+}
+
+
+
+

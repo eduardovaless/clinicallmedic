@@ -29,3 +29,13 @@ pdf-viewer {
 mat-tab {
   width: 150%;
 }
+
+:host ::ng-deep .ck-editor__editable_inline {
+  min-height: 150px;
+ 
+}
+
+.edit{
+  margin-top: 15px;
+}
+
