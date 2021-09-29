@@ -1,6 +1,8 @@
+import { SnackBarService } from './../services/snackbar.service';
 import { ServiceEmpresaService } from './../services/service-empresa.service';
 import { DadosEmpresa } from './../template/dadosempresa';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -12,13 +14,22 @@ export class HomeComponent implements OnInit {
 
   clinica: DadosEmpresa;
   nomeFantasia= ""
+  user  = JSON.parse(localStorage.getItem("user"))
 
   constructor(
     private service: ServiceEmpresaService,
+    private snackBar: SnackBarService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
     this.getClinica()
+
+    if(!this.user.nomeUsuario){
+      this.router.navigate(["/home/home"]);
+      this.snackBar.warnMessage("Usuario sem permisão")
+      return
+    }
   }
 
   getClinica(){

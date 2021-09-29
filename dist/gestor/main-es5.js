@@ -1615,19 +1615,40 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _services_service_empresa_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! ./../services/service-empresa.service */
     "./src/app/services/service-empresa.service.ts");
+    /* harmony import */
+
+
+    var _services_snackbar_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./../services/snackbar.service */
+    "./src/app/services/snackbar.service.ts");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
 
     var HomeComponent = /*#__PURE__*/function () {
-      function HomeComponent(service) {
+      function HomeComponent(service, snackBar, router) {
         _classCallCheck(this, HomeComponent);
 
         this.service = service;
+        this.snackBar = snackBar;
+        this.router = router;
         this.nomeFantasia = "";
+        this.user = JSON.parse(localStorage.getItem("user"));
       }
 
       _createClass(HomeComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
           this.getClinica();
+
+          if (!this.user.nomeUsuario) {
+            this.router.navigate(["/home/home"]);
+            this.snackBar.warnMessage("Usuario sem permisão");
+            return;
+          }
         }
       }, {
         key: "getClinica",
@@ -1644,14 +1665,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }();
 
     HomeComponent.ɵfac = function HomeComponent_Factory(t) {
-      return new (t || HomeComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_service_empresa_service__WEBPACK_IMPORTED_MODULE_1__["ServiceEmpresaService"]));
+      return new (t || HomeComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_service_empresa_service__WEBPACK_IMPORTED_MODULE_1__["ServiceEmpresaService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_snackbar_service__WEBPACK_IMPORTED_MODULE_2__["SnackBarService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]));
     };
 
     HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: HomeComponent,
       selectors: [["app-home"]],
       decls: 22,
-      vars: 1,
+      vars: 2,
       consts: [[1, "container"], [1, "mt-4", 2, "color", "rgb(0, 100, 100)"], [1, "breadcrumb", "mb-4"], [1, "breadcrumb-item", "active"], [1, "row"], ["src", "assets/images/medic.png", "alt", "ClinicAll", 2, "margin-left", "50px", "margin-top", "-70px"], [2, "margin-top", "00px", "margin-left", "20px", "font-family", "Helvetica, Sans-Serif", "color", "rgb(16, 107, 107)"], [2, "text-align", "center", "font-family", "Helvetica, Sans-Serif", "color", "rgb(16, 107, 107)", "margin-top", "40px"]],
       template: function HomeComponent_Template(rf, ctx) {
         if (rf & 1) {
@@ -1667,7 +1688,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "li", 3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "Bem vindo ao ClinicAll Medic");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -1721,7 +1742,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
 
         if (rf & 2) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](19);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Bem vindo ao ClinicAll Medic Dr\xAA ", ctx.user.nomeUsuario, ".");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](14);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.nomeFantasia);
         }
@@ -1741,6 +1766,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }], function () {
         return [{
           type: _services_service_empresa_service__WEBPACK_IMPORTED_MODULE_1__["ServiceEmpresaService"]
+        }, {
+          type: _services_snackbar_service__WEBPACK_IMPORTED_MODULE_2__["SnackBarService"]
+        }, {
+          type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]
         }];
       }, null);
     })();
@@ -2204,6 +2233,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this.service = service;
         this.servicelogin = servicelogin;
         this.snackBar = snackBar;
+        this.user = JSON.parse(localStorage.getItem("user"));
         this.userName = "";
         this.login = document.getElementById('login');
         this.senha = document.getElementById('senha');
@@ -2216,6 +2246,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           this.usuario = new _login__WEBPACK_IMPORTED_MODULE_1__["Login"]();
           this.getClinica();
           this.getLogin();
+
+          if (!this.user.nomeUsuario) {
+            this.router.navigate(["/home/home"]);
+            this.snackBar.warnMessage("Usuario sem permisão");
+            return;
+          }
         }
       }, {
         key: "onSubmit",
@@ -2228,6 +2264,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           console.log(this.usuario);
           this.servicelogin.fazerLogin(this.usuario).subscribe(function (resposta) {
             console.log(resposta);
+            localStorage.setItem("user", JSON.stringify(resposta));
 
             _this4.router.navigate(['/home/home']);
           }, function (error) {
@@ -6161,14 +6198,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var ano = data.getFullYear();
 
     var SidebarComponent = /*#__PURE__*/function () {
-      function SidebarComponent(serviceEmpresa, service) {
+      function SidebarComponent(serviceEmpresa, service, router) {
         _classCallCheck(this, SidebarComponent);
 
         this.serviceEmpresa = serviceEmpresa;
         this.service = service;
+        this.router = router;
         this.anoAtual = ano;
         this.nomeFantasia = "";
-        this.nomeusuario = "";
+        this.user = JSON.parse(localStorage.getItem("user"));
       }
 
       _createClass(SidebarComponent, [{
@@ -6185,13 +6223,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             return _this23.nomeFantasia = resposta.nomeFantasia;
           });
         }
+      }, {
+        key: "sair",
+        value: function sair() {
+          this.router.navigate(['']);
+          localStorage.clear();
+        }
       }]);
 
       return SidebarComponent;
     }();
 
     SidebarComponent.ɵfac = function SidebarComponent_Factory(t) {
-      return new (t || SidebarComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_service_empresa_service__WEBPACK_IMPORTED_MODULE_1__["ServiceEmpresaService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_login_login_service__WEBPACK_IMPORTED_MODULE_2__["LoginService"]));
+      return new (t || SidebarComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_service_empresa_service__WEBPACK_IMPORTED_MODULE_1__["ServiceEmpresaService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_login_login_service__WEBPACK_IMPORTED_MODULE_2__["LoginService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]));
     };
 
     SidebarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
@@ -6199,7 +6243,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       selectors: [["app-sidebar"]],
       decls: 75,
       vars: 3,
-      consts: [[1, "sb-topnav", "navbar", "navbar-expand", "navbar-dark", 2, "background-color", "rgb(8, 113, 121)"], ["routerLink", "home/home", 1, "navbar-brand", 2, "background-color", "rgb(8, 113, 121)"], ["src", "assets/images/logo2.png", "alt", "logo"], ["mat-button", "", "type", "button", "mat-button", "", 2, "color", "white", "background-color", "rgb(8, 113, 121)", 3, "click"], [1, "navbar-brand", 2, "margin-left", "300px"], [1, "usuario", 2, "margin-left", "200px", "color", "white"], [1, "example-container"], ["mode", "side", 1, "example-sidenav"], ["drawer", ""], [2, "color", "rgb(39, 182, 134)", "margin-left", "10px", "color", "rgb(235, 235, 235)"], ["routerLink", "/home/home", 1, "nav-link"], [1, "menu", "row", 2, "margin-left", "10px"], [1, "fas", "fa-home", "icon"], [1, "name", 2, "margin-left", "10px"], ["routerLink", "/agenda/medico", 1, "nav-link"], [1, "fas", "fa-address-card", "icon"], ["routerLink", "/paciente/list", 1, "nav-link"], [1, "fas", "fa-portrait", "icon"], ["routerLink", "", 1, "nav-link"], [1, "fas", "fa-window-close", "icon"], [1, "container"], [1, "py-4", "bg-light"], [1, "container-fluid"], [1, "d-flex", "align-items-center", "justify-content-between", "small"], [1, "text-muted"], ["href", "#"], ["mode", "side", "opened", "", 1, "example-sidenav2"], ["drawer2", ""], ["routerLink", "/home/home", 1, "nav-link", "active"], [1, "menu1", "row", 2, "margin-left", "10px"], [1, "fas", "fa-home", "icon2"], ["routerLink", "/agenda/medico", 1, "nav-link", "active"], [1, "fas", "fa-address-card", "icon2"], ["routerLink", "/paciente/list", 1, "nav-link", "active"], [1, "fas", "fa-portrait", "icon2"], ["routerLink", "", 1, "nav-link", "active"], [1, "fas", "fa-window-close", "icon2"]],
+      consts: [[1, "sb-topnav", "navbar", "navbar-expand", "navbar-dark", 2, "background-color", "rgb(8, 113, 121)"], ["routerLink", "home/home", 1, "navbar-brand", 2, "background-color", "rgb(8, 113, 121)"], ["src", "assets/images/logo2.png", "alt", "logo"], ["mat-button", "", "type", "button", "mat-button", "", 2, "color", "white", "background-color", "rgb(8, 113, 121)", 3, "click"], [1, "navbar-brand", 2, "margin-left", "300px"], [1, "usuario", 2, "margin-left", "200px", "color", "white"], [1, "example-container"], ["mode", "side", 1, "example-sidenav"], ["drawer", ""], [2, "color", "rgb(39, 182, 134)", "margin-left", "10px", "color", "rgb(235, 235, 235)"], ["routerLink", "/home/home", 1, "nav-link"], [1, "menu", "row", 2, "margin-left", "10px"], [1, "fas", "fa-home", "icon"], [1, "name", 2, "margin-left", "10px"], ["routerLink", "/agenda/medico", 1, "nav-link"], [1, "fas", "fa-address-card", "icon"], ["routerLink", "/paciente/list", 1, "nav-link"], [1, "fas", "fa-portrait", "icon"], [1, "nav-link", 3, "click"], [1, "fas", "fa-window-close", "icon"], [1, "container"], [1, "py-4", "bg-light"], [1, "container-fluid"], [1, "d-flex", "align-items-center", "justify-content-between", "small"], [1, "text-muted"], ["href", "#"], ["mode", "side", "opened", "", 1, "example-sidenav2"], ["drawer2", ""], ["routerLink", "/home/home", 1, "nav-link", "active"], [1, "menu1", "row", 2, "margin-left", "10px"], [1, "fas", "fa-home", "icon2"], ["routerLink", "/agenda/medico", 1, "nav-link", "active"], [1, "fas", "fa-address-card", "icon2"], ["routerLink", "/paciente/list", 1, "nav-link", "active"], [1, "fas", "fa-portrait", "icon2"], [1, "nav-link", "active", 3, "click"], [1, "fas", "fa-window-close", "icon2"]],
       template: function SidebarComponent_Template(rf, ctx) {
         if (rf & 1) {
           var _r67 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
@@ -6328,6 +6372,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "a", 18);
 
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function SidebarComponent_Template_a_click_36_listener() {
+            return ctx.sair();
+          });
+
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "div", 11);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](38, "i", 19);
@@ -6440,6 +6488,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](72, "a", 35);
 
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function SidebarComponent_Template_a_click_72_listener() {
+            return ctx.sair();
+          });
+
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](73, "div", 29);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](74, "i", 36);
@@ -6458,7 +6510,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Usu\xE1rio Conectado: ", ctx.nomeusuario, "");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Usu\xE1rio Conectado: ", ctx.user.nomeUsuario, "");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](41);
 
@@ -6483,6 +6535,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           type: _services_service_empresa_service__WEBPACK_IMPORTED_MODULE_1__["ServiceEmpresaService"]
         }, {
           type: _login_login_service__WEBPACK_IMPORTED_MODULE_2__["LoginService"]
+        }, {
+          type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]
         }];
       }, null);
     })();

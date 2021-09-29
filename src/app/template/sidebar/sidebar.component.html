@@ -11,7 +11,7 @@
   
     <div class="navbar-brand" style="margin-left: 300px;"><span >{{nomeFantasia}}</span></div>
 
-    <div class="usuario" style="margin-left: 200px; color: white;"><span>Usuário Conectado: {{nomeusuario}}</span></div>
+    <div class="usuario" style="margin-left: 200px; color: white;"><span>Usuário Conectado: {{user.nomeUsuario}}</span></div>
   
   </nav>
   
@@ -51,12 +51,13 @@
       </a>        
   
       <!--------FECHAR-------->
-      <a class="nav-link" routerLink="">
+      <a class="nav-link" (click)="sair()">
         <div class="menu row" style="margin-left: 10px;"><i class="fas fa-window-close icon"></i>
           <p style="margin-left: 10px;" class="name">Sair</p>
         </div>
       </a>
   
+      
       
     </mat-drawer>
     
@@ -126,7 +127,7 @@
     
     <br>
     <!--------FECHAR-------->
-    <a class="nav-link active" routerLink="">
+    <a class="nav-link active" (click)="sair()">
       <div class="menu1 row" style="margin-left: 10px;"><i class="fas fa-window-close icon2"></i>
        
       </div>

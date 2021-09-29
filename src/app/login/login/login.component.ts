@@ -13,7 +13,8 @@ import { Login } from '../login';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit{
-
+  
+  user  = JSON.parse(localStorage.getItem("user"))
   userName= ""
   login = document.getElementById('login');
   senha = document.getElementById('senha');
@@ -41,6 +42,11 @@ export class LoginComponent implements OnInit{
     this.getClinica()
     this.getLogin()
     
+    if(!this.user.nomeUsuario){
+      this.router.navigate(["/home/home"]);
+      this.snackBar.warnMessage("Usuario sem permisão")
+      return
+    }
   }
 
   onSubmit() {  
@@ -52,7 +58,7 @@ export class LoginComponent implements OnInit{
 
     this.servicelogin.fazerLogin(this.usuario).subscribe((resposta)=>{
       console.log(resposta)
-      
+      localStorage.setItem("user", JSON.stringify(resposta));
       this.router.navigate(['/home/home'])
     },
     error =>{

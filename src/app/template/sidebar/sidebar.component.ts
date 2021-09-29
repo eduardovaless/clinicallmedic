@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { LoginComponent } from './../../login/login/login.component';
 import { LoginService } from './../../login/login.service';
 import { PacienteService } from './../../paciente/paciente.service';
@@ -25,15 +26,18 @@ export class SidebarComponent implements OnInit {
   anoAtual= ano;
   nomeFantasia = ""
   usuario: LoginComponent
-  nomeusuario= ""
+  user  = JSON.parse(localStorage.getItem("user"))
+  
 
   constructor(
     private serviceEmpresa: ServiceEmpresaService,
-    private service: LoginService
+    private service: LoginService,
+    private router: Router,
 
-  ) {      
+
+  ) {        
     
-    
+   
   }
 
   ngOnInit(): void {
@@ -45,6 +49,10 @@ export class SidebarComponent implements OnInit {
     this.serviceEmpresa.getClinica().subscribe(resposta => this.nomeFantasia = resposta.nomeFantasia);
       }
 
+  sair(){
+    this.router.navigate([''])
+    localStorage.clear();
+  }
      
 
 
