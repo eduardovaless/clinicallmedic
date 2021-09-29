@@ -19,7 +19,7 @@ button{
 }
 
 pdf-viewer {
-  display: flex;
+  display: flexbox;
   height: 180vh;
   margin-left: -25px;
   left: -100px;

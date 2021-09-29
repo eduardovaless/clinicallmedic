@@ -1,0 +1,49 @@
+<div class="container" style="height:100%">
+    <h1 class="mt-4" style="color: rgb(0, 100, 100)">Dashboard</h1>
+    <ol class="breadcrumb mb-4">
+      <li class="breadcrum-bitem active">Gráficos Médico</li>
+    </ol>
+    <br>
+
+   
+    <div>
+        <h2 style="text-align: center;"> <b>Atendimento por Meses</b> </h2>
+        <ngx-charts-bar-horizontal
+        [view]="view"
+        [scheme]="colorScheme"
+        [results]="single"
+        [gradient]="gradient"
+        [xAxis]="showXAxis"
+        [yAxis]="showYAxis"
+        [legend]="showLegend"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel"
+        (select)="onSelect($event)"
+        (activate)="onActivate($event)"
+        (deactivate)="onDeactivate($event)">
+          </ngx-charts-bar-horizontal>
+    </div>
+<br>
+<br>
+  
+<div>
+      <h2 style="text-align: center; margin-top:350px"> <b>Atendimento por Meses</b> </h2>
+      <ngx-charts-pie-chart
+      [view]="view2"
+      [scheme]="colorScheme2"
+      [results]="single2"
+      [gradient]="gradient2"
+      [legend]="showLegend2"
+      [legendPosition]="legendPosition"
+      [labels]="showLabels"
+      [doughnut]="isDoughnut"
+      (select)="onSelect2($event)"
+      (activate)="onActivate2($event)"
+      (deactivate)="onDeactivate2($event)"
+      >
+      </ngx-charts-pie-chart>
+  </div>
+
+</div>

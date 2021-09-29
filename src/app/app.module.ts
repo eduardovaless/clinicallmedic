@@ -1,3 +1,4 @@
+import { DashboardModule } from './dashboard/dashboard.module';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { MatListModule } from '@angular/material/list';
 
@@ -50,6 +51,7 @@ import {defaultFormat as _rollupMoment, Moment} from 'moment';
 import { ProntuarioComponent } from './prontuario/prontuario/prontuario.component';
 import { ProntuarioModule } from './prontuario/prontuario.module';
 import { PacienteService } from './paciente/paciente.service';
+
 registerLocaleData(localeBr, 'pt', localeBrExtra)
 export const MY_FORMATS = {
     parse: {
@@ -75,6 +77,7 @@ export const MY_FORMATS = {
     HomeComponent,
     LoginComponent,
     LayoutComponent,
+    
 
 
 
@@ -96,7 +99,8 @@ export const MY_FORMATS = {
     ProntuarioModule,
     PdfViewerModule,
     MatListModule,
-    CKEditorModule
+    CKEditorModule,
+    DashboardModule
     
     
   ],
