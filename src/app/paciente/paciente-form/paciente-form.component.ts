@@ -62,6 +62,12 @@ export class PacienteFormComponent implements OnInit {
     this.getConvenio();
 
 
+    let user  = JSON.parse(localStorage.getItem("user"))
+    if(!user){
+      this.router.navigate([""]);
+      this.snackBar.warnMessage("Usuario sem permisão")
+      return
+    }
 
   }
 

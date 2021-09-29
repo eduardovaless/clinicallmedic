@@ -1,3 +1,4 @@
+import { SnackBarService } from './../../services/snackbar.service';
 import { AgendaService } from './../agenda.service';
 import { Observable } from 'rxjs';
 import { Agenda } from './../agenda';
@@ -31,7 +32,8 @@ export class AgendamedicaComponent implements OnInit {
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
-    private service: AgendaService
+    private service: AgendaService,
+    private snackBar: SnackBarService
 
   ) {
     
@@ -60,7 +62,14 @@ export class AgendamedicaComponent implements OnInit {
     }else{
       currentDate = moment().format('YYYY-MM-DD') //coloca a data do dia já formatada
     }
-    
+
+   // LOCALSTORAGE
+    let user  = JSON.parse(localStorage.getItem("user"))
+    if(!user){
+      this.router.navigate([""]);
+      this.snackBar.warnMessage("Usuario sem permisão")
+      return
+    }
     
 
       this.service.getAgenda(this.idUnidade, this.idProfissional, currentDate)

@@ -1,3 +1,4 @@
+import { SnackBarService } from './../../services/snackbar.service';
 import { Router } from '@angular/router';
 import { LoginComponent } from './../../login/login/login.component';
 import { LoginService } from './../../login/login.service';
@@ -33,6 +34,7 @@ export class SidebarComponent implements OnInit {
     private serviceEmpresa: ServiceEmpresaService,
     private service: LoginService,
     private router: Router,
+    private snackbar: SnackBarService
 
 
   ) {        
@@ -43,6 +45,12 @@ export class SidebarComponent implements OnInit {
   ngOnInit(): void {
     this.getclinica()
     
+    let user  = JSON.parse(localStorage.getItem("user"))
+    if(!user){
+      this.router.navigate([""]);
+      this.snackbar.warnMessage("Usuario sem permisão")
+      return
+    }
   }
 
   getclinica(){    

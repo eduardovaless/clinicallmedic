@@ -1,3 +1,4 @@
+import { SnackBarService } from './../../services/snackbar.service';
 import { PacienteService } from './../paciente.service';
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
@@ -52,7 +53,8 @@ dataSource = new MatTableDataSource<Paciente>();
   constructor(
     private service: PacienteService,
     private router: Router,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private snackBar: SnackBarService
   ) {
 
 
@@ -60,13 +62,11 @@ dataSource = new MatTableDataSource<Paciente>();
    }
 
   ngOnInit(): void {
+
     this.getPacie()
     this.initialTable();
 
 
-
-
-    //teste-------------------------
     let params : Observable<any> = this.activatedRoute.params
    params.subscribe(urlParams => {
      this.idPaciente = urlParams ['id'];
@@ -75,6 +75,14 @@ dataSource = new MatTableDataSource<Paciente>();
      .subscribe(response => this.pacientes = response,
       errorResponse => this.pacientes = new Paciente()
       )}})
+
+
+      let user  = JSON.parse(localStorage.getItem("user"))
+    if(!user){
+      this.router.navigate([""]);
+      this.snackBar.warnMessage("Usuario sem permisão")
+      return
+    }
 
 
   }

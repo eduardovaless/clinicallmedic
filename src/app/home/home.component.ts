@@ -25,8 +25,9 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.getClinica()
 
-    if(!this.user.nomeUsuario){
-      this.router.navigate(["/home/home"]);
+   let user  = JSON.parse(localStorage.getItem("user"))
+    if(!user){
+      this.router.navigate([""]);
       this.snackBar.warnMessage("Usuario sem permisão")
       return
     }

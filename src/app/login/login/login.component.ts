@@ -14,7 +14,7 @@ import { Login } from '../login';
 })
 export class LoginComponent implements OnInit{
   
-  user  = JSON.parse(localStorage.getItem("user"))
+ 
   userName= ""
   login = document.getElementById('login');
   senha = document.getElementById('senha');
@@ -42,11 +42,7 @@ export class LoginComponent implements OnInit{
     this.getClinica()
     this.getLogin()
     
-    if(!this.user.nomeUsuario){
-      this.router.navigate(["/home/home"]);
-      this.snackBar.warnMessage("Usuario sem permisão")
-      return
-    }
+    
   }
 
   onSubmit() {  

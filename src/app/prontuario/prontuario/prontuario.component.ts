@@ -1,5 +1,6 @@
+import { SnackBarService } from './../../services/snackbar.service';
 import { ProntuarioService } from './../prontuario.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { PacienteService } from './../../paciente/paciente.service';
 import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
@@ -43,6 +44,8 @@ export class ProntuarioComponent implements OnInit {
    private service:PacienteService,
    private servicep: ProntuarioService,
    private activatedRoute: ActivatedRoute,
+   private snackBar: SnackBarService,
+   private router: Router,
    
 
   ) {
@@ -63,6 +66,13 @@ export class ProntuarioComponent implements OnInit {
 
       
       this.getPront();
+
+      let user  = JSON.parse(localStorage.getItem("user"))
+    if(!user){
+      this.router.navigate([""]);
+      this.snackBar.warnMessage("Usuario sem permisão")
+      return
+    }
 
   }
 
