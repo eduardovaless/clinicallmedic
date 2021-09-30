@@ -52,7 +52,7 @@
     margin: 0 auto;
   max-height: 100%;
   margin-top: 55px ;
-  position: absolute;
+  position: static;
 }
 
 .example-sidenav{
