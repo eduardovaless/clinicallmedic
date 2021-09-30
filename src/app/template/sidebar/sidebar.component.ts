@@ -12,6 +12,13 @@ import { Login } from 'src/app/login/login';
 
 var data = new Date();
 var ano = data.getFullYear();
+var strData =
+        data.getFullYear() + "-" +
+        ("00" + (data.getMonth() + 1)).slice(-2) + "-" +
+        ("00" + data.getDate()).slice(-2) + " " +          
+        ("00" + data.getHours()).slice(-2) + ":" +
+        ("00" + data.getMinutes()).slice(-2) + ":" +
+        ("00" + data.getSeconds()).slice(-2);
 
 
 @Component({
@@ -25,6 +32,7 @@ export class SidebarComponent implements OnInit {
 
   dadosempresa: DadosEmpresa;
   anoAtual= ano;
+  horaatual= strData;
   nomeFantasia = ""
   usuario: LoginComponent
   user  = JSON.parse(localStorage.getItem("user"))

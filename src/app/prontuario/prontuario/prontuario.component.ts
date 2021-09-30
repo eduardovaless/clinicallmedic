@@ -25,7 +25,7 @@ export class ProntuarioComponent implements OnInit {
   documento:number;
   paciente: Paciente;
   listPront= new Array();
-
+  
 
   //teste---------
   _base64ToArrayBuffer(base64) {
@@ -87,6 +87,8 @@ export class ProntuarioComponent implements OnInit {
      .subscribe(response => {if (response.idDocumento) {
       this.listPront.push(response)
     }else {this.listPront= response};
+
+    
       console.log(response)
       console.log(this.listPront)
   

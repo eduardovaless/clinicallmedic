@@ -9,7 +9,9 @@
       <mat-icon>reorder</mat-icon>
     </button>
 
-    <div class="navbar-brand" style="margin-left: 300px;"><span >{{nomeFantasia}}</span></div>
+    <div class="navbar-brand" ><span>{{horaatual | date: 'dd/MM/yyyy - HH:mm'}}</span></div>
+
+    <div class="navbar-brand" style="margin-left: 30px;"><span >{{nomeFantasia}}</span></div>
 
     <div class="usuario" style="margin-left: 200px; color: white;"><span>Usuário Conectado: {{user.nomeUsuario}}</span></div>
 
@@ -27,7 +29,8 @@
 
       <!--------HOME-------->
       <a class="nav-link" routerLink="/home/home">
-        <div class="menu row" style="margin-left: 10px;"> <i class="fas fa-home icon"></i>
+        <div class="menu row" style="margin-left: 10px;"> 
+          <mat-icon class="icon">home</mat-icon>
           <p style="margin-left: 10px;" class="name">HOME</p>
         </div>
       </a>
@@ -36,30 +39,34 @@
       <!--------OPERACIONAL-------->
       <div style="color: rgb(39, 182, 134); margin-left: 10px; color: rgb(235, 235, 235);">Operacional</div>
 
-      <!--------AUTORIZAÇÃO-------->
+      <!--------AGENDA-------->
       <a class="nav-link" routerLink="/agenda/medico">
-        <div class="menu row" style="margin-left: 10px;"><i class="fas fa-address-card icon"></i>
+        <div class="menu row" style="margin-left: 10px;">
+          <mat-icon class="icon">schedule</mat-icon>
           <p class="name" style="margin-left: 10px;">Agenda</p>
         </div>
       </a>
 
       <!--------DASHBOARD-------->
       <a class="nav-link" routerLink="/dashboard/list">
-        <div class="menu row" style="margin-left: 10px;"><i class="fa fa-id-card  icon"></i>
+        <div class="menu row" style="margin-left: 10px;">
+          <mat-icon class="icon">dashboard</mat-icon>
           <p style="margin-left: 10px;" class="name">Dashboard</p>
         </div>
       </a>
 
       <!--------COLBORADOR-------->
       <a class="nav-link" routerLink="/paciente/list">
-        <div class="menu row" style="margin-left: 10px;"><i class="fas fa-portrait icon"></i>
+        <div class="menu row" style="margin-left: 10px;">
+          <mat-icon class="icon">portrait</mat-icon>
           <p style="margin-left: 10px;" class="name">Paciente</p>
         </div>
       </a>
 
       <!--------FECHAR-------->
       <a class="nav-link" (click)="sair()">
-        <div class="menu row" style="margin-left: 10px;"><i class="fas fa-window-close icon"></i>
+        <div class="menu row" style="margin-left: 10px;">
+          <mat-icon class="icon">close</mat-icon>
           <p style="margin-left: 10px;" class="name">Sair</p>
         </div>
       </a>
@@ -81,8 +88,9 @@
     <!--BODY-->
     <main>
       <div class="container">
-          <br>
-        <router-outlet></router-outlet>
+          <br><body>            
+                    <router-outlet></router-outlet>
+          </body>
      <!--FOOTER-->
      <footer class="py-4 bg-light">
         <div class="container-fluid">
@@ -112,29 +120,37 @@
 
     <!--------HOME-------->
     <a class="nav-link active" routerLink="/home/home">
-      <div title="HOME" class="menu1 row" style="margin-left: 10px;"> <i class="fas fa-home icon2"></i>
+      <div title="HOME" class="menu1 row" style="margin-left: 10px;"> 
+        
+        <mat-icon class="icon2">home</mat-icon>
 
       </div>
     </a>
 
 
-    <!--------AUTORIZAÇÃO-------->
+    <!--------AGENDA-------->
     <a class="nav-link active" routerLink="/agenda/medico">
-      <div title="Autorização" class="menu1 row" style="margin-left: 10px;"><i class="fas fa-address-card icon2"></i>
+      <div title="Agenda" class="menu1 row" style="margin-left: 10px;">
+        
+        <mat-icon class="icon2">schedule</mat-icon>
 
       </div>
     </a>
 
     <!--------DASHBOARD-------->
     <a class="nav-link active" routerLink="/dashboard/list">
-      <div title="Dashboard" class="menu1 row" style="margin-left: 10px;"><i class="fa fa-id-card icon2"></i>
+      <div title="Dashboard" class="menu1 row" style="margin-left: 10px;">
+                
+        <mat-icon class="icon2">dashboard</mat-icon>
 
       </div>
     </a>
 
-    <!--------COLBORADOR-------->
+    <!--------PACIENTE-------->
     <a class="nav-link active" routerLink="/paciente/list">
-      <div title="Pacientes" class="menu1 row" style="margin-left: 10px;"><i class="fas fa-portrait icon2"></i>
+      <div title="Pacientes" class="menu1 row" style="margin-left: 10px;">
+        
+        <mat-icon class="icon2">portrait</mat-icon>
 
       </div>
     </a>
@@ -142,7 +158,9 @@
     <br>
     <!--------FECHAR-------->
     <a class="nav-link active" (click)="sair()">
-      <div title="Sair" class="menu1 row" style="margin-left: 10px;"><i class="fas fa-window-close icon2"></i>
+      <div title="Sair" class="menu1 row" style="margin-left: 10px;">
+        
+        <mat-icon class="icon2">close</mat-icon>
 
       </div>
     </a>

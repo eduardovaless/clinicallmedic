@@ -1,7 +1,7 @@
 <div class="container" style="height:100%">
   <h1 class="mt-4" style="color: rgb(0, 100, 100)">Prontuário do Paciente</h1>
   <ol class="breadcrumb mb-4">
-    <li class="breadcrum-bitem active">Visualização de Prontuário</li>
+    <li class="breadcrum-bitem active">Prontuário</li>
   </ol>
   <br>
 
@@ -63,7 +63,7 @@
 
        <!--EDITOR DA FICHA-->
        <div class="edit" *ngIf="edited">
-         <ckeditor [disabled]="isDisabled" [editor]="Editor" data=""></ckeditor>
+         <ckeditor [disabled]="isDisabled" [editor]="Editor" [data]=""></ckeditor>
        </div>
       
 

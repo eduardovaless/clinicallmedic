@@ -11,13 +11,14 @@
 
 .example-sidenav{
   background-color: rgb(15, 140, 150);
-  display: inline-block;
+  
     width: 15%;
     margin: 0 auto;
   max-height: 100%;
   margin-top: 55px ;
-
+  
 }
+
 
 .example-sidenav2{
   background-color: rgb(15, 140, 150);
@@ -27,6 +28,43 @@
   max-height: 100%;
   margin-top: 55px ;
   position: fixed;
+}
+
+@media(max-width:768px) {
+	 
+  body {
+ height: 100%;
+ position: static;
+ margin-left: 80px;
+
+}
+  
+  .container-fluid {
+ height: 0;
+}
+  .content-wrapper {
+ float: none;
+}
+ .example-sidenav2{
+  background-color: rgb(15, 140, 150);
+  display: inline-block;
+    width: 15%;
+    margin: 0 auto;
+  max-height: 100%;
+  margin-top: 55px ;
+  position: absolute;
+}
+
+.example-sidenav{
+  background-color: rgb(15, 140, 150);
+  
+    width: 40%;
+    margin: 0 auto;
+  max-height: 100%;
+  margin-top: 55px ;
+  
+}
+
 }
 
 .menu{
@@ -67,7 +105,7 @@
   border-radius: 10px;
   display: flex;
   cursor: pointer;
-  font-size: 25px;
+  font-size: 32px;
   background: 30px;
 
 }
@@ -75,4 +113,3 @@
 .menu1{
   color: white;
 }
-
