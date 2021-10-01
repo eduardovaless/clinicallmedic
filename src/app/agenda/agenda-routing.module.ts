@@ -8,7 +8,8 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   
   { path: 'agenda' , component: LayoutComponent, children: [
-    { path: 'medico', component: AgendamedicaComponent}
+    { path: 'medico', component: AgendamedicaComponent},
+  
     
   ]}
 

@@ -1,3 +1,5 @@
+import { PacienteService } from './../../paciente/paciente.service';
+import { Paciente } from './../../paciente/paciente';
 import { SnackBarService } from './../../services/snackbar.service';
 import { AgendaService } from './../agenda.service';
 import { Observable } from 'rxjs';
@@ -18,13 +20,16 @@ import localePt from '@angular/common/locales/pt';
 })
 export class AgendamedicaComponent implements OnInit {
   agenda: Agenda [] = [];
+  genda: Agenda
+  idpacie: string;
   selected: Date | null;
   backgroundColorToggle = "primary";
   idUnidade: number;
   idProfissional: string;
   dataAgenda: string;
+  id:number;
+  pacientes: number;
 
-  
 
   displayedColumns: string[] = ['status', 'hora', 'paciente', 'convenio', 'servico'];
   
@@ -33,9 +38,12 @@ export class AgendamedicaComponent implements OnInit {
     private router: Router,
     private activatedRoute: ActivatedRoute,
     private service: AgendaService,
-    private snackBar: SnackBarService
+    private snackBar: SnackBarService,
+    private servicep: PacienteService
+
 
   ) {
+    
     
     this.idUnidade= 1
     this.idProfissional= '19888'
@@ -73,13 +81,41 @@ export class AgendamedicaComponent implements OnInit {
     
 
       this.service.getAgenda(this.idUnidade, this.idProfissional, currentDate)
-      .subscribe(resposta => this.agenda = resposta);}
+      .subscribe(resposta => this.agenda = resposta);
+      
+        
+    }
+
+
+     
   
 
   openScheduleDialog(){
     this.router.navigate(["/autorizacao/form"])    
   }
 
+  click(idPaciente){    
 
+    if (idPaciente) {
+      this.router.navigate([`/prontuario/form/${idPaciente}`])
+    }else{
+      this.snackBar.errorMessage("Nenhum paciente não selecionado!")
+    }
+     
+   }
+ //routerLink="/prontuario/form/{{element.idPaciente}}"
+
+
+/*click(){
   
+  let params : Observable<any> = this.activatedRoute.params
+   params.subscribe(urlParams => {
+     this.id = urlParams ['id'];
+     console.log(this.id)
+
+  if (this.idpacie) {
+    this.router.navigate([`/prontuario/form/`])
+  }
+    
+    */
 }

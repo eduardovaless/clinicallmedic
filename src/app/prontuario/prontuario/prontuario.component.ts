@@ -74,6 +74,7 @@ export class ProntuarioComponent implements OnInit {
       return
     }
 
+    
   }
 
   getPront(){

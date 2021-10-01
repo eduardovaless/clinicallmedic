@@ -1,0 +1,178 @@
+<div mat-dialog-actions fxLayout="row">
+
+    <div *ngIf='schedule.situacaoAgenda == "agendado"'>
+      <button mat-icon-button matTooltip="Agendado">
+        <mat-icon>
+          calendar_today
+        </mat-icon>
+      </button>
+    </div>
+  
+    <div *ngIf='schedule.situacaoAgenda == "entrega de resultado"'>
+      <button mat-icon-button matTooltip="Entrega de Resultado">
+        <mat-icon>
+          description
+        </mat-icon>
+      </button>
+    </div>
+  
+    <div *ngIf='schedule.situacaoAgenda == "atrasado"'>
+      <button mat-icon-button matTooltip="Presente/Atrasado">
+        <mat-icon style="color: red;">
+          sentiment_satisfied
+        </mat-icon>
+      </button>
+    </div>
+  
+    <div *ngIf='schedule.situacaoAgenda == "deu atendimento"'>
+      <button mat-icon-button matTooltip="Atendido">
+        <mat-icon style="color: green;">
+          done
+        </mat-icon>
+      </button>
+    </div>
+  
+    <div *ngIf='schedule.situacaoAgenda == "presente"'>
+      <button mat-icon-button matTooltip="Presente">
+        <mat-icon style="color: green;">
+          sentiment_satisfied
+        </mat-icon>
+      </button>
+    </div>
+    
+    <div *ngIf='schedule.situacaoAgenda == "sem prontuario (sem cdpaciente)"'>
+      <button mat-icon-button matTooltip="Agendado sem cadastro">
+        <mat-icon  style="color: red;">
+          highlight_off
+        </mat-icon>
+      </button>
+    </div>
+  
+    <!--<div *ngIf='schedule.estadoAgenda == "extra"'>
+      <button mat-icon-button matTooltip="Extra">
+        <mat-icon>
+          group_add
+        </mat-icon>
+      </button>
+    </div> -->
+  
+    <div *ngIf='schedule.estadoAgenda == "1a. Vez"'>
+      <button mat-icon-button matTooltip="1a. Vez">
+        <mat-icon>
+          filter_1
+        </mat-icon>
+      </button>
+    </div>
+  
+    <div *ngIf='schedule.estadoAgenda == "urgente"'>
+      <button mat-icon-button matTooltip="Urgente">
+        <mat-icon style="color: red;">
+          format_underlined
+        </mat-icon>
+      </button>
+    </div>
+  
+    <div *ngIf='schedule.estadoAgenda == "bloqueado pode ser image ou state index"'>
+      <button mat-icon-button matTooltip="Bloqueado">
+        <mat-icon >
+          lock
+        </mat-icon>
+      </button>
+    </div>
+  
+    <div *ngIf='schedule.estadoAgenda == "pronto ou medico avisado"'>
+      <button mat-icon-button matTooltip="Pronto ou Médico Avisado">
+        <mat-icon style="color: rgb(199, 17, 223);">
+          sentiment_satisfied
+        </mat-icon>
+      </button>
+    </div>
+  
+    <div *ngIf='schedule.estadoAgenda == "atendido"'>
+      <button mat-icon-button matTooltip="Atendido">
+        <mat-icon style="color: rgb(24, 163, 228);">
+          sentiment_satisfied
+        </mat-icon>
+      </button>
+    </div>
+  
+    <div *ngIf='schedule.estadoAgenda == "confirmado pela telefonista"'>
+      <button mat-icon-button matTooltip="Confirmado">
+        <mat-icon>
+          sentiment_satisfied
+        </mat-icon>
+      </button>
+    </div>
+  
+    <div *ngIf='schedule.estadoAgenda == "faltou"'>
+      <button mat-icon-button matTooltip="Faltou e Avisou">
+        <mat-icon>
+          call_missed_outgoing
+        </mat-icon>
+      </button>
+    </div>
+  
+    <div *ngIf='schedule.estadoAgenda == "faltou e nao avisou"'>
+      <button mat-icon-button matTooltip="Faltou e nao avisou">
+        <mat-icon>
+          backspace
+        </mat-icon>
+      </button>
+    </div>
+  
+    <div *ngIf='schedule.estadoAgenda == "medico faltou"'>
+      <button mat-icon-button matTooltip="Médico Faltou">
+        <mat-icon>
+          work_off
+        </mat-icon>
+      </button>
+    </div>
+  
+    <div *ngIf='schedule.estadoAgenda == "desistiu"'>
+      <button mat-icon-button matTooltip="Desistiu">
+        <mat-icon>
+          not_interested
+        </mat-icon>
+      </button>
+    </div>
+  
+    <div *ngIf='schedule.estadoAgenda == "remarcou"'>
+      <button mat-icon-button matTooltip="Remarcou">
+        <mat-icon style="color: blue">
+          local_phone
+        </mat-icon>
+      </button>
+    </div>
+  
+    <div *ngIf='schedule.estadoAgenda == "nao confirmado"'>
+      <button mat-icon-button matTooltip="Nao Confirmado">
+        <mat-icon >
+          announcement
+        </mat-icon>
+      </button>
+    </div>
+  
+    <div *ngIf='schedule.estadoAgenda == "especial"'>
+      <button mat-icon-button matTooltip="Necessidades Especiais">
+        <mat-icon >
+          accessible
+        </mat-icon>
+      </button>
+    </div>  
+    
+      <div *ngIf='schedule.estadoAgenda == "exame"'>
+        <button mat-icon-button matTooltip="Em Exame">
+          <mat-icon style="color:gold">
+            sentiment_satisfied
+          </mat-icon>
+        </button>
+      </div>
+    
+      <div *ngIf='schedule.estadoAgenda == "gestante"'>
+        <button mat-icon-button matTooltip="Gestante">
+          <mat-icon>
+            pregnant_woman
+          </mat-icon>
+        </button>
+      </div>
+  </div>

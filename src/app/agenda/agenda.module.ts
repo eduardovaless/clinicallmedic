@@ -1,3 +1,4 @@
+
 import { AgendaService } from './agenda.service';
 import { AgendaRoutingModule } from './agenda-routing.module';
 import { AgendamedicaComponent } from './agendamedica/agendamedica.component';
@@ -18,9 +19,10 @@ import {MatCardModule} from '@angular/material/card';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { AgendaStatusComponent } from './agenda-status/agenda-status.component';
 
 @NgModule({
-  declarations: [AgendamedicaComponent],
+  declarations: [AgendamedicaComponent, AgendaStatusComponent],
 
   imports: [
     BrowserAnimationsModule,
@@ -35,7 +37,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     MatIconModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    AgendaRoutingModule
+    AgendaRoutingModule,
+    
     
     
     
@@ -47,7 +50,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     
   ],
   providers:[
-    AgendaService
+    AgendaService,
+    
   ]
 })
 export class AgendaModule { }
