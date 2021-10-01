@@ -1632,7 +1632,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           if (idPaciente) {
             this.router.navigate(["/prontuario/form/".concat(idPaciente)]);
           } else {
-            this.snackBar.errorMessage("Nenhum paciente não selecionado!");
+            this.snackBar.errorMessage("Nenhum paciente selecionado!");
           }
         }
       }]);

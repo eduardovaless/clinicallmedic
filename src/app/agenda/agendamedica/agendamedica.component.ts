@@ -99,7 +99,7 @@ export class AgendamedicaComponent implements OnInit {
     if (idPaciente) {
       this.router.navigate([`/prontuario/form/${idPaciente}`])
     }else{
-      this.snackBar.errorMessage("Nenhum paciente não selecionado!")
+      this.snackBar.errorMessage("Nenhum paciente selecionado!")
     }
      
    }
