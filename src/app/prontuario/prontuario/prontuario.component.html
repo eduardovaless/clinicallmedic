@@ -44,8 +44,11 @@
         <mat-icon aria-hidden="false" aria-label="Example home icon">videocam</mat-icon>Cancelar
       </button>
 
-  <iframe *ngIf="video" src="https://sendlink-53591.firebaseapp.com/conf.html?room=efeff8939e1156492b6c4214fccfb6bf" style="border:0px #ffffff none;" name="Jitsi" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="1000px" width="600px" allowfullscreen="" allow="camera; microphone">
-  </iframe>
+  <div *ngIf="video">
+    <iframe  src="https://sendlink-53591.firebaseapp.com/conf.html?room=" style="border:0px #ffffff none;" name="Jitsi" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="1000px" width="600px" allowfullscreen="" allow="camera; microphone">
+    </iframe>
+
+  </div>
 
 
   <!-----------------------------------------------------TABS DO PRONTUARIO----------------------------------------->

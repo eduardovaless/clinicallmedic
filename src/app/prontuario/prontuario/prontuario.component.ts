@@ -79,6 +79,7 @@ export class ProntuarioComponent implements OnInit {
       return
     }
 
+   
     
   }
 
@@ -127,6 +128,9 @@ toggleVideo(){
   this.video = true
   this.videonovo = false;
   this.videocancelar = true;
+
+ 
+  
 }
 toggleVideo2(){
   this.video = false;
