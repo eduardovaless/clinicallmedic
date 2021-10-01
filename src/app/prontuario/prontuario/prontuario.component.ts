@@ -17,10 +17,15 @@ export class ProntuarioComponent implements OnInit {
   public Editor = ClassicEditor;
   public isDisabled = false;
   public edited: boolean;
-  public cancel: boolean;
+  public cancel: boolean;  
   public novo: boolean = true;
+
+  public video: boolean;
+  public videonovo: boolean = true;
+  public videocancelar: boolean;
+
   pdfSrc: any
-  pdf= "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf"
+    pdf= "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf"
   id:number;
   documento:number;
   paciente: Paciente;
@@ -118,7 +123,16 @@ toggleCancel(){
   this.cancel = false;
 }
 
-
+toggleVideo(){
+  this.video = true
+  this.videonovo = false;
+  this.videocancelar = true;
+}
+toggleVideo2(){
+  this.video = false;
+  this.videonovo = true; 
+  this.videocancelar = false;
+}
 
 }
 

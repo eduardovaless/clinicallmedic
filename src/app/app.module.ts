@@ -1,3 +1,4 @@
+import { VideoconferenciaModule } from './videoconferencia/videoconferencia.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { MatListModule } from '@angular/material/list';
@@ -51,6 +52,7 @@ import {defaultFormat as _rollupMoment, Moment} from 'moment';
 import { ProntuarioComponent } from './prontuario/prontuario/prontuario.component';
 import { ProntuarioModule } from './prontuario/prontuario.module';
 import { PacienteService } from './paciente/paciente.service';
+import { VideoconferenciaComponent } from './videoconferencia/videoconferencia/videoconferencia.component';
 
 registerLocaleData(localeBr, 'pt', localeBrExtra)
 export const MY_FORMATS = {
@@ -78,6 +80,7 @@ export const MY_FORMATS = {
     LoginComponent,
     LayoutComponent,
     
+    
 
 
 
@@ -100,7 +103,8 @@ export const MY_FORMATS = {
     PdfViewerModule,
     MatListModule,
     CKEditorModule,
-    DashboardModule
+    DashboardModule,
+    VideoconferenciaModule
     
     
   ],

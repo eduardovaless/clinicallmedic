@@ -33,6 +33,20 @@
 
   </mat-form-field>
 
+        <!--BOTOES DA VIDEOCONFERENCIA-->
+        <button *ngIf="videonovo" type="button" class="btn ml-3" style="background-color: rgb(77, 77, 49);" mat-raised-button
+        color="primary" (click)="toggleVideo()" >
+        <mat-icon aria-hidden="false" aria-label="Example home icon">videocam</mat-icon> 
+      </button>
+
+      <button *ngIf="videocancelar" type="button" class="btn ml-3" style="background-color: rgb(184, 112, 53);" mat-raised-button
+        color="primary" (click)="toggleVideo2()" >
+        <mat-icon aria-hidden="false" aria-label="Example home icon">videocam</mat-icon>Cancelar
+      </button>
+
+  <iframe *ngIf="video" src="https://sendlink-53591.firebaseapp.com/conf.html?room=efeff8939e1156492b6c4214fccfb6bf" style="border:0px #ffffff none;" name="Jitsi" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="1000px" width="600px" allowfullscreen="" allow="camera; microphone">
+  </iframe>
+
 
   <!-----------------------------------------------------TABS DO PRONTUARIO----------------------------------------->
 
@@ -54,11 +68,14 @@
         Cancelar
         <mat-icon>close</mat-icon>
       </button>
-
+      
       <button type="button" class="btn ml-3" style="background-color: rgb(22, 61, 97);" mat-raised-button
-        color="primary" routerLink="/paciente/list">
+        color="primary" routerLink="/agenda/medico" >
         <i class="icone fa fa-reply"> </i> Voltar
       </button>
+
+
+
       <br>
 
        <!--EDITOR DA FICHA-->
