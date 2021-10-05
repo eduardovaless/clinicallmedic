@@ -29,7 +29,7 @@ export class AgendamedicaComponent implements OnInit {
   dataAgenda: string;
   id:number;
   pacientes: number;
-
+  user  = JSON.parse(localStorage.getItem("user"))
 
   displayedColumns: string[] = ['status', 'hora', 'paciente', 'convenio', 'servico'];
   
@@ -46,7 +46,7 @@ export class AgendamedicaComponent implements OnInit {
     
     
     this.idUnidade= 1
-    this.idProfissional= '19888'
+    this.idProfissional= this.user.idProfissional
     
 
 

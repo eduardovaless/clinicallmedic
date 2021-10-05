@@ -7,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
 import { Paciente } from 'src/app/paciente/paciente';
 import { pdfDefaultOptions } from 'ngx-extended-pdf-viewer';
 import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-prontuario',
   templateUrl: './prontuario.component.html',
-  styleUrls: ['./prontuario.component.css']
+  styleUrls: ['./prontuario.component.css'],
+  providers: [DatePipe] 
 })
 export class ProntuarioComponent implements OnInit {
   public Editor = ClassicEditor;
@@ -28,6 +30,7 @@ export class ProntuarioComponent implements OnInit {
     pdf= "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf"
   id:number;
   documento:number;
+  
   paciente: Paciente;
   listPront= new Array();
   
@@ -51,14 +54,18 @@ export class ProntuarioComponent implements OnInit {
    private activatedRoute: ActivatedRoute,
    private snackBar: SnackBarService,
    private router: Router,
-   
+   private datePipe: DatePipe
 
   ) {
     this.paciente=new Paciente();
     pdfDefaultOptions.assetsFolder = 'bleeding-edge';
    }
 
+  
+
   ngOnInit(): void {
+
+    
 
     let params : Observable<any> = this.activatedRoute.params
    params.subscribe(urlParams => {

@@ -37,6 +37,7 @@ export class SidebarComponent implements OnInit {
   usuario: LoginComponent
   user  = JSON.parse(localStorage.getItem("user"))
   
+  
 
   constructor(
     private serviceEmpresa: ServiceEmpresaService,
@@ -57,6 +58,13 @@ export class SidebarComponent implements OnInit {
     if(!user){
       this.router.navigate([""]);
       this.snackbar.warnMessage("Usuario sem permisão")
+      return
+    }
+
+    let userid = JSON.parse(localStorage.getItem("user"))
+    if(!userid.idProfissional){
+      this.router.navigate([""]);
+      this.snackbar.warnMessage("Sistema exclusivo para médicos.")
       return
     }
   }

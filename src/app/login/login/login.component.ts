@@ -18,7 +18,7 @@ export class LoginComponent implements OnInit{
   userName= ""
   login = document.getElementById('login');
   senha = document.getElementById('senha');
-
+  user  = JSON.parse(localStorage.getItem("user"))
 
    public usuario: Login; 
 
@@ -40,7 +40,7 @@ export class LoginComponent implements OnInit{
     this.usuario = new Login();
     
     this.getClinica()
-    this.getLogin()
+    
     
     
   }
@@ -53,9 +53,10 @@ export class LoginComponent implements OnInit{
     console.log(this.usuario)
 
     this.servicelogin.fazerLogin(this.usuario).subscribe((resposta)=>{
-      console.log(resposta)
-      localStorage.setItem("user", JSON.stringify(resposta));
-      this.router.navigate(['/home/home'])
+      console.log(resposta)      
+      localStorage.setItem("user", JSON.stringify(resposta));          
+        this.router.navigate(['/home/home'])
+              
     },
     error =>{
       this.snackBar.errorMessage("Usuário ou/e Senha Inconrretos.")
@@ -66,10 +67,9 @@ export class LoginComponent implements OnInit{
 
   getClinica(){
     this.service.getClinica().subscribe(resposta => this.nomeFantasia = resposta.nomeFantasia)
-  }
-
-  getLogin(){
     
   }
+
+  
   
 }

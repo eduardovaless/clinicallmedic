@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./videoconferencia.component.css']
 })
 export class VideoconferenciaComponent implements OnInit {
+ url="https://sendlink-53591.firebaseapp.com/conf.html?room="
 
-  constructor() { }
+  constructor() {}
 
+  
+ 
   ngOnInit(): void {
+    
   }
 
+  
 }

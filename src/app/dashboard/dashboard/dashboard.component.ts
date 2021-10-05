@@ -1,3 +1,5 @@
+import { Router } from '@angular/router';
+import { SnackBarService } from './../../services/snackbar.service';
 import { Component, OnInit } from '@angular/core';
 import { single } from './dashboard'; 
 import { single2 } from './dashboard';
@@ -7,7 +9,7 @@ import { single2 } from './dashboard';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
-export class DashboardComponent  {
+export class DashboardComponent implements OnInit{
   //serviços
   single: any[];
   view: any[] = [700, 400];
@@ -43,13 +45,30 @@ export class DashboardComponent  {
      domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA', '#00FFFF', '#000000', '#B120CB', '#F30B54', '#04F896']
    };
 
-  constructor() {
+  constructor(
+
+    private snackBar: SnackBarService,
+    private router: Router,
+
+  ) {
     //serviços
     Object.assign(this, { single });
 
     //meses
     Object.assign(this, { single2 });
   }
+
+  ngOnInit(): void {
+
+    // LOCALSTORAGE
+    let user  = JSON.parse(localStorage.getItem("user"))
+    if(!user){
+      this.router.navigate([""]);
+      this.snackBar.warnMessage("Usuario sem permisão")
+      return
+    }
+
+ }
 
   //serviços
   onSelect(data): void {

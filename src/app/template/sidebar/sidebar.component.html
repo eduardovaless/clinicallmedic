@@ -20,7 +20,7 @@
 
   <!--SIDEBAR LATERAL-->
 
-  <mat-drawer-container class="example-container">
+  <mat-drawer-container class="example-container" >
 
     <mat-drawer #drawer class="example-sidenav" mode="side">
 
@@ -52,6 +52,14 @@
         <div class="menu row" style="margin-left: 10px;">
           <mat-icon class="icon">dashboard</mat-icon>
           <p style="margin-left: 10px;" class="name">Dashboard</p>
+        </div>
+      </a>
+
+      <!--------Telemedicina-------->
+      <a class="nav-link" routerLink="/video/conferencia">
+        <div class="menu row" style="margin-left: 10px;">
+          <mat-icon class="icon">videocam</mat-icon>
+          <p style="margin-left: 10px;" class="name">Telemedicina</p>
         </div>
       </a>
 
@@ -146,6 +154,13 @@
       </div>
     </a>
 
+    <!--------Telemedicina-------->
+    <a class="nav-link" routerLink="/video/conferencia">
+      <div title="Telemedicina" class="menu1 row" style="margin-left: 10px;">
+        <mat-icon class="icon2">videocam</mat-icon>        
+      </div>
+    </a>
+
     <!--------PACIENTE-------->
     <a class="nav-link active" routerLink="/paciente/list">
       <div title="Pacientes" class="menu1 row" style="margin-left: 10px;">
@@ -154,6 +169,7 @@
 
       </div>
     </a>
+    
 
     <br>
     <!--------FECHAR-------->

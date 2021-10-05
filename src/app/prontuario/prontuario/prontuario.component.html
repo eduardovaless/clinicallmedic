@@ -27,8 +27,8 @@
     <mat-label style="font-size:15px; color:rgb(5, 70, 61); background-color:rgb(250, 250, 250)"><b>Nascimento</b>
     </mat-label>
 
-    <input matInput style="color:rgb(5, 70, 61); background-color:rgb(250, 250, 250)" class="form-control" disabled
-      [(ngModel)]="paciente.dataNascimento" name="dataNascimento" />
+    <input matInput type="date" style="color:rgb(5, 70, 61); background-color:rgb(250, 250, 250)" class="form-control" disabled
+    [(ngModel)]="paciente.dataNascimento" name="dataNascimento" />
 
 
   </mat-form-field>
@@ -45,7 +45,7 @@
       </button>
 
   <div *ngIf="video">
-    <iframe  src="https://sendlink-53591.firebaseapp.com/conf.html?room=" style="border:0px #ffffff none;" name="Jitsi" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="1000px" width="600px" allowfullscreen="" allow="camera; microphone">
+    <iframe  src="https://sendlink-53591.firebaseapp.com/conf.html?room=" style="border:0px #ffffff none;" name="Jitsi" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="900px" width="600px" allowfullscreen="" allow="camera; microphone">
     </iframe>
 
   </div>
@@ -84,6 +84,11 @@
        <!--EDITOR DA FICHA-->
        <div class="edit" *ngIf="edited">
          <ckeditor [disabled]="isDisabled" [editor]="Editor" [data]=""></ckeditor>
+<br>
+         <button type="button" class="btn ml-3" style="background-color: rgb(8, 134, 71);" mat-raised-button
+        color="primary" routerLink="" >
+        <i class="icone fa fa-save"> </i> Salvar Ficha
+       </button>
        </div>
       
 
@@ -135,6 +140,11 @@
         <!--EDITOR DO LAUDO-->
         <div class="edit" *ngIf="edited">
           <ckeditor [disabled]="isDisabled" [editor]="Editor" data=""></ckeditor>
+          <br>
+         <button type="button" class="btn ml-3" style="background-color: rgb(8, 134, 71);" mat-raised-button
+        color="primary" routerLink="" >
+        <i class="icone fa fa-save"> </i> Salvar Laudo
+       </button>
         </div>
        
         <!--PDF DO LAUDO-->
@@ -186,6 +196,12 @@
        <!--EDITOR DO ATESTADO E RELATORIO-->
        <div class="edit" *ngIf="edited">
          <ckeditor [disabled]="isDisabled" [editor]="Editor" data=""></ckeditor>
+
+         <br>
+         <button type="button" class="btn ml-3" style="background-color: rgb(8, 134, 71);" mat-raised-button
+        color="primary" routerLink="" >
+        <i class="icone fa fa-save"> </i> Salvar Atestado ou Relatório
+       </button>
        </div>
       
        <!--PDF DO RECEITUARIO-->
@@ -237,6 +253,12 @@
        <!--EDITOR DO RECEITUARIO-->
        <div class="edit" *ngIf="edited">
          <ckeditor [disabled]="isDisabled" [editor]="Editor" data=""></ckeditor>
+
+         <br>
+         <button type="button" class="btn ml-3" style="background-color: rgb(8, 134, 71);" mat-raised-button
+        color="primary" routerLink="" >
+        <i class="icone fa fa-save"> </i> Salvar Receituário
+       </button>
        </div>
       
        <!--PDF DO RECEITUARIO-->
@@ -288,6 +310,12 @@
        <!--EDITOR DO EXAME-->
        <div class="edit" *ngIf="edited">
          <ckeditor [disabled]="isDisabled" [editor]="Editor" data=""></ckeditor>
+
+         <br>
+         <button type="button" class="btn ml-3" style="background-color: rgb(8, 134, 71);" mat-raised-button
+        color="primary" routerLink="" >
+        <i class="icone fa fa-save"> </i> Salvar Solicitação de Exame
+       </button>
        </div>
       
        <!--PDF DO EXAME-->

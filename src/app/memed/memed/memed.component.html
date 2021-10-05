@@ -1,0 +1,58 @@
+      
+    <script
+        type="text/javascript"
+        src="https://sandbox.memed.com.br/modulos/plataforma.sinapse-prescricao/build/sinapse-prescricao.min.js"
+        data-token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.WzM1MzUzLCIzN2Y3ZTFlY2EwM2EwZjI5NzhlOTk2MjM2M2Y3Yjc0MCIsIjIwMjEtMTAtMDQiLCJzaW5hcHNlLnByZXNjcmljYW8iLCJwYXJ0bmVyLjMuMzA3MTciXQ._rX1QhvYh8-uR8Ez65TmWYkPSqnrTrlRc79Jlnu1SnE"
+        data-color="#COR_PRIMARIA_EM_HEXADECIMAL">
+    </script>
+    
+        <script>
+            MdSinapsePrescricao.event.add('core:moduleInit', function moduleInitHandler(module) {
+    
+        // O módulo da prescrição foi iniciado
+        if (module.name === 'plataforma.prescricao') {
+    
+          // Registrando o evento de click no elemento
+    
+            MdHub.command.send('plataforma.prescricao', 'setPaciente', {
+              // Pode ser um documento criptografado do paciente, por exemplo
+              // Usamos essa propriedade para destinguir nomes iguais
+              // (obrigatório)
+              idExterno: 'some_encoded_data_or_hash_or_id',
+    
+              // Nome do paciente (obrigatório)
+              nome: 'José da Silva',
+    
+              // Nome social do paciente (opcional)
+              nome_social: 'Maria da Silva',
+    
+              // Endereço do paciente (opcional)
+              endereco: 'Rua da Saúde, 123',
+    
+              // Cidade do paciente (opcional)
+              cidade: 'São Paulo',
+    
+              // Telefone celular (obrigatório, DDD + digitos, somente números. NÃO ENVIAR PREFIXO "+55")
+              telefone: '071988109052',
+    
+              // Usado no receituário de alto custo (Opcional)
+              peso: 75,
+    
+              // Usado no receituário de alto custo (Opcional)
+          altura: 1.80,
+    
+              // Usado no receituário de alto custo (Opcional)
+          nome_mae: 'Nome da mãe',
+    
+              // Usado no receituário de alto custo (Opcional)
+          dificuldade_locomocao: true,
+          idExterno: '123456789'
+            }).then(function() {
+    
+              // Mostra o módulo de prescrição
+              MdHub.module.show('plataforma.prescricao');
+            });
+    
+        }
+        });
+        </script>

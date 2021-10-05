@@ -1,3 +1,4 @@
+import { MemedModule } from './memed/memed.module';
 import { VideoconferenciaModule } from './videoconferencia/videoconferencia.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
@@ -53,6 +54,7 @@ import { ProntuarioComponent } from './prontuario/prontuario/prontuario.componen
 import { ProntuarioModule } from './prontuario/prontuario.module';
 import { PacienteService } from './paciente/paciente.service';
 import { VideoconferenciaComponent } from './videoconferencia/videoconferencia/videoconferencia.component';
+import { MemedComponent } from './memed/memed/memed.component';
 
 registerLocaleData(localeBr, 'pt', localeBrExtra)
 export const MY_FORMATS = {
@@ -78,12 +80,8 @@ export const MY_FORMATS = {
     AppComponent,
     HomeComponent,
     LoginComponent,
-    LayoutComponent,
+    LayoutComponent,    
     
-    
-
-
-
 
 
 
@@ -104,7 +102,8 @@ export const MY_FORMATS = {
     MatListModule,
     CKEditorModule,
     DashboardModule,
-    VideoconferenciaModule
+    VideoconferenciaModule,
+    MemedModule
     
     
   ],
