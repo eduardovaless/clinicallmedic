@@ -45,7 +45,7 @@ export class AgendamedicaComponent implements OnInit {
   ) {
     
     
-    this.idUnidade= 1
+    this.idUnidade= 12
     this.idProfissional= this.user.idProfissional
     
 

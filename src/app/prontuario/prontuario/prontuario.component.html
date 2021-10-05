@@ -95,15 +95,17 @@
        <!--PDF FICHA-->
       <br>
       <div class="row">
-        <mat-nav-list style="width: 170px; margin-left: 20px;">
-          <mat-list-item *ngFor="let documento of listPront">
-            <mat-divider></mat-divider>
-           <span matLine *ngIf="documento.origem=='FICHA'">{{documento.data | date: 'dd/MM/yyyy' }}</span>
-            <button mat-icon-button (click)="visupdf(documento)"  *ngIf="documento.origem=='FICHA'">
-              <mat-icon>search</mat-icon>
-            </button>
-          </mat-list-item>
-        </mat-nav-list>
+        <div>
+          <mat-nav-list style="width: 170px; margin-left: 20px;" *ngFor="let documento of listPront">
+            <mat-list-item *ngIf="documento.origem=='FICHA'">
+              <mat-divider></mat-divider>
+             <span matLine>{{documento.data | date: 'dd/MM/yyyy' }}</span>
+              <button mat-icon-button (click)="visupdf(documento)"  >
+                <mat-icon>search</mat-icon>
+              </button>
+            </mat-list-item>
+          </mat-nav-list>
+        </div>
         
         <!--View Fichas-->
         <pdf-viewer [src]="pdfSrc"
@@ -149,16 +151,18 @@
        
         <!--PDF DO LAUDO-->
       <br>
-      <div class="row">
-        <mat-nav-list style="width: 180px; margin-left: 20px;">
-          <mat-list-item *ngFor="let documento of listPront">
-            <mat-divider></mat-divider>
-           <span matLine *ngIf="documento.origem=='LDMED'">{{documento.data | date: 'dd/MM/yyyy' }}</span>
-            <button mat-icon-button (click)="visupdf(documento)"  *ngIf="documento.origem=='LDMED'">
-              <mat-icon>search</mat-icon>
-            </button>
-          </mat-list-item>
-        </mat-nav-list>
+      <div class="row" >
+        <div style="margin-top:-100px;">
+          <mat-nav-list style="margin-left: 20px;" *ngFor="let documento of listPront">
+            <mat-list-item *ngIf="documento.origem=='LDMED'">
+              <mat-divider></mat-divider>
+             <span matLine>{{documento.data | date: 'dd/MM/yyyy'}}</span>
+              <button mat-icon-button (click)="visupdf(documento)">
+                <mat-icon>search</mat-icon>
+              </button>
+            </mat-list-item>
+          </mat-nav-list>
+        </div>
         
         <!--View LAUDO-->
         <pdf-viewer [src]="pdfSrc" 
@@ -204,17 +208,19 @@
        </button>
        </div>
       
-       <!--PDF DO RECEITUARIO-->
+       <!--PDF DO ATESTADO E RELATORIO-->
       <div class="row">
-        <mat-nav-list style="width: 180px; margin-left: 20px;">
-          <mat-list-item *ngFor="let documento of listPront">
-            <mat-divider></mat-divider>
-           <span matLine *ngIf="documento.origem=='RELAT'">{{documento.data | date: 'dd/MM/yyyy' }}</span>
-            <button mat-icon-button (click)="visupdf(documento)"  *ngIf="documento.origem=='RELAT'">
-              <mat-icon>search</mat-icon>
-            </button>
-          </mat-list-item>
-        </mat-nav-list>
+        <div>
+          <mat-nav-list style="margin-left: 20px;" *ngFor="let documento of listPront">
+            <mat-list-item *ngIf="documento.origem=='RELAT'">
+              <mat-divider></mat-divider>
+             <span matLine>{{documento.data | date: 'dd/MM/yyyy' }}</span>
+              <button mat-icon-button (click)="visupdf(documento)"  >
+                <mat-icon>search</mat-icon>
+              </button>
+            </mat-list-item>
+          </mat-nav-list>
+        </div>
 
         <!--View ATESTADO E RELATORIO-->
         <pdf-viewer [src]="pdfSrc"
@@ -263,15 +269,17 @@
       
        <!--PDF DO RECEITUARIO-->
       <div class="row">
-        <mat-nav-list style="width: 180px; margin-left: 20px;">
-          <mat-list-item *ngFor="let documento of listPront">
-            <mat-divider></mat-divider>
-           <span matLine *ngIf="documento.origem=='RELAT'">{{documento.data | date: 'dd/MM/yyyy' }}</span>
-            <button mat-icon-button (click)="visupdf(documento)"  *ngIf="documento.origem=='RELAT'">
-              <mat-icon>search</mat-icon>
-            </button>
-          </mat-list-item>
-        </mat-nav-list>
+        <div>
+          <mat-nav-list style="width: 180px; margin-left: 20px;" *ngFor="let documento of listPront">
+            <mat-list-item *ngIf="documento.origem=='RELAT'">
+              <mat-divider></mat-divider>
+             <span matLine>{{documento.data | date: 'dd/MM/yyyy' }}</span>
+              <button mat-icon-button (click)="visupdf(documento)"  >
+                <mat-icon>search</mat-icon>
+              </button>
+            </mat-list-item>
+          </mat-nav-list>
+        </div>
 
         <!--View RECEITUARIO-->
         <pdf-viewer [src]="pdfSrc"
@@ -321,21 +329,23 @@
        <!--PDF DO EXAME-->
       <br>
       <div class="row">
-        <mat-nav-list style="width: 180px; margin-left: 20px;">
-          <mat-list-item *ngFor="let documento of listPront">
-            <mat-divider></mat-divider>
-            <span matLine *ngIf="documento.origem=='RELAT'">{{documento.data | date: 'dd/MM/yyyy' }}</span>
-            <button mat-icon-button (click)="visupdf(documento)"  *ngIf="documento.origem=='RELAT'">
-              <mat-icon>search</mat-icon>
-            </button>
-          </mat-list-item>
-        </mat-nav-list>
+        <div>
+          <mat-nav-list style="width: 180px; margin-left: 20px;" *ngFor="let documento of listPront">
+            <mat-list-item *ngIf="documento.origem=='RELAT'">
+              <mat-divider></mat-divider>
+              <span matLine >{{documento.data | date: 'dd/MM/yyyy' }}</span>
+              <button mat-icon-button (click)="visupdf(documento)" >
+                <mat-icon>search</mat-icon>
+              </button>
+            </mat-list-item>
+          </mat-nav-list>
+        </div>
 
         <!--View Solicitação de Exames-->
         <pdf-viewer [src]="pdfSrc"
         [show-borders]="true"
         
-        [zoom]="0.8">></pdf-viewer>
+        [zoom]="0.8"></pdf-viewer>
       </div>
     </mat-tab>
   </mat-tab-group>
