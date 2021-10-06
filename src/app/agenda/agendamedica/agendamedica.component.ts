@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 import moment from 'moment';
 import { MAT_DATE_LOCALE } from '@angular/material/core';
 import localePt from '@angular/common/locales/pt';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-agendamedica',
@@ -23,16 +24,17 @@ export class AgendamedicaComponent implements OnInit {
   genda: Agenda
   idpacie: string;
   selected: Date | null;
+  selected1 = '';
   backgroundColorToggle = "primary";
-  idUnidade: number;
+  idUnidade= 1;
   idProfissional: string;
   dataAgenda: string;
   id:number;
   pacientes: number;
   user  = JSON.parse(localStorage.getItem("user"))
-
+  unidade:string;
   displayedColumns: string[] = ['status', 'hora', 'paciente', 'convenio', 'servico'];
-  
+  currentDate: string;
 
   constructor(
     private router: Router,
@@ -45,7 +47,7 @@ export class AgendamedicaComponent implements OnInit {
   ) {
     
     
-    this.idUnidade= 12
+    
     this.idProfissional= this.user.idProfissional
     
 
@@ -55,6 +57,7 @@ export class AgendamedicaComponent implements OnInit {
   ngOnInit(): void {
 
     this.searchScheduleProfessional();
+    this.getUnidade();
   }
     //carregar agenda do medico logado
 
@@ -62,13 +65,13 @@ export class AgendamedicaComponent implements OnInit {
      
       moment.locale('pt'); 
      
-      let currentDate;
+      
       
        //vai receber a data do dia ou a data selecionada
       if (event) {//se tiver o evento vamos jogar o evento nele se não colocamos a data do dia
-        currentDate = moment(event).format('YYYY-MM-DD') //coloco no currentDate o evento da data já formatada no formato da api     
+        this.currentDate = moment(event).format('YYYY-MM-DD') //coloco no currentDate o evento da data já formatada no formato da api     
     }else{
-      currentDate = moment().format('YYYY-MM-DD') //coloca a data do dia já formatada
+      this.currentDate = moment().format('YYYY-MM-DD') //coloca a data do dia já formatada
     }
 
    // LOCALSTORAGE
@@ -80,13 +83,15 @@ export class AgendamedicaComponent implements OnInit {
     }
     
 
-      this.service.getAgenda(this.idUnidade, this.idProfissional, currentDate)
+      this.service.getAgenda(this.idUnidade, this.idProfissional, this.currentDate)
       .subscribe(resposta => this.agenda = resposta);
       
         
     }
 
-
+    getUnidade(){
+      this.service.getUnidade().subscribe(resposta => this.unidade = resposta);
+    }
      
   
 

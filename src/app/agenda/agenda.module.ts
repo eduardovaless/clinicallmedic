@@ -1,3 +1,4 @@
+import { MatSelectModule } from '@angular/material/select';
 
 import { AgendaService } from './agenda.service';
 import { AgendaRoutingModule } from './agenda-routing.module';
@@ -38,7 +39,8 @@ import { AgendaStatusComponent } from './agenda-status/agenda-status.component';
     MatDatepickerModule,
     MatNativeDateModule,
     AgendaRoutingModule,
-    
+    MatSelectModule,
+
     
     
     

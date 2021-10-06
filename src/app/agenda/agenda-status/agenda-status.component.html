@@ -48,13 +48,13 @@
       </button>
     </div>
   
-    <!--<div *ngIf='schedule.estadoAgenda == "extra"'>
+    <div *ngIf='schedule.estadoAgenda == "extra"'>
       <button mat-icon-button matTooltip="Extra">
-        <mat-icon>
-          group_add
+        <mat-icon style="color: red;">
+          e_mobiledata
         </mat-icon>
       </button>
-    </div> -->
+    </div> 
   
     <div *ngIf='schedule.estadoAgenda == "1a. Vez"'>
       <button mat-icon-button matTooltip="1a. Vez">
@@ -74,7 +74,7 @@
   
     <div *ngIf='schedule.estadoAgenda == "bloqueado pode ser image ou state index"'>
       <button mat-icon-button matTooltip="Bloqueado">
-        <mat-icon >
+        <mat-icon style="color:gold">
           lock
         </mat-icon>
       </button>
@@ -122,7 +122,7 @@
   
     <div *ngIf='schedule.estadoAgenda == "medico faltou"'>
       <button mat-icon-button matTooltip="Médico Faltou">
-        <mat-icon>
+        <mat-icon style="color:rgb(18, 114, 143)">
           work_off
         </mat-icon>
       </button>
@@ -130,7 +130,7 @@
   
     <div *ngIf='schedule.estadoAgenda == "desistiu"'>
       <button mat-icon-button matTooltip="Desistiu">
-        <mat-icon>
+        <mat-icon style="color:red">
           not_interested
         </mat-icon>
       </button>

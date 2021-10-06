@@ -86,7 +86,7 @@
          <ckeditor [disabled]="isDisabled" [editor]="Editor" [data]=""></ckeditor>
 <br>
          <button type="button" class="btn ml-3" style="background-color: rgb(8, 134, 71);" mat-raised-button
-        color="primary" routerLink="" >
+        color="primary" >
         <i class="icone fa fa-save"> </i> Salvar Ficha
        </button>
        </div>
@@ -134,7 +134,7 @@
        </button>
  
        <button type="button" class="btn ml-3" style="background-color: rgb(22, 61, 97);" mat-raised-button
-         color="primary" routerLink="/paciente/list">
+         color="primary" routerLink="/agenda/medico">
          <i class="icone fa fa-reply"> </i> Voltar
        </button>
        <br>
@@ -144,7 +144,7 @@
           <ckeditor [disabled]="isDisabled" [editor]="Editor" data=""></ckeditor>
           <br>
          <button type="button" class="btn ml-3" style="background-color: rgb(8, 134, 71);" mat-raised-button
-        color="primary" routerLink="" >
+        color="primary" >
         <i class="icone fa fa-save"> </i> Salvar Laudo
        </button>
         </div>
@@ -152,7 +152,7 @@
         <!--PDF DO LAUDO-->
       <br>
       <div class="row" >
-        <div style="margin-top:-100px;">
+        <div>
           <mat-nav-list style="margin-left: 20px;" *ngFor="let documento of listPront">
             <mat-list-item *ngIf="documento.origem=='LDMED'">
               <mat-divider></mat-divider>
@@ -192,7 +192,7 @@
       </button>
 
       <button type="button" class="btn ml-3" style="background-color: rgb(22, 61, 97);" mat-raised-button
-        color="primary" routerLink="/paciente/list">
+        color="primary" routerLink="/agenda/medico">
         <i class="icone fa fa-reply"> </i> Voltar
       </button>
       <br>
@@ -203,7 +203,7 @@
 
          <br>
          <button type="button" class="btn ml-3" style="background-color: rgb(8, 134, 71);" mat-raised-button
-        color="primary" routerLink="" >
+        color="primary" >
         <i class="icone fa fa-save"> </i> Salvar Atestado ou Relatório
        </button>
        </div>
@@ -251,7 +251,7 @@
       </button>
 
       <button type="button" class="btn ml-3" style="background-color: rgb(22, 61, 97);" mat-raised-button
-        color="primary" routerLink="/paciente/list">
+        color="primary" routerLink="/agenda/medico">
         <i class="icone fa fa-reply"> </i> Voltar
       </button>
       <br>
@@ -262,7 +262,7 @@
 
          <br>
          <button type="button" class="btn ml-3" style="background-color: rgb(8, 134, 71);" mat-raised-button
-        color="primary" routerLink="" >
+        color="primary" >
         <i class="icone fa fa-save"> </i> Salvar Receituário
        </button>
        </div>
@@ -310,7 +310,7 @@
       </button>
 
       <button type="button" class="btn ml-3" style="background-color: rgb(22, 61, 97);" mat-raised-button
-        color="primary" routerLink="/paciente/list">
+        color="primary" routerLink="/agenda/medico">
         <i class="icone fa fa-reply"> </i> Voltar
       </button>
       <br>
@@ -321,7 +321,7 @@
 
          <br>
          <button type="button" class="btn ml-3" style="background-color: rgb(8, 134, 71);" mat-raised-button
-        color="primary" routerLink="" >
+        color="primary" >
         <i class="icone fa fa-save"> </i> Salvar Solicitação de Exame
        </button>
        </div>

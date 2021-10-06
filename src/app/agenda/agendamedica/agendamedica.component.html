@@ -6,24 +6,56 @@
     </ol>
 
  <br>
-    <div class="container" id="agenda">
+
+
+
+
+    <div class="container" id="agenda">      
+            
+        
 
         <div>
+
+            <h3 style="color: rgb(10, 92, 92);"> <b>Selecione a unidade:</b></h3>
+             <mat-form-field style="width: 250px;" appearance="fill">
+                <mat-label>Unidade</mat-label>
+                <mat-select [(value)]="idUnidade">
+                    <mat-option *ngFor="let unidade of unidade" [value]="unidade.idUnidade" name="unidade" ngDefaultControl>
+                        {{unidade.nomeUnidade}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+         <!--Calendario-->   
             <mat-card class="demo-inline-calendar-card">
-                <mat-calendar  class="calendar" (selectedChange)="searchScheduleProfessional($event)"></mat-calendar>
+                <mat-calendar  class="calendar"  (selectedChange)="searchScheduleProfessional($event)"></mat-calendar>
                   <p><span>{{dataAgenda}}</span>  </p>
+                  <p>Data selecionada:<b>{{currentDate | date: 'dd/MM/yyyy'}}</b></p>
             </mat-card>
 
             <mat-card style="margin-top:10px;">
-                <h4 style="text-align:center;">Instruções</h4>
+                <h4 style="text-align:center;"><b>Instruções</b></h4>
                 <p>Para verificar o prontuário <br>clique no paciente.</p><br>
                 
-                <h3 style="text-align:center;">Status da Agenda</h3>
+                
+                <h3 style="text-align:center;"><b>Status da Agenda</b></h3>
 <hr>
                 <p>
                     <mat-icon >
                         calendar_today
                       </mat-icon>  Agendado
+                </p>
+
+                <p>
+                    <mat-icon  style="color: red;">
+                        highlight_off
+                      </mat-icon>  Paciente Não Cadastrado
+                </p>
+
+                <p>
+                    <mat-icon style="color: red;">
+                        e_mobiledata
+                      </mat-icon>  Horario Extra
                 </p>
 
                 <p>
@@ -63,7 +95,7 @@
                 </p>
 
                 <p>
-                    <mat-icon >
+                    <mat-icon style="color:gold">
                         lock
                       </mat-icon>  Paciente Bloqueado
                 </p>
@@ -105,13 +137,13 @@
                 </p>
 
                 <p>
-                    <mat-icon>
+                    <mat-icon style="color:rgb(18, 114, 143)">
                         work_off
                       </mat-icon>  Médico Faltou
                 </p>
 
                 <p>
-                    <mat-icon>
+                    <mat-icon style="color:red">
                         not_interested
                       </mat-icon>  Paciente Desistiu
                 </p>

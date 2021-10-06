@@ -12,13 +12,14 @@ export class AgendaService {
   
   apiURL: string = environment.apiURL + `/datasnap/rest/TCalendarController/agendaProfissional`;
   apiURL2: string = environment.apiURL + `/datasnap/rest/TCalendarController/agendamento`;
+  apiURL3: string = environment.apiURL + `/datasnap/rest/TEntityController/unidades`;
 
   constructor(
     private http: HttpClient,
     
   ) { }
 
-    getAgenda(idUnidade: number, idProfissional: string, currentDate: string){
+    getAgenda(idUnidade: any, idProfissional: string, currentDate: string){
       return this.http.get<Agenda[]>(`${this.apiURL}/${idUnidade}/${idProfissional}/${currentDate}`)
     }
 
@@ -28,6 +29,10 @@ export class AgendaService {
 
     getPront(id: number): Observable<any> {
       return this.http.get<any>(`${this.apiURL2}/${id}`);
+    }
+
+    getUnidade(): Observable<any> {
+      return this.http.get<any>(this.apiURL3);
     }
 
 
