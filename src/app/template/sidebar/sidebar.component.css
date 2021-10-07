@@ -30,7 +30,7 @@
   position: fixed;
 }
 
-@media(max-width:768px) {
+@media(max-width:1200px) {
 	 
   body {
  height: 100%;
@@ -53,11 +53,12 @@
   max-height: 100%;
   margin-top: 55px ;
   position: static;
+  visibility: hidden;
 }
 
 .example-sidenav{
   background-color: rgb(15, 140, 150);
-  
+  visibility: hidden;
     width: 40%;
     margin: 0 auto;
   max-height: 100%;
