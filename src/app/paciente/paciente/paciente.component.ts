@@ -39,16 +39,6 @@ export class PacienteComponent implements OnInit {
 
 dataSource = new MatTableDataSource<Paciente>();
 
-
-
-
-
-
-
-
-
-
-
 //-----------------------------------
   constructor(
     private service: PacienteService,
@@ -68,7 +58,7 @@ dataSource = new MatTableDataSource<Paciente>();
 
 
     let params : Observable<any> = this.activatedRoute.params
-   params.subscribe(urlParams => {
+     params.subscribe(urlParams => {
      this.idPaciente = urlParams ['id'];
      if(this.idPaciente){
      this.service.getPacieById(this.idPaciente)
@@ -77,7 +67,7 @@ dataSource = new MatTableDataSource<Paciente>();
       )}})
 
 
-      let user  = JSON.parse(localStorage.getItem("user"))
+      let user  = JSON.parse(sessionStorage.getItem("user"))
     if(!user){
       this.router.navigate([""]);
       this.snackBar.warnMessage("Usuario sem permisão")

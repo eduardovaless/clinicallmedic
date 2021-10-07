@@ -31,7 +31,7 @@ export class AgendamedicaComponent implements OnInit {
   dataAgenda: string;
   id:number;
   pacientes: number;
-  user  = JSON.parse(localStorage.getItem("user"))
+  user  = JSON.parse(sessionStorage.getItem("user"))
   unidade:string;
   displayedColumns: string[] = ['status', 'hora', 'paciente', 'convenio', 'servico'];
   currentDate: string;
@@ -74,8 +74,8 @@ export class AgendamedicaComponent implements OnInit {
       this.currentDate = moment().format('YYYY-MM-DD') //coloca a data do dia já formatada
     }
 
-   // LOCALSTORAGE
-    let user  = JSON.parse(localStorage.getItem("user"))
+   // sessionStorage
+    let user  = JSON.parse(sessionStorage.getItem("user"))
     if(!user){
       this.router.navigate([""]);
       this.snackBar.warnMessage("Usuario sem permisão")

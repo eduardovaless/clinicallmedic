@@ -35,7 +35,7 @@ export class SidebarComponent implements OnInit {
   horaatual= strData;
   nomeFantasia = ""
   usuario: LoginComponent
-  user  = JSON.parse(localStorage.getItem("user"))
+  user  = JSON.parse(sessionStorage.getItem("user"))
   
   
 
@@ -54,14 +54,14 @@ export class SidebarComponent implements OnInit {
   ngOnInit(): void {
     this.getclinica()
     
-    let user  = JSON.parse(localStorage.getItem("user"))
+    let user  = JSON.parse(sessionStorage.getItem("user"))
     if(!user){
       this.router.navigate([""]);
       this.snackbar.warnMessage("Usuario sem permisão")
       return
     }
 
-    let userid = JSON.parse(localStorage.getItem("user"))
+    let userid = JSON.parse(sessionStorage.getItem("user"))
     if(!userid.idProfissional){
       this.router.navigate([""]);
       this.snackbar.warnMessage("Sistema exclusivo para médicos.")
@@ -75,7 +75,7 @@ export class SidebarComponent implements OnInit {
 
   sair(){
     this.router.navigate([''])
-    localStorage.clear();
+    sessionStorage.clear();
   }
      
 

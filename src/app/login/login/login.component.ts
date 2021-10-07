@@ -18,7 +18,7 @@ export class LoginComponent implements OnInit{
   userName= ""
   login = document.getElementById('login');
   senha = document.getElementById('senha');
-  user  = JSON.parse(localStorage.getItem("user"))
+  user  = JSON.parse(sessionStorage.getItem("user"))
 
    public usuario: Login; 
 
@@ -54,7 +54,7 @@ export class LoginComponent implements OnInit{
 
     this.servicelogin.fazerLogin(this.usuario).subscribe((resposta)=>{
       console.log(resposta)      
-      localStorage.setItem("user", JSON.stringify(resposta));          
+      sessionStorage.setItem("user", JSON.stringify(resposta));          
         this.router.navigate(['/home/home'])
               
     },

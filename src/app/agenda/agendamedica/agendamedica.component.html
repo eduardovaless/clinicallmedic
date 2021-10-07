@@ -27,150 +27,150 @@
             </mat-form-field>
 
          <!--Calendario-->   
-            <mat-card class="demo-inline-calendar-card">
+            <mat-card class="demo-inline-calendar-card" style="color: rgb(10, 92, 92);">
                 <mat-calendar  class="calendar"  (selectedChange)="searchScheduleProfessional($event)"></mat-calendar>
                   <p><span>{{dataAgenda}}</span>  </p>
-                  <p>Data selecionada:<b>{{currentDate | date: 'dd/MM/yyyy'}}</b></p>
+                  <p style="color: rgb(10, 92, 92);">Data selecionada:<b>{{currentDate | date: 'dd/MM/yyyy'}}</b></p>
             </mat-card>
 
             <mat-card style="margin-top:10px;">
-                <h4 style="text-align:center;"><b>Instruções</b></h4>
-                <p>Para verificar o prontuário <br>clique no paciente.</p><br>
+                <h4 style="color: rgb(10, 92, 92); text-align:center;"><b>Instruções</b></h4>
+                <p style="color: rgb(10, 92, 92);">Para verificar o prontuário <br>clique no paciente.</p><br>
                 
                 
-                <h3 style="text-align:center;"><b>Status da Agenda</b></h3>
+                <h3 style="color: rgb(10, 92, 92);text-align:center;"><b>Status da Agenda</b></h3>
 <hr>
                 <p>
                     <mat-icon >
                         calendar_today
-                      </mat-icon>  Agendado
+                      </mat-icon>  <span style="color: rgb(10, 92, 92);">Agendado</span>
                 </p>
 
                 <p>
                     <mat-icon  style="color: red;">
                         highlight_off
-                      </mat-icon>  Paciente Não Cadastrado
+                      </mat-icon>  <span style="color: rgb(10, 92, 92);">Paciente Não Cadastrado</span>
                 </p>
 
                 <p>
                     <mat-icon style="color: red;">
                         e_mobiledata
-                      </mat-icon>  Horario Extra
+                      </mat-icon>  <span style="color: rgb(10, 92, 92);">Horario Extra</span>
                 </p>
 
                 <p>
                     <mat-icon >
                         description
-                      </mat-icon>  Entrega de Resultado
+                      </mat-icon>  <span style="color: rgb(10, 92, 92);">Entrega de Resultado</span>
                 </p>
 
                 <p>
                     <mat-icon style="color: red;">
                         sentiment_satisfied
-                      </mat-icon>  Paciente Atrasado
+                      </mat-icon>  <span style="color: rgb(10, 92, 92);">Paciente Atrasado</span>
                 </p>
 
                 <p>
                     <mat-icon style="color: green;">
                         sentiment_satisfied
-                      </mat-icon>  Paciente Presente
+                      </mat-icon>  <span style="color: rgb(10, 92, 92);">Paciente Presente</span>
                 </p>
 
                 <p>
                     <mat-icon style="color: green;">
                         done
-                      </mat-icon>  Atendido
+                      </mat-icon>  <span style="color: rgb(10, 92, 92);">Atendido</span>
                 </p>
 
                 <p>
                     <mat-icon>
                         filter_1
-                      </mat-icon>  Paciente Primeira Vez
+                      </mat-icon> <span style="color: rgb(10, 92, 92);"> Paciente Primeira Vez</span>
                 </p>
 
                 <p>
                     <mat-icon style="color: red;">
                         format_underlined
-                      </mat-icon>  Paciente Urgente
+                      </mat-icon>  <span style="color: rgb(10, 92, 92);">Paciente Urgente</span>
                 </p>
 
                 <p>
                     <mat-icon style="color:gold">
                         lock
-                      </mat-icon>  Paciente Bloqueado
+                      </mat-icon>  <span style="color: rgb(10, 92, 92);">Paciente Bloqueado</span>
                 </p>
 
                 <p>
                     <mat-icon style="color: rgb(199, 17, 223);">
                         sentiment_satisfied
-                      </mat-icon>  Paciente Pronto 
+                      </mat-icon>  <span style="color: rgb(10, 92, 92);">Paciente Pronto</span> 
                 </p>
 
                 <p>
                     <mat-icon style="color: rgb(24, 163, 228);">
                         sentiment_satisfied
-                      </mat-icon>  Médico Atendeu 
+                      </mat-icon>  <span style="color: rgb(10, 92, 92);">Médico Atendeu</span> 
                 </p>
 
                 <p>
                     <mat-icon>
                         sentiment_satisfied
-                      </mat-icon> Paciente Confirmado  
+                      </mat-icon> <span style="color: rgb(10, 92, 92);">Paciente Confirmado</span>  
                 </p>
 
                 <p>
                     <mat-icon >
                         announcement
-                      </mat-icon>  Paciente Não Confirmou
+                      </mat-icon>  <span style="color: rgb(10, 92, 92);">Paciente Não Confirmou</span>
                 </p>
 
                 <p>
                     <mat-icon>
                         call_missed_outgoing
-                      </mat-icon>  Paciente Faltou e Avisou
+                      </mat-icon>  <span style="color: rgb(10, 92, 92);">Paciente Faltou e Avisou</span>
                 </p>
 
                 <p>
                     <mat-icon>
                         backspace
-                      </mat-icon>  Faltou e Não Avisou
+                      </mat-icon>  <span style="color: rgb(10, 92, 92);">Faltou e Não Avisou</span>
                 </p>
 
                 <p>
                     <mat-icon style="color:rgb(18, 114, 143)">
                         work_off
-                      </mat-icon>  Médico Faltou
+                      </mat-icon>  <span style="color: rgb(10, 92, 92);">Médico Faltou</span> 
                 </p>
 
                 <p>
                     <mat-icon style="color:red">
                         not_interested
-                      </mat-icon>  Paciente Desistiu
+                      </mat-icon>  <span style="color: rgb(10, 92, 92);">Paciente Desistiu</span>
                 </p>
 
                 <p>
                     <mat-icon style="color: blue">
                         local_phone
-                      </mat-icon>  Paciente Remarcou
+                      </mat-icon>  <span style="color: rgb(10, 92, 92);">Paciente Remarcou</span>
                 </p>
                            
 
                 <p>
                     <mat-icon >
                         accessible
-                      </mat-icon>  Necessidades Especiais
+                      </mat-icon>  <span style="color: rgb(10, 92, 92);">Necessidades Especiais</span>
                 </p>
 
                 <p>
                     <mat-icon style="color:gold">
                         sentiment_satisfied
-                      </mat-icon>  Paciente em Exame
+                      </mat-icon> <span style="color: rgb(10, 92, 92);"> Paciente em Exame</span>
                 </p>
 
                 <p>
                     <mat-icon>
                         pregnant_woman
-                      </mat-icon>  Gestante
+                      </mat-icon>  <span style="color: rgb(10, 92, 92);">Gestante</span>
                 </p>
 
 

@@ -18,8 +18,8 @@ export class MemedComponent implements OnInit {
 
   ngOnInit(): void {
 
-     // LOCALSTORAGE
-     let user  = JSON.parse(localStorage.getItem("user"))
+     // sessionStorage
+     let user  = JSON.parse(sessionStorage.getItem("user"))
      if(!user){
        this.router.navigate([""]);
        this.snackBar.warnMessage("Usuario sem permisão")

@@ -37,3 +37,7 @@ table {
 
     display: flex;
   }
+
+  .calendar{
+    color: rgb(10, 92, 92);
+  }

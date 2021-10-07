@@ -79,7 +79,7 @@ export class ProntuarioComponent implements OnInit {
       
       this.getPront();
 
-      let user  = JSON.parse(localStorage.getItem("user"))
+      let user  = JSON.parse(sessionStorage.getItem("user"))
     if(!user){
       this.router.navigate([""]);
       this.snackBar.warnMessage("Usuario sem permisão")

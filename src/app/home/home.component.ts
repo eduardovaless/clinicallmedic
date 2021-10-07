@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
 
   clinica: DadosEmpresa;
   nomeFantasia= ""
-  user  = JSON.parse(localStorage.getItem("user"))
+  user  = JSON.parse(sessionStorage.getItem("user"))
 
   constructor(
     private service: ServiceEmpresaService,
@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.getClinica()
 
-   let user  = JSON.parse(localStorage.getItem("user"))
+   let user  = JSON.parse(sessionStorage.getItem("user"))
     if(!user){
       this.router.navigate([""]);
       this.snackBar.warnMessage("Usuario sem permisão")
