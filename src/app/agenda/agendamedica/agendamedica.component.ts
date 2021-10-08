@@ -1,5 +1,4 @@
 import { PacienteService } from './../../paciente/paciente.service';
-import { Paciente } from './../../paciente/paciente';
 import { SnackBarService } from './../../services/snackbar.service';
 import { AgendaService } from './../agenda.service';
 import { Observable } from 'rxjs';
@@ -7,9 +6,11 @@ import { Agenda } from './../agenda';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import moment from 'moment';
-import { MAT_DATE_LOCALE } from '@angular/material/core';
 import localePt from '@angular/common/locales/pt';
-import { FormControl } from '@angular/forms';
+
+
+
+
 
 @Component({
   selector: 'app-agendamedica',

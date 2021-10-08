@@ -1,0 +1,59 @@
+<div id="memed-container"></div>
+
+<style>
+    #memed-container{
+        margin: auto;
+        width: 810px;
+        height: 700px;
+    }
+</style>
+
+<script
+  type="text/javascript"
+  src="https://sandbox.memed.com.br/modulos/plataforma.sinapse-prescricao/build/sinapse-prescricao.min.js"
+  data-token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.WzM1NDQxLCI1ZTk5ZDJjNmU5NGExMGY1YmU3ZDY3YTBhZDc5YmMxYSIsIjIwMjEtMTAtMDgiLCJzaW5hcHNlLnByZXNjcmljYW8iLCJwYXJ0bmVyLjMuMzA4MDUiXQ.pi86_cVkP2d1lfg1Ld5KT17ytJM2enoNew46MQGE838"
+  data-container="memed-container">
+</script>
+
+  <script>
+      MdSinapsePrescricao.event.add('core:moduleInit', function moduleInitHandler(module) {
+
+  // O módulo da prescrição foi iniciado
+  if (module.name === 'plataforma.prescricao') {
+
+    // Registrando o evento de click no elemento
+
+      MdHub.command.send('plataforma.prescricao', 'setPaciente', {
+        // Pode ser um documento criptografado do paciente, por exemplo
+        // Usamos essa propriedade para destinguir nomes iguais
+        // (obrigatório)
+        idExterno: 'some_encoded_data_or_hash_or_id',
+
+        // Nome do paciente (obrigatório)
+        nome: 'José da Silva',
+
+        // Nome social do paciente (opcional)
+        nome_social: 'Maria da Silva',
+
+        // Endereço do paciente (opcional)
+        endereco: 'Rua da Saúde, 123',
+
+        // Cidade do paciente (opcional)
+        cidade: 'São Paulo',
+
+        // Telefone celular (obrigatório, DDD + digitos, somente números. NÃO ENVIAR PREFIXO "+55")
+        telefone: '71988109052',
+
+        // Usado no receituário de alto custo (Opcional)
+    dificuldade_locomocao: true,
+    idExterno: '123456789'
+      }).then(function() {
+
+        // Mostra o módulo de prescrição
+        MdHub.module.show('plataforma.prescricao');
+      });
+
+  }
+  });
+  </script>
+  

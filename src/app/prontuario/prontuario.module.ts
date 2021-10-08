@@ -1,6 +1,5 @@
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 
-
 import { MAT_DATE_LOCALE } from '@angular/material/core';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -25,7 +24,8 @@ import { ProntuarioComponent } from './prontuario/prontuario.component';
 import { ProntuarioRoutingModule } from './prontuario-routing.module';
 import { PacienteService } from '../paciente/paciente.service';
 import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
-
+import { NgxOnlyOfficeModule } from "ngx-onlyoffice";
+import {MatDialogModule} from '@angular/material/dialog';
 @NgModule({
   declarations: [ProntuarioComponent],
 
@@ -51,7 +51,10 @@ import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
     MatDividerModule,
     PdfViewerModule,
     CKEditorModule,
+    NgxOnlyOfficeModule,
+    MatDialogModule
     
+
    
   ],
   exports:[

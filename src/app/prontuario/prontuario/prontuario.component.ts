@@ -3,11 +3,12 @@ import { ProntuarioService } from './../prontuario.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { PacienteService } from './../../paciente/paciente.service';
 import { Observable } from 'rxjs';
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { Paciente } from 'src/app/paciente/paciente';
 import { pdfDefaultOptions } from 'ngx-extended-pdf-viewer';
 import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import { DatePipe } from '@angular/common';
+import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-prontuario',
@@ -25,6 +26,51 @@ export class ProntuarioComponent implements OnInit {
   public video: boolean;
   public videonovo: boolean = true;
   public videocancelar: boolean;
+
+  public myConfig = {
+    /*
+        editorConfig is the original config for onlyoffice, see docs under https://api.onlyoffice.com/editors/config/document
+    */
+    editorConfig: { 
+      document: {
+        fileType: "docx",
+        info: {
+          author: "Me",
+          created: "26.11.19",
+        },
+        key: "3277238458",
+        permissions: {
+          download: true,
+          edit: true,
+        },
+        title: "TestTitle",
+        url: "example.com",
+      },
+      documentType: "text",
+      editorConfig: {
+        embedded: {
+          embedUrl: "example.com",
+          saveUrl: "example.com",
+          shareUrl: "example.com",
+          toolbarDocked: "top",
+        },
+        lang: "en",
+        mode: "edit",
+      },
+      events: {
+        onBack: console.log,
+        onDocumentStateChange: console.log,
+        onError: console.log,
+        onReady: console.log,
+        onRequestEditRights: console.log,
+        onSave: console.log,
+      },
+      height: "100%",
+      type: "desktop",
+      width: "100%",
+    },
+    script: "https://office.example-server/web-apps/apps/api/documents/api.js", // <-- This is the api script URL.
+  };
 
   pdfSrc: any
     pdf= "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf"
@@ -54,7 +100,8 @@ export class ProntuarioComponent implements OnInit {
    private activatedRoute: ActivatedRoute,
    private snackBar: SnackBarService,
    private router: Router,
-   private datePipe: DatePipe
+   private datePipe: DatePipe,
+   public dialog: MatDialog
 
   ) {
     this.paciente=new Paciente();
@@ -145,6 +192,20 @@ toggleVideo2(){
   this.videocancelar = false;
 }
 
+
+openDialog(){
+  this.dialog.open(DialogDataExampleDialog, {
+     
+    });
+  }
+}
+
+@Component({
+  selector: 'dialog-data-example-dialog',
+  templateUrl: 'memed-dialog.html',
+})
+export class DialogDataExampleDialog {
+  constructor() {}
 }
 
 

@@ -22,7 +22,7 @@ import { UsuarioModule } from './usuario/usuario.module';
 
 
 import { NgModule } from '@angular/core';
-
+import { NgxOnlyOfficeModule } from "ngx-onlyoffice";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
@@ -103,7 +103,8 @@ export const MY_FORMATS = {
     CKEditorModule,
     DashboardModule,
     VideoconferenciaModule,
-    MemedModule
+    MemedModule,
+    NgxOnlyOfficeModule
     
     
   ],
