@@ -33,17 +33,17 @@ export class ProntuarioComponent implements OnInit {
     */
     editorConfig: { 
       document: {
-        fileType: "docx",
+        fileType: "rtf",
         info: {
           author: "Me",
           created: "26.11.19",
         },
-        key: "3277238458",
+        key: "Khirz6zTPdfd7",
         permissions: {
           download: true,
           edit: true,
         },
-        title: "TestTitle",
+        title: "Document",
         url: "example.com",
       },
       documentType: "text",

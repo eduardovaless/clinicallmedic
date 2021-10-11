@@ -52,7 +52,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     PdfViewerModule,
     CKEditorModule,
     NgxOnlyOfficeModule,
-    MatDialogModule
+    MatDialogModule,
+   
     
 
    

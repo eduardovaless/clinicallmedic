@@ -47,7 +47,7 @@
       <button mat-button (click)="openDialog()">Memed</button>
 
   <div *ngIf="video">
-    <iframe  src="https://sendlink-53591.firebaseapp.com/conf.html?room=}" style="border:0px #ffffff none;" name="Jitsi" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="900px" width="600px" allowfullscreen="" allow="camera; microphone">
+    <iframe  src="https://sendlink-53591.firebaseapp.com/conf.html?room=" style="border:0px #ffffff none;" name="Jitsi" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="900px" width="600px" allowfullscreen="" allow="camera; microphone">
     </iframe>
 
   </div>
@@ -85,7 +85,8 @@
 
        <!--EDITOR DA FICHA-->
        <div class="edit" *ngIf="edited">
-        <onlyoffice [config]="myConfig"></onlyoffice>
+
+        <ckeditor [disabled]="isDisabled" [editor]="Editor" data=""></ckeditor>
 <br>
          <button type="button" class="btn ml-3" style="background-color: rgb(8, 134, 71);" mat-raised-button
         color="primary" >

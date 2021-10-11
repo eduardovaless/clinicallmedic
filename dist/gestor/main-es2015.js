@@ -3776,7 +3776,7 @@ ProntuarioModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdefine
             ng2_pdf_viewer__WEBPACK_IMPORTED_MODULE_16__["PdfViewerModule"],
             _ckeditor_ckeditor5_angular__WEBPACK_IMPORTED_MODULE_0__["CKEditorModule"],
             ngx_onlyoffice__WEBPACK_IMPORTED_MODULE_23__["NgxOnlyOfficeModule"],
-            _angular_material_dialog__WEBPACK_IMPORTED_MODULE_24__["MatDialogModule"]
+            _angular_material_dialog__WEBPACK_IMPORTED_MODULE_24__["MatDialogModule"],
         ],
         _angular_material_tabs__WEBPACK_IMPORTED_MODULE_7__["MatTabsModule"]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵsetNgModuleScope"](ProntuarioModule, { declarations: [_prontuario_prontuario_component__WEBPACK_IMPORTED_MODULE_19__["ProntuarioComponent"]], imports: [_angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_1__["BrowserAnimationsModule"],
@@ -3830,7 +3830,7 @@ ProntuarioModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdefine
                     ng2_pdf_viewer__WEBPACK_IMPORTED_MODULE_16__["PdfViewerModule"],
                     _ckeditor_ckeditor5_angular__WEBPACK_IMPORTED_MODULE_0__["CKEditorModule"],
                     ngx_onlyoffice__WEBPACK_IMPORTED_MODULE_23__["NgxOnlyOfficeModule"],
-                    _angular_material_dialog__WEBPACK_IMPORTED_MODULE_24__["MatDialogModule"]
+                    _angular_material_dialog__WEBPACK_IMPORTED_MODULE_24__["MatDialogModule"],
                 ],
                 exports: [
                     _angular_material_tabs__WEBPACK_IMPORTED_MODULE_7__["MatTabsModule"],
@@ -3917,12 +3917,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material_tabs__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/material/tabs */ "./node_modules/@angular/material/fesm2015/tabs.js");
 /* harmony import */ var ng2_pdf_viewer__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ng2-pdf-viewer */ "./node_modules/ng2-pdf-viewer/__ivy_ngcc__/fesm2015/ng2-pdf-viewer.js");
 /* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/material/icon */ "./node_modules/@angular/material/fesm2015/icon.js");
-/* harmony import */ var ngx_onlyoffice__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ngx-onlyoffice */ "./node_modules/ngx-onlyoffice/__ivy_ngcc__/fesm2015/ngx-onlyoffice.js");
+/* harmony import */ var _ckeditor_ckeditor5_angular__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @ckeditor/ckeditor5-angular */ "./node_modules/@ckeditor/ckeditor5-angular/__ivy_ngcc__/fesm2015/ckeditor-ckeditor5-angular.js");
 /* harmony import */ var _angular_material_list__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/material/list */ "./node_modules/@angular/material/fesm2015/list.js");
 /* harmony import */ var _angular_material_divider__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/material/divider */ "./node_modules/@angular/material/fesm2015/divider.js");
 /* harmony import */ var _angular_material_core__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/material/core */ "./node_modules/@angular/material/fesm2015/core.js");
-/* harmony import */ var _ckeditor_ckeditor5_angular__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @ckeditor/ckeditor5-angular */ "./node_modules/@ckeditor/ckeditor5-angular/__ivy_ngcc__/fesm2015/ckeditor-ckeditor5-angular.js");
-
 
 
 
@@ -3992,7 +3990,7 @@ function ProntuarioComponent_button_31_Template(rf, ctx) { if (rf & 1) {
 } }
 function ProntuarioComponent_div_36_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 37);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "onlyoffice", 38);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "ckeditor", 38);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "br");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "button", 39);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "i", 40);
@@ -4002,7 +4000,7 @@ function ProntuarioComponent_div_36_Template(rf, ctx) { if (rf & 1) {
 } if (rf & 2) {
     const ctx_r99 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("config", ctx_r99.myConfig);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", ctx_r99.isDisabled)("editor", ctx_r99.Editor);
 } }
 function ProntuarioComponent_mat_nav_list_40_mat_list_item_1_Template(rf, ctx) { if (rf & 1) {
     const _r129 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
@@ -4055,7 +4053,7 @@ function ProntuarioComponent_button_46_Template(rf, ctx) { if (rf & 1) {
 } }
 function ProntuarioComponent_div_51_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 37);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "ckeditor", 44);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "ckeditor", 38);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "br");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "button", 39);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "i", 40);
@@ -4088,7 +4086,7 @@ function ProntuarioComponent_mat_nav_list_55_mat_list_item_1_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](4, 1, documento_r135.data, "dd/MM/yyyy"));
 } }
 function ProntuarioComponent_mat_nav_list_55_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-nav-list", 45);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-nav-list", 44);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, ProntuarioComponent_mat_nav_list_55_mat_list_item_1_Template, 8, 4, "mat-list-item", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
@@ -4118,7 +4116,7 @@ function ProntuarioComponent_button_60_Template(rf, ctx) { if (rf & 1) {
 } }
 function ProntuarioComponent_div_65_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 37);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "ckeditor", 44);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "ckeditor", 38);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "br");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "button", 39);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "i", 40);
@@ -4151,7 +4149,7 @@ function ProntuarioComponent_mat_nav_list_68_mat_list_item_1_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](4, 1, documento_r145.data, "dd/MM/yyyy"));
 } }
 function ProntuarioComponent_mat_nav_list_68_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-nav-list", 45);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-nav-list", 44);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, ProntuarioComponent_mat_nav_list_68_mat_list_item_1_Template, 8, 4, "mat-list-item", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
@@ -4181,7 +4179,7 @@ function ProntuarioComponent_button_73_Template(rf, ctx) { if (rf & 1) {
 } }
 function ProntuarioComponent_div_78_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 37);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "ckeditor", 44);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "ckeditor", 38);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "br");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "button", 39);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "i", 40);
@@ -4214,7 +4212,7 @@ function ProntuarioComponent_mat_nav_list_81_mat_list_item_1_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](4, 1, documento_r155.data, "dd/MM/yyyy"));
 } }
 function ProntuarioComponent_mat_nav_list_81_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-nav-list", 46);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-nav-list", 45);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, ProntuarioComponent_mat_nav_list_81_mat_list_item_1_Template, 8, 4, "mat-list-item", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
@@ -4244,7 +4242,7 @@ function ProntuarioComponent_button_87_Template(rf, ctx) { if (rf & 1) {
 } }
 function ProntuarioComponent_div_92_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 37);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "ckeditor", 44);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "ckeditor", 38);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "br");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "button", 39);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "i", 40);
@@ -4277,7 +4275,7 @@ function ProntuarioComponent_mat_nav_list_96_mat_list_item_1_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](4, 1, documento_r165.data, "dd/MM/yyyy"));
 } }
 function ProntuarioComponent_mat_nav_list_96_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-nav-list", 46);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-nav-list", 45);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, ProntuarioComponent_mat_nav_list_96_mat_list_item_1_Template, 8, 4, "mat-list-item", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
@@ -4305,17 +4303,17 @@ class ProntuarioComponent {
             */
             editorConfig: {
                 document: {
-                    fileType: "docx",
+                    fileType: "rtf",
                     info: {
                         author: "Me",
                         created: "26.11.19",
                     },
-                    key: "3277238458",
+                    key: "Khirz6zTPdfd7",
                     permissions: {
                         download: true,
                         edit: true,
                     },
-                    title: "TestTitle",
+                    title: "Document",
                     url: "example.com",
                 },
                 documentType: "text",
@@ -4429,7 +4427,7 @@ class ProntuarioComponent {
     }
 }
 ProntuarioComponent.ɵfac = function ProntuarioComponent_Factory(t) { return new (t || ProntuarioComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_paciente_paciente_service__WEBPACK_IMPORTED_MODULE_5__["PacienteService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_prontuario_service__WEBPACK_IMPORTED_MODULE_6__["ProntuarioService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_7__["ActivatedRoute"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_snackbar_service__WEBPACK_IMPORTED_MODULE_8__["SnackBarService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_7__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_4__["DatePipe"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_9__["MatDialog"])); };
-ProntuarioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ProntuarioComponent, selectors: [["app-prontuario"]], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([_angular_common__WEBPACK_IMPORTED_MODULE_4__["DatePipe"]])], decls: 98, vars: 41, consts: [[1, "container", 2, "height", "100%"], [1, "mt-4", 2, "color", "rgb(0, 100, 100)"], [1, "breadcrumb", "mb-4"], [1, "breadcrum-bitem", "active"], ["id", "nomep", "appearance", "fill", 1, "example-full-width", 2, "background-color", "rgb(250, 250, 250)"], [2, "font-size", "15px", "color", "rgb(5, 70, 61)", "background-color", "rgb(250, 250, 250)"], ["matInput", "", "disabled", "", "name", "nomePaciente", 1, "form-control", 2, "color", "rgb(5, 70, 61)", "background-color", "rgb(250, 250, 250)", 3, "ngModel", "ngModelChange"], ["id", "conve", "appearance", "fill", 1, "example-full-width", 2, "background-color", "rgb(250, 250, 250)"], ["matInput", "", "disabled", "", "name", "nomeConvenio", 1, "form-control", 2, "color", "rgb(5, 70, 61)", "background-color", "rgb(250, 250, 250)", 3, "ngModel", "ngModelChange"], ["id", "nasci", "appearance", "fill", 1, "example-full-width", 2, "background-color", "rgb(250, 250, 250)"], ["matInput", "", "type", "date", "disabled", "", "name", "dataNascimento", 1, "form-control", 2, "color", "rgb(5, 70, 61)", "background-color", "rgb(250, 250, 250)", 3, "ngModel", "ngModelChange"], ["type", "button", "class", "btn ml-3", "style", "background-color: rgb(77, 77, 49);", "mat-raised-button", "", "color", "primary", 3, "click", 4, "ngIf"], ["type", "button", "class", "btn ml-3", "style", "background-color: rgb(184, 112, 53);", "mat-raised-button", "", "color", "primary", 3, "click", 4, "ngIf"], ["mat-button", "", 3, "click"], [4, "ngIf"], [2, "size", "100%"], ["label", "Ficha"], ["mat-button", "", "style", "color: rgb(255, 255, 255); background-color: rgb(38, 95, 105)", 3, "click", 4, "ngIf"], ["mat-button", "", "style", "color: rgb(255, 255, 255); background-color: rgb(87, 9, 110)", 3, "click", 4, "ngIf"], ["type", "button", "mat-raised-button", "", "color", "primary", "routerLink", "/agenda/medico", 1, "btn", "ml-3", 2, "background-color", "rgb(22, 61, 97)"], [1, "icone", "fa", "fa-reply"], ["class", "edit", 4, "ngIf"], [1, "row"], ["style", "width: 170px; margin-left: 20px;", 4, "ngFor", "ngForOf"], [3, "src", "show-borders", "zoom"], ["label", "Laudos", 2, "height", "100%"], ["style", "margin-left: 20px;", 4, "ngFor", "ngForOf"], ["label", "Atestado e Relat\u00F3rios"], ["label", "Receitu\u00E1rio"], ["style", "width: 180px; margin-left: 20px;", 4, "ngFor", "ngForOf"], ["label", "Solicita\u00E7\u00E3o de Exames"], ["type", "button", "mat-raised-button", "", "color", "primary", 1, "btn", "ml-3", 2, "background-color", "rgb(77, 77, 49)", 3, "click"], ["aria-hidden", "false", "aria-label", "Example home icon"], ["type", "button", "mat-raised-button", "", "color", "primary", 1, "btn", "ml-3", 2, "background-color", "rgb(184, 112, 53)", 3, "click"], ["src", "https://sendlink-53591.firebaseapp.com/conf.html?room=}", "name", "Jitsi", "scrolling", "no", "frameborder", "0", "marginheight", "0px", "marginwidth", "0px", "height", "900px", "width", "600px", "allowfullscreen", "", "allow", "camera; microphone", 2, "border", "0px #ffffff none"], ["mat-button", "", 2, "color", "rgb(255, 255, 255)", "background-color", "rgb(38, 95, 105)", 3, "click"], ["mat-button", "", 2, "color", "rgb(255, 255, 255)", "background-color", "rgb(87, 9, 110)", 3, "click"], [1, "edit"], [3, "config"], ["type", "button", "mat-raised-button", "", "color", "primary", 1, "btn", "ml-3", 2, "background-color", "rgb(8, 134, 71)"], [1, "icone", "fa", "fa-save"], [2, "width", "170px", "margin-left", "20px"], ["matLine", ""], ["mat-icon-button", "", 3, "click"], ["data", "", 3, "disabled", "editor"], [2, "margin-left", "20px"], [2, "width", "180px", "margin-left", "20px"]], template: function ProntuarioComponent_Template(rf, ctx) { if (rf & 1) {
+ProntuarioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ProntuarioComponent, selectors: [["app-prontuario"]], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([_angular_common__WEBPACK_IMPORTED_MODULE_4__["DatePipe"]])], decls: 98, vars: 41, consts: [[1, "container", 2, "height", "100%"], [1, "mt-4", 2, "color", "rgb(0, 100, 100)"], [1, "breadcrumb", "mb-4"], [1, "breadcrum-bitem", "active"], ["id", "nomep", "appearance", "fill", 1, "example-full-width", 2, "background-color", "rgb(250, 250, 250)"], [2, "font-size", "15px", "color", "rgb(5, 70, 61)", "background-color", "rgb(250, 250, 250)"], ["matInput", "", "disabled", "", "name", "nomePaciente", 1, "form-control", 2, "color", "rgb(5, 70, 61)", "background-color", "rgb(250, 250, 250)", 3, "ngModel", "ngModelChange"], ["id", "conve", "appearance", "fill", 1, "example-full-width", 2, "background-color", "rgb(250, 250, 250)"], ["matInput", "", "disabled", "", "name", "nomeConvenio", 1, "form-control", 2, "color", "rgb(5, 70, 61)", "background-color", "rgb(250, 250, 250)", 3, "ngModel", "ngModelChange"], ["id", "nasci", "appearance", "fill", 1, "example-full-width", 2, "background-color", "rgb(250, 250, 250)"], ["matInput", "", "type", "date", "disabled", "", "name", "dataNascimento", 1, "form-control", 2, "color", "rgb(5, 70, 61)", "background-color", "rgb(250, 250, 250)", 3, "ngModel", "ngModelChange"], ["type", "button", "class", "btn ml-3", "style", "background-color: rgb(77, 77, 49);", "mat-raised-button", "", "color", "primary", 3, "click", 4, "ngIf"], ["type", "button", "class", "btn ml-3", "style", "background-color: rgb(184, 112, 53);", "mat-raised-button", "", "color", "primary", 3, "click", 4, "ngIf"], ["mat-button", "", 3, "click"], [4, "ngIf"], [2, "size", "100%"], ["label", "Ficha"], ["mat-button", "", "style", "color: rgb(255, 255, 255); background-color: rgb(38, 95, 105)", 3, "click", 4, "ngIf"], ["mat-button", "", "style", "color: rgb(255, 255, 255); background-color: rgb(87, 9, 110)", 3, "click", 4, "ngIf"], ["type", "button", "mat-raised-button", "", "color", "primary", "routerLink", "/agenda/medico", 1, "btn", "ml-3", 2, "background-color", "rgb(22, 61, 97)"], [1, "icone", "fa", "fa-reply"], ["class", "edit", 4, "ngIf"], [1, "row"], ["style", "width: 170px; margin-left: 20px;", 4, "ngFor", "ngForOf"], [3, "src", "show-borders", "zoom"], ["label", "Laudos", 2, "height", "100%"], ["style", "margin-left: 20px;", 4, "ngFor", "ngForOf"], ["label", "Atestado e Relat\u00F3rios"], ["label", "Receitu\u00E1rio"], ["style", "width: 180px; margin-left: 20px;", 4, "ngFor", "ngForOf"], ["label", "Solicita\u00E7\u00E3o de Exames"], ["type", "button", "mat-raised-button", "", "color", "primary", 1, "btn", "ml-3", 2, "background-color", "rgb(77, 77, 49)", 3, "click"], ["aria-hidden", "false", "aria-label", "Example home icon"], ["type", "button", "mat-raised-button", "", "color", "primary", 1, "btn", "ml-3", 2, "background-color", "rgb(184, 112, 53)", 3, "click"], ["src", "https://sendlink-53591.firebaseapp.com/conf.html?room=", "name", "Jitsi", "scrolling", "no", "frameborder", "0", "marginheight", "0px", "marginwidth", "0px", "height", "900px", "width", "600px", "allowfullscreen", "", "allow", "camera; microphone", 2, "border", "0px #ffffff none"], ["mat-button", "", 2, "color", "rgb(255, 255, 255)", "background-color", "rgb(38, 95, 105)", 3, "click"], ["mat-button", "", 2, "color", "rgb(255, 255, 255)", "background-color", "rgb(87, 9, 110)", 3, "click"], [1, "edit"], ["data", "", 3, "disabled", "editor"], ["type", "button", "mat-raised-button", "", "color", "primary", 1, "btn", "ml-3", 2, "background-color", "rgb(8, 134, 71)"], [1, "icone", "fa", "fa-save"], [2, "width", "170px", "margin-left", "20px"], ["matLine", ""], ["mat-icon-button", "", 3, "click"], [2, "margin-left", "20px"], [2, "width", "180px", "margin-left", "20px"]], template: function ProntuarioComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Prontu\u00E1rio do Paciente");
@@ -4487,7 +4485,7 @@ ProntuarioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](34, " Voltar ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](35, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](36, ProntuarioComponent_div_36_Template, 6, 1, "div", 21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](36, ProntuarioComponent_div_36_Template, 6, 2, "div", 21);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](37, "br");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "div", 22);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "div");
@@ -4635,7 +4633,7 @@ ProntuarioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.listPront);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("src", ctx.pdfSrc)("show-borders", true)("zoom", 0.8);
-    } }, directives: [_angular_material_form_field__WEBPACK_IMPORTED_MODULE_10__["MatFormField"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_10__["MatLabel"], _angular_material_input__WEBPACK_IMPORTED_MODULE_11__["MatInput"], _angular_forms__WEBPACK_IMPORTED_MODULE_12__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_12__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_12__["NgModel"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], _angular_material_button__WEBPACK_IMPORTED_MODULE_13__["MatButton"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_14__["MatTabGroup"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_14__["MatTab"], _angular_router__WEBPACK_IMPORTED_MODULE_7__["RouterLink"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgForOf"], ng2_pdf_viewer__WEBPACK_IMPORTED_MODULE_15__["PdfViewerComponent"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_16__["MatIcon"], ngx_onlyoffice__WEBPACK_IMPORTED_MODULE_17__["NgxOnlyOfficeComponent"], _angular_material_list__WEBPACK_IMPORTED_MODULE_18__["MatNavList"], _angular_material_list__WEBPACK_IMPORTED_MODULE_18__["MatListItem"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_19__["MatDivider"], _angular_material_core__WEBPACK_IMPORTED_MODULE_20__["MatLine"], _ckeditor_ckeditor5_angular__WEBPACK_IMPORTED_MODULE_21__["CKEditorComponent"]], pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["DatePipe"]], styles: [".example-full-width[_ngcontent-%COMP%]{\r\n  margin-left: 6px;\r\n}\r\n\r\n#nomep[_ngcontent-%COMP%]{\r\n  width: 50%;\r\n}\r\n\r\n#conve[_ngcontent-%COMP%]{\r\n  width: 25%;\r\n}\r\n\r\n#nasci[_ngcontent-%COMP%]{\r\n  width: 20%;\r\n}\r\n\r\nbutton[_ngcontent-%COMP%]{\r\n  margin-left: 7px;\r\n}\r\n\r\npdf-viewer[_ngcontent-%COMP%] {\r\n  display: flexbox;\r\n  height: 180vh;\r\n  margin-left: -25px;\r\n  left: -100px;\r\n  \r\n}\r\n\r\nmat-tab[_ngcontent-%COMP%] {\r\n  width: 150%;\r\n}\r\n\r\n[_nghost-%COMP%]     .ck-editor__editable_inline {\r\n  min-height: 150px;\r\n \r\n}\r\n\r\n.edit[_ngcontent-%COMP%]{\r\n  margin-top: 15px;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcHJvbnR1YXJpby9wcm9udHVhcmlvL3Byb250dWFyaW8uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLFVBQVU7QUFDWjs7QUFFQTtFQUNFLFVBQVU7QUFDWjs7QUFFQTtFQUNFLFVBQVU7QUFDWjs7QUFFQTtFQUNFLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixhQUFhO0VBQ2Isa0JBQWtCO0VBQ2xCLFlBQVk7O0FBRWQ7O0FBRUE7RUFDRSxXQUFXO0FBQ2I7O0FBRUE7RUFDRSxpQkFBaUI7O0FBRW5COztBQUVBO0VBQ0UsZ0JBQWdCO0FBQ2xCIiwiZmlsZSI6InNyYy9hcHAvcHJvbnR1YXJpby9wcm9udHVhcmlvL3Byb250dWFyaW8uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5leGFtcGxlLWZ1bGwtd2lkdGh7XHJcbiAgbWFyZ2luLWxlZnQ6IDZweDtcclxufVxyXG5cclxuI25vbWVwe1xyXG4gIHdpZHRoOiA1MCU7XHJcbn1cclxuXHJcbiNjb252ZXtcclxuICB3aWR0aDogMjUlO1xyXG59XHJcblxyXG4jbmFzY2l7XHJcbiAgd2lkdGg6IDIwJTtcclxufVxyXG5cclxuYnV0dG9ue1xyXG4gIG1hcmdpbi1sZWZ0OiA3cHg7XHJcbn1cclxuXHJcbnBkZi12aWV3ZXIge1xyXG4gIGRpc3BsYXk6IGZsZXhib3g7XHJcbiAgaGVpZ2h0OiAxODB2aDtcclxuICBtYXJnaW4tbGVmdDogLTI1cHg7XHJcbiAgbGVmdDogLTEwMHB4O1xyXG4gIFxyXG59XHJcblxyXG5tYXQtdGFiIHtcclxuICB3aWR0aDogMTUwJTtcclxufVxyXG5cclxuOmhvc3QgOjpuZy1kZWVwIC5jay1lZGl0b3JfX2VkaXRhYmxlX2lubGluZSB7XHJcbiAgbWluLWhlaWdodDogMTUwcHg7XHJcbiBcclxufVxyXG5cclxuLmVkaXR7XHJcbiAgbWFyZ2luLXRvcDogMTVweDtcclxufVxyXG5cclxuIl19 */"] });
+    } }, directives: [_angular_material_form_field__WEBPACK_IMPORTED_MODULE_10__["MatFormField"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_10__["MatLabel"], _angular_material_input__WEBPACK_IMPORTED_MODULE_11__["MatInput"], _angular_forms__WEBPACK_IMPORTED_MODULE_12__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_12__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_12__["NgModel"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], _angular_material_button__WEBPACK_IMPORTED_MODULE_13__["MatButton"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_14__["MatTabGroup"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_14__["MatTab"], _angular_router__WEBPACK_IMPORTED_MODULE_7__["RouterLink"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgForOf"], ng2_pdf_viewer__WEBPACK_IMPORTED_MODULE_15__["PdfViewerComponent"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_16__["MatIcon"], _ckeditor_ckeditor5_angular__WEBPACK_IMPORTED_MODULE_17__["CKEditorComponent"], _angular_material_list__WEBPACK_IMPORTED_MODULE_18__["MatNavList"], _angular_material_list__WEBPACK_IMPORTED_MODULE_18__["MatListItem"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_19__["MatDivider"], _angular_material_core__WEBPACK_IMPORTED_MODULE_20__["MatLine"]], pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["DatePipe"]], styles: [".example-full-width[_ngcontent-%COMP%]{\r\n  margin-left: 6px;\r\n}\r\n\r\n#nomep[_ngcontent-%COMP%]{\r\n  width: 50%;\r\n}\r\n\r\n#conve[_ngcontent-%COMP%]{\r\n  width: 25%;\r\n}\r\n\r\n#nasci[_ngcontent-%COMP%]{\r\n  width: 20%;\r\n}\r\n\r\nbutton[_ngcontent-%COMP%]{\r\n  margin-left: 7px;\r\n}\r\n\r\npdf-viewer[_ngcontent-%COMP%] {\r\n  display: flexbox;\r\n  height: 180vh;\r\n  margin-left: -25px;\r\n  left: -100px;\r\n  \r\n}\r\n\r\nmat-tab[_ngcontent-%COMP%] {\r\n  width: 150%;\r\n}\r\n\r\n[_nghost-%COMP%]     .ck-editor__editable_inline {\r\n  min-height: 150px;\r\n \r\n}\r\n\r\n.edit[_ngcontent-%COMP%]{\r\n  margin-top: 15px;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcHJvbnR1YXJpby9wcm9udHVhcmlvL3Byb250dWFyaW8uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLFVBQVU7QUFDWjs7QUFFQTtFQUNFLFVBQVU7QUFDWjs7QUFFQTtFQUNFLFVBQVU7QUFDWjs7QUFFQTtFQUNFLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixhQUFhO0VBQ2Isa0JBQWtCO0VBQ2xCLFlBQVk7O0FBRWQ7O0FBRUE7RUFDRSxXQUFXO0FBQ2I7O0FBRUE7RUFDRSxpQkFBaUI7O0FBRW5COztBQUVBO0VBQ0UsZ0JBQWdCO0FBQ2xCIiwiZmlsZSI6InNyYy9hcHAvcHJvbnR1YXJpby9wcm9udHVhcmlvL3Byb250dWFyaW8uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5leGFtcGxlLWZ1bGwtd2lkdGh7XHJcbiAgbWFyZ2luLWxlZnQ6IDZweDtcclxufVxyXG5cclxuI25vbWVwe1xyXG4gIHdpZHRoOiA1MCU7XHJcbn1cclxuXHJcbiNjb252ZXtcclxuICB3aWR0aDogMjUlO1xyXG59XHJcblxyXG4jbmFzY2l7XHJcbiAgd2lkdGg6IDIwJTtcclxufVxyXG5cclxuYnV0dG9ue1xyXG4gIG1hcmdpbi1sZWZ0OiA3cHg7XHJcbn1cclxuXHJcbnBkZi12aWV3ZXIge1xyXG4gIGRpc3BsYXk6IGZsZXhib3g7XHJcbiAgaGVpZ2h0OiAxODB2aDtcclxuICBtYXJnaW4tbGVmdDogLTI1cHg7XHJcbiAgbGVmdDogLTEwMHB4O1xyXG4gIFxyXG59XHJcblxyXG5tYXQtdGFiIHtcclxuICB3aWR0aDogMTUwJTtcclxufVxyXG5cclxuOmhvc3QgOjpuZy1kZWVwIC5jay1lZGl0b3JfX2VkaXRhYmxlX2lubGluZSB7XHJcbiAgbWluLWhlaWdodDogMTUwcHg7XHJcbiBcclxufVxyXG5cclxuLmVkaXR7XHJcbiAgbWFyZ2luLXRvcDogMTVweDtcclxufVxyXG5cclxuIl19 */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ProntuarioComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -4649,8 +4647,12 @@ class DialogDataExampleDialog {
     constructor() { }
 }
 DialogDataExampleDialog.ɵfac = function DialogDataExampleDialog_Factory(t) { return new (t || DialogDataExampleDialog)(); };
-DialogDataExampleDialog.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: DialogDataExampleDialog, selectors: [["dialog-data-example-dialog"]], decls: 1, vars: 0, consts: [["id", "memed-container"]], template: function DialogDataExampleDialog_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "div", 0);
+DialogDataExampleDialog.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: DialogDataExampleDialog, selectors: [["dialog-data-example-dialog"]], decls: 4, vars: 0, consts: [["rel", "stylesheet", "type", "text/css", "href", "/style/responsive.css"], ["rel", "stylesheet", "type", "text/css", "href", "/style/owl/owl.carousel.min.css"], ["id", "memed-container"]], template: function DialogDataExampleDialog_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "head");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "link", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "link", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "div", 2);
     } }, styles: ["#memed-container[_ngcontent-%COMP%]{\n        margin: auto;\n        width: 810px;\n        height: 700px;\n    }"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](DialogDataExampleDialog, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
