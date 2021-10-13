@@ -15,19 +15,19 @@ export var single = [
   
   export var single2 = [
     {
-      "name": "Janeiro",
+      "name": "Jan",
       "value": 89
     },
     {
-      "name": "Fevereiro",
+      "name": "Fev",
       "value": 50
     },
     {
-      "name": "Março",
+      "name": "Mar",
       "value": 72
     },
       {
-      "name": "Abril",
+      "name": "Abr",
       "value": 120
     },
     {
@@ -35,19 +35,23 @@ export var single = [
       "value": 22
     },
     {
-      "name": "Junho",
+      "name": "Jun",
       "value": 32
     },
     {
-      "name": "Julho",
+      "name": "Jul",
       "value": 92
     },
     {
-      "name": "Agosto",
+      "name": "Ago",
       "value": 44
     },
     {
-      "name": "Setembro",
+      "name": "Set",
       "value": 65
+    },
+    {
+      "name": "Out",
+      "value": 45
     }
   ];

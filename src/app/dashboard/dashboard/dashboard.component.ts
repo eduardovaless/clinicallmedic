@@ -42,7 +42,7 @@ export class DashboardComponent implements OnInit{
    legendPosition: string = 'below';
  
    colorScheme2 = {
-     domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA', '#00FFFF', '#000000', '#B120CB', '#F30B54', '#04F896']
+     domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA', '#00FFFF', '#000000', '#B120CB', '#F30B54', '#04F896', '#301a06']
    };
 
   constructor(
