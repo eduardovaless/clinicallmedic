@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VideoconferenciaComponent implements OnInit {
  url="https://sendlink-53591.firebaseapp.com/conf.html?room="
+ hash= Math.floor(Date.now() * Math.random()).toString(36)
 
   constructor() {}
 

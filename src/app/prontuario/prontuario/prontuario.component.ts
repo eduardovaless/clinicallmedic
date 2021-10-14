@@ -17,6 +17,7 @@ import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
   providers: [DatePipe] 
 })
 export class ProntuarioComponent implements OnInit {
+  hash= Math.floor(Date.now() * Math.random()).toString(36)
   public Editor = ClassicEditor;
   public isDisabled = false;
   public edited: boolean;

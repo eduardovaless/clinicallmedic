@@ -47,8 +47,22 @@
       <button mat-button (click)="openDialog()" disabled>Memed</button>
 
   <div *ngIf="video">
-    <iframe  src="https://sendlink-53591.firebaseapp.com/conf.html?room=" style="border:0px #ffffff none;" name="Jitsi" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="900px" width="600px" allowfullscreen="" allow="camera; microphone">
-    </iframe>
+    <div class="row">
+      
+      
+      <br>
+      <iframe src="https://sendlink-53591.firebaseapp.com/conf.html?room=" style="border:0px #ffffff none;" name="Jitsi" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="1000px" width="600px" allowfullscreen="" allow="camera; microphone">
+      </iframe>
+
+      <h3 style="color: rgb(17, 114, 114); font-size: 20px; margin-top:500px; margin-left: 50px;">
+        <b>Copie e cole esse codigo <br> para iniciar a reunião:</b><br>
+        
+        <mat-form-field class="example-form-field" appearance="fill">        
+          <input matInput type="text" [(ngModel)]="hash">          
+        </mat-form-field>
+
+      </h3>
+    </div>
 
   </div>
 
