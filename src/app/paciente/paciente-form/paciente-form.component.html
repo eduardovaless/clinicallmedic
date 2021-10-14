@@ -178,7 +178,7 @@
               <mat-form-field style="width: 340px;" appearance="fill">
                 <mat-label>Convênio</mat-label>
                 <mat-select>
-                    <mat-option *ngFor="let convenio of convenio " [value]="convenio" name="convenio" ngDefaultControl [(ngModel)]="paciente.nomeConvenio">
+                    <mat-option *ngFor="let convenio of convenio " [value]="convenio.idConvenio" name="convenio" ngDefaultControl [(ngModel)]="paciente.nomeConvenio">
                         {{convenio.nomeConvenio}}
                     </mat-option>
                 </mat-select>
@@ -208,7 +208,7 @@
                 <mat-form-field style="width: 154px;" appearance="fill">
                     <mat-label>Nacionalidade</mat-label>
                     <mat-select>
-                        <mat-option *ngFor="let nacionalidade of nacionalidade " [value]="nacionalidade" name="nacionalidade" ngDefaultControl [(ngModel)]="paciente.nacionalidade">
+                        <mat-option *ngFor="let nacionalidade of nacionalidade " [value]="nacionalidade.idNacao" name="nacionalidade" ngDefaultControl [(ngModel)]="paciente.nacionalidade">
                             {{nacionalidade.nomeNacao}}
                         </mat-option>
                     </mat-select>

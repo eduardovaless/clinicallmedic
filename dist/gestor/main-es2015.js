@@ -905,12 +905,12 @@ function AgendamedicaComponent_mat_option_16_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", unidade_r58.nomeUnidade, " ");
 } }
-function AgendamedicaComponent_th_152_Template(rf, ctx) { if (rf & 1) {
+function AgendamedicaComponent_th_159_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "th", 31);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Status ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } }
-function AgendamedicaComponent_td_153_Template(rf, ctx) { if (rf & 1) {
+function AgendamedicaComponent_td_160_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td", 32);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "app-agenda-status", 33);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -919,12 +919,12 @@ function AgendamedicaComponent_td_153_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("schedule", element_r59);
 } }
-function AgendamedicaComponent_th_155_Template(rf, ctx) { if (rf & 1) {
+function AgendamedicaComponent_th_162_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "th", 31);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Hora ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } }
-function AgendamedicaComponent_td_156_Template(rf, ctx) { if (rf & 1) {
+function AgendamedicaComponent_td_163_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td", 32);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -933,12 +933,12 @@ function AgendamedicaComponent_td_156_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", element_r60.horaAgenda ? element_r60.horaAgenda : "----", " ");
 } }
-function AgendamedicaComponent_th_158_Template(rf, ctx) { if (rf & 1) {
+function AgendamedicaComponent_th_165_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "th", 31);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Paciente ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } }
-function AgendamedicaComponent_td_159_Template(rf, ctx) { if (rf & 1) {
+function AgendamedicaComponent_td_166_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td", 32);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -947,12 +947,12 @@ function AgendamedicaComponent_td_159_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", element_r61.paciente.nomePaciente ? element_r61.paciente.nomePaciente : "----", " ");
 } }
-function AgendamedicaComponent_th_161_Template(rf, ctx) { if (rf & 1) {
+function AgendamedicaComponent_th_168_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "th", 31);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Conv\u00EAnio ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } }
-function AgendamedicaComponent_td_162_Template(rf, ctx) { if (rf & 1) {
+function AgendamedicaComponent_td_169_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td", 32);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -961,12 +961,12 @@ function AgendamedicaComponent_td_162_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", element_r62.paciente.nomeConvenio ? element_r62.paciente.nomeConvenio : "----", " ");
 } }
-function AgendamedicaComponent_th_164_Template(rf, ctx) { if (rf & 1) {
+function AgendamedicaComponent_th_171_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "th", 31);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Servi\u00E7o ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } }
-function AgendamedicaComponent_td_165_Template(rf, ctx) { if (rf & 1) {
+function AgendamedicaComponent_td_172_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td", 32);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -975,13 +975,13 @@ function AgendamedicaComponent_td_165_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", element_r63.nomeProcedimento ? element_r63.nomeProcedimento : "----", " ");
 } }
-function AgendamedicaComponent_tr_166_Template(rf, ctx) { if (rf & 1) {
+function AgendamedicaComponent_tr_173_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "tr", 34);
 } }
-function AgendamedicaComponent_tr_167_Template(rf, ctx) { if (rf & 1) {
+function AgendamedicaComponent_tr_174_Template(rf, ctx) { if (rf & 1) {
     const _r66 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "tr", 35);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AgendamedicaComponent_tr_167_Template_tr_click_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r66); const element_r64 = ctx.$implicit; const ctx_r65 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r65.click(element_r64.idPaciente); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AgendamedicaComponent_tr_174_Template_tr_click_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r66); const element_r64 = ctx.$implicit; const ctx_r65 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r65.click(element_r64.idPaciente); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } }
 class AgendamedicaComponent {
@@ -1041,7 +1041,7 @@ class AgendamedicaComponent {
 AgendamedicaComponent.ɵfac = function AgendamedicaComponent_Factory(t) { return new (t || AgendamedicaComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_agenda_service__WEBPACK_IMPORTED_MODULE_4__["AgendaService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_snackbar_service__WEBPACK_IMPORTED_MODULE_5__["SnackBarService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_paciente_paciente_service__WEBPACK_IMPORTED_MODULE_6__["PacienteService"])); };
 AgendamedicaComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AgendamedicaComponent, selectors: [["app-agendamedica"]], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([
             { provide: _angular_common_locales_pt__WEBPACK_IMPORTED_MODULE_2___default.a, useValue: 'pt' },
-        ])], decls: 168, vars: 10, consts: [[1, "container"], [1, "mt-4", 2, "color", "rgb(0, 100, 100)"], [1, "breadcrumb", "mb-4"], [1, "breadcrum-bitem", "active"], ["id", "agenda", 1, "container"], [2, "color", "rgb(10, 92, 92)"], ["appearance", "fill", 2, "width", "250px"], [3, "value", "valueChange"], ["name", "unidade", "ngDefaultControl", "", 3, "value", 4, "ngFor", "ngForOf"], [1, "demo-inline-calendar-card", 2, "color", "rgb(10, 92, 92)"], [1, "calendar", 3, "selectedChange"], [2, "margin-top", "10px"], [2, "color", "rgb(10, 92, 92)", "text-align", "center"], [2, "color", "red"], [2, "color", "green"], [2, "color", "gold"], [2, "color", "rgb(199, 17, 223)"], [2, "color", "rgb(24, 163, 228)"], [2, "color", "rgb(18, 114, 143)"], [2, "color", "blue"], ["mat-table", "", 1, "mat-elevation-z8", 3, "dataSource"], ["matColumnDef", "status"], ["mat-header-cell", "", 4, "matHeaderCellDef"], ["mat-cell", "", 4, "matCellDef"], ["matColumnDef", "hora"], ["matColumnDef", "paciente"], ["matColumnDef", "convenio"], ["matColumnDef", "servico"], ["mat-header-row", "", 4, "matHeaderRowDef"], ["mat-row", "", 3, "click", 4, "matRowDef", "matRowDefColumns"], ["name", "unidade", "ngDefaultControl", "", 3, "value"], ["mat-header-cell", ""], ["mat-cell", ""], [3, "schedule"], ["mat-header-row", ""], ["mat-row", "", 3, "click"]], template: function AgendamedicaComponent_Template(rf, ctx) { if (rf & 1) {
+        ])], decls: 175, vars: 10, consts: [[1, "container"], [1, "mt-4", 2, "color", "rgb(0, 100, 100)"], [1, "breadcrumb", "mb-4"], [1, "breadcrum-bitem", "active"], ["id", "agenda", 1, "container"], [2, "color", "rgb(10, 92, 92)"], ["appearance", "fill", 2, "width", "250px"], [3, "value", "valueChange"], ["name", "unidade", "ngDefaultControl", "", 3, "value", 4, "ngFor", "ngForOf"], [1, "demo-inline-calendar-card", 2, "color", "rgb(10, 92, 92)"], [1, "calendar", 3, "selectedChange"], [2, "margin-top", "10px"], [2, "color", "rgb(10, 92, 92)", "text-align", "center"], [2, "color", "red"], [2, "color", "green"], [2, "color", "gold"], [2, "color", "rgb(199, 17, 223)"], [2, "color", "rgb(24, 163, 228)"], [2, "color", "rgb(18, 114, 143)"], [2, "color", "blue"], ["mat-table", "", 1, "mat-elevation-z8", 3, "dataSource"], ["matColumnDef", "status"], ["mat-header-cell", "", 4, "matHeaderCellDef"], ["mat-cell", "", 4, "matCellDef"], ["matColumnDef", "hora"], ["matColumnDef", "paciente"], ["matColumnDef", "convenio"], ["matColumnDef", "servico"], ["mat-header-row", "", 4, "matHeaderRowDef"], ["mat-row", "", 3, "click", 4, "matRowDef", "matRowDefColumns"], ["name", "unidade", "ngDefaultControl", "", 3, "value"], ["mat-header-cell", ""], ["mat-cell", ""], [3, "schedule"], ["mat-header-row", ""], ["mat-row", "", 3, "click"]], template: function AgendamedicaComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Agenda");
@@ -1092,218 +1092,228 @@ AgendamedicaComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "p", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "Para verificar o prontu\u00E1rio ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](33, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](34, "clique no paciente.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "li");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](33, "Para verificar o prontu\u00E1rio ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](34, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, "clique no paciente.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](35, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "h3", 12);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "b");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](38, "Status da Agenda");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](36, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "p", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "li");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](39, "Selecione a unidade da sua ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](40, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](41, "agenda.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](39, "hr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "mat-icon");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42, " calendar_today ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "span", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](44, "Agendado");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](42, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "h3", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](44, "b");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](45, "Status da Agenda");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](45, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](46, "mat-icon", 13);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](47, " highlight_off ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](46, "hr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](47, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](48, "mat-icon");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](49, " calendar_today ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](48, "span", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](49, "Paciente N\u00E3o Cadastrado");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](50, "span", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](51, "Agendado");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](50, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](51, "mat-icon", 13);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](52, " e_mobiledata ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](52, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](53, "mat-icon", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](54, " highlight_off ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](53, "span", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](54, "Horario Extra");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](55, "span", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](56, "Paciente N\u00E3o Cadastrado");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](55, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](56, "mat-icon");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](57, " description ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](57, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](58, "mat-icon", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](59, " e_mobiledata ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](58, "span", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](59, "Entrega de Resultado");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](60, "span", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](61, "Horario Extra");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](60, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](61, "mat-icon", 13);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](62, " sentiment_satisfied ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](62, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](63, "mat-icon");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](64, " description ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](63, "span", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](64, "Paciente Atrasado");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](65, "span", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](66, "Entrega de Resultado");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](65, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](66, "mat-icon", 14);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](67, " sentiment_satisfied ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](67, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](68, "mat-icon", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](69, " sentiment_satisfied ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](68, "span", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](69, "Paciente Presente");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](70, "span", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](71, "Paciente Atrasado");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](70, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](71, "mat-icon", 14);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](72, " done ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](72, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](73, "mat-icon", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](74, " sentiment_satisfied ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](73, "span", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](74, "Atendido");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](75, "span", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](76, "Paciente Presente");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](75, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](76, "mat-icon");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](77, " filter_1 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](77, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](78, "mat-icon", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](79, " done ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](78, "span", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](79, " Paciente Primeira Vez");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](80, "span", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](81, "Atendido");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](80, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](81, "mat-icon", 13);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](82, " format_underlined ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](82, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](83, "mat-icon");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](84, " filter_1 ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](83, "span", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](84, "Paciente Urgente");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](85, "span", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](86, " Paciente Primeira Vez");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](85, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](86, "mat-icon", 15);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](87, " lock ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](87, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](88, "mat-icon", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](89, " format_underlined ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](88, "span", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](89, "Paciente Bloqueado");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](90, "span", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](91, "Paciente Urgente");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](90, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](91, "mat-icon", 16);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](92, " sentiment_satisfied ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](92, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](93, "mat-icon", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](94, " lock ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](93, "span", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](94, "Paciente Pronto");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](95, "span", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](96, "Paciente Bloqueado");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](95, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](96, "mat-icon", 17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](97, " sentiment_satisfied ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](97, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](98, "mat-icon", 16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](99, " sentiment_satisfied ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](98, "span", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](99, "M\u00E9dico Atendeu");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](100, "span", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](101, "Paciente Pronto");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](100, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](101, "mat-icon");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](102, " sentiment_satisfied ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](102, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](103, "mat-icon", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](104, " sentiment_satisfied ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](103, "span", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](104, "Paciente Confirmado");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](105, "span", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](106, "M\u00E9dico Atendeu");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](105, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](106, "mat-icon");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](107, " announcement ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](107, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](108, "mat-icon");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](109, " sentiment_satisfied ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](108, "span", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](109, "Paciente N\u00E3o Confirmou");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](110, "span", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](111, "Paciente Confirmado");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](110, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](111, "mat-icon");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](112, " call_missed_outgoing ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](112, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](113, "mat-icon");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](114, " announcement ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](113, "span", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](114, "Paciente Faltou e Avisou");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](115, "span", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](116, "Paciente N\u00E3o Confirmou");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](115, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](116, "mat-icon");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](117, " backspace ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](117, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](118, "mat-icon");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](119, " call_missed_outgoing ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](118, "span", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](119, "Faltou e N\u00E3o Avisou");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](120, "span", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](121, "Paciente Faltou e Avisou");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](120, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](121, "mat-icon", 18);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](122, " work_off ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](122, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](123, "mat-icon");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](124, " backspace ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](123, "span", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](124, "M\u00E9dico Faltou");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](125, "span", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](126, "Faltou e N\u00E3o Avisou");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](125, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](126, "mat-icon", 13);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](127, " not_interested ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](127, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](128, "mat-icon", 18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](129, " work_off ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](128, "span", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](129, "Paciente Desistiu");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](130, "span", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](131, "M\u00E9dico Faltou");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](130, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](131, "mat-icon", 19);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](132, " local_phone ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](132, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](133, "mat-icon", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](134, " not_interested ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](133, "span", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](134, "Paciente Remarcou");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](135, "span", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](136, "Paciente Desistiu");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](135, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](136, "mat-icon");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](137, " accessible ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](137, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](138, "mat-icon", 19);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](139, " local_phone ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](138, "span", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](139, "Necessidades Especiais");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](140, "span", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](141, "Paciente Remarcou");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](140, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](141, "mat-icon", 15);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](142, " sentiment_satisfied ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](142, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](143, "mat-icon");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](144, " accessible ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](143, "span", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](144, " Paciente em Exame");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](145, "span", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](146, "Necessidades Especiais");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](145, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](146, "mat-icon");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](147, " pregnant_woman ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](147, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](148, "mat-icon", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](149, " sentiment_satisfied ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](148, "span", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](149, "Gestante");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](150, "span", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](151, " Paciente em Exame");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](152, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](153, "mat-icon");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](154, " pregnant_woman ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](155, "span", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](156, "Gestante");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](150, "table", 20);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](151, 21);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](152, AgendamedicaComponent_th_152_Template, 2, 0, "th", 22);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](153, AgendamedicaComponent_td_153_Template, 2, 1, "td", 23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](157, "table", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](158, 21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](159, AgendamedicaComponent_th_159_Template, 2, 0, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](160, AgendamedicaComponent_td_160_Template, 2, 1, "td", 23);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](154, 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](155, AgendamedicaComponent_th_155_Template, 2, 0, "th", 22);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](156, AgendamedicaComponent_td_156_Template, 2, 1, "td", 23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](161, 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](162, AgendamedicaComponent_th_162_Template, 2, 0, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](163, AgendamedicaComponent_td_163_Template, 2, 1, "td", 23);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](157, 25);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](158, AgendamedicaComponent_th_158_Template, 2, 0, "th", 22);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](159, AgendamedicaComponent_td_159_Template, 2, 1, "td", 23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](164, 25);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](165, AgendamedicaComponent_th_165_Template, 2, 0, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](166, AgendamedicaComponent_td_166_Template, 2, 1, "td", 23);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](160, 26);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](161, AgendamedicaComponent_th_161_Template, 2, 0, "th", 22);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](162, AgendamedicaComponent_td_162_Template, 2, 1, "td", 23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](167, 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](168, AgendamedicaComponent_th_168_Template, 2, 0, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](169, AgendamedicaComponent_td_169_Template, 2, 1, "td", 23);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](163, 27);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](164, AgendamedicaComponent_th_164_Template, 2, 0, "th", 22);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](165, AgendamedicaComponent_td_165_Template, 2, 1, "td", 23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](170, 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](171, AgendamedicaComponent_th_171_Template, 2, 0, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](172, AgendamedicaComponent_td_172_Template, 2, 1, "td", 23);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](166, AgendamedicaComponent_tr_166_Template, 1, 0, "tr", 28);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](167, AgendamedicaComponent_tr_167_Template, 1, 0, "tr", 29);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](173, AgendamedicaComponent_tr_173_Template, 1, 0, "tr", 28);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](174, AgendamedicaComponent_tr_174_Template, 1, 0, "tr", 29);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1316,7 +1326,7 @@ AgendamedicaComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.dataAgenda);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](26, 7, ctx.currentDate, "dd/MM/yyyy"));
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](125);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](132);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("dataSource", ctx.agenda);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](16);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("matHeaderRowDef", ctx.displayedColumns);
@@ -1850,7 +1860,7 @@ class DashboardComponent {
         this.showYAxisLabel = true;
         this.xAxisLabel = 'Serviços realizados';
         this.colorScheme = {
-            domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
+            domain: ['#20a8d8', '#fc6f8d', '#d0ff7d', '#f1db7a', '#908279']
         };
         //MESES
         // options
@@ -1860,7 +1870,20 @@ class DashboardComponent {
         this.isDoughnut = false;
         this.legendPosition = 'below';
         this.colorScheme2 = {
-            domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA', '#00FFFF', '#000000', '#B120CB', '#F30B54', '#04F896']
+            domain: [
+                '#5AA454',
+                '#A10A28',
+                '#ff6e3d',
+                '#AAAAAA',
+                '#00FFFF',
+                '#000000',
+                '#B120CB',
+                '#816701',
+                '#f9f586',
+                '#002c99',
+                '#9f93db',
+                '#e31750',
+            ]
         };
         //serviços
         Object.assign(this, { single: _dashboard__WEBPACK_IMPORTED_MODULE_1__["single"] });
@@ -1963,7 +1986,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "single2", function() { return single2; });
 var single = [
     {
-        "name": "Consulta",
+        "name": "CONSULTA EM CONSULTORIO",
         "value": 89
     },
     {
@@ -1973,23 +1996,31 @@ var single = [
     {
         "name": "USG ABDOME TOTAL",
         "value": 72
+    },
+    {
+        "name": "USG ORGÃOS SUPERIORES",
+        "value": 77
+    },
+    {
+        "name": "USG ORGÃOS INFERIORES",
+        "value": 66
     }
 ];
 var single2 = [
     {
-        "name": "Janeiro",
+        "name": "Jan",
         "value": 89
     },
     {
-        "name": "Fevereiro",
+        "name": "Fev",
         "value": 50
     },
     {
-        "name": "Março",
+        "name": "Mar",
         "value": 72
     },
     {
-        "name": "Abril",
+        "name": "Abr",
         "value": 120
     },
     {
@@ -1997,21 +2028,33 @@ var single2 = [
         "value": 22
     },
     {
-        "name": "Junho",
+        "name": "Jun",
         "value": 32
     },
     {
-        "name": "Julho",
+        "name": "Jul",
         "value": 92
     },
     {
-        "name": "Agosto",
+        "name": "Ago",
         "value": 44
     },
     {
-        "name": "Setembro",
+        "name": "Set",
         "value": 65
-    }
+    },
+    {
+        "name": "Out",
+        "value": 45
+    },
+    {
+        "name": "Nov",
+        "value": 0
+    },
+    {
+        "name": "Dez",
+        "value": 0
+    },
 ];
 
 
@@ -2058,7 +2101,7 @@ class HomeComponent {
     }
 }
 HomeComponent.ɵfac = function HomeComponent_Factory(t) { return new (t || HomeComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_service_empresa_service__WEBPACK_IMPORTED_MODULE_1__["ServiceEmpresaService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_snackbar_service__WEBPACK_IMPORTED_MODULE_2__["SnackBarService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"])); };
-HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["app-home"]], decls: 25, vars: 2, consts: [[1, "container"], [1, "mt-4", 2, "color", "rgb(0, 100, 100)"], [1, "breadcrumb", "mb-4"], [1, "breadcrumb-item", "active"], [1, "row"], ["src", "assets/images/medic.png", "alt", "ClinicAll", 2, "margin-left", "50px", "margin-top", "-70px"], [2, "margin-top", "00px", "margin-left", "20px", "font-family", "Helvetica, Sans-Serif", "color", "rgb(16, 107, 107)"], [2, "text-align", "center", "font-family", "Helvetica, Sans-Serif", "color", "rgb(16, 107, 107)", "margin-top", "40px"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
+HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["app-home"]], decls: 27, vars: 3, consts: [[1, "container", 2, "background-color", "rgb(255, 255, 255)", "border-radius", "10px"], [1, "mt-4", 2, "color", "rgb(0, 100, 100)"], [1, "breadcrumb", "mb-4", 2, "background-color", "rgb(211, 228, 228)"], [1, "breadcrumb-item", "active", 2, "background-color", "rgb(211, 228, 228)", "color", "rgb(0, 100, 100)"], [1, "row"], [2, "background-color", "rgb(211, 228, 228)", "border-radius", "10px", "margin-left", "20px"], ["src", "assets/images/medic.png", "alt", "ClinicAll", 2, "margin-left", "-120px", "margin-top", "-70px"], [2, "margin-top", "00px", "margin-left", "20px", "font-family", "Helvetica, Sans-Serif", "color", "rgb(16, 107, 107)"], [2, "text-align", "center", "font-family", "Helvetica, Sans-Serif", "color", "rgb(16, 107, 107)", "margin-top", "40px"], ["src", "assets/images/logoclinica.png", 3, "alt"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Home");
@@ -2075,14 +2118,15 @@ HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "br");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](10, "br");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "div", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "img", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "h3", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, " \u00A0 \u00A0 ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "h1");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "ClinicAll Medic ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "div", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "img", 6);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](17, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "h4", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "h3", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, " \u00A0 \u00A0 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "h1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "ClinicAll Medic ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "h4", 8);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "b");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "Esse produto est\u00E1 licenciado para: ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "span");
@@ -2090,16 +2134,20 @@ HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](23, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](24, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](24, "img", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](25, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](26, "br");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Dr\u00AA ", ctx.user.nomeUsuario, "");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](15);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.nomeFantasia);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate1"]("alt", "logo ", ctx.nomeFantasia, "");
     } }, styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5jb21wb25lbnQuY3NzIn0= */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](HomeComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
@@ -2708,7 +2756,7 @@ function PacienteFormComponent_mat_option_106_Template(rf, ctx) { if (rf & 1) {
 } if (rf & 2) {
     const convenio_r19 = ctx.$implicit;
     const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("value", convenio_r19)("ngModel", ctx_r6.paciente.nomeConvenio);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("value", convenio_r19.idConvenio)("ngModel", ctx_r6.paciente.nomeConvenio);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", convenio_r19.nomeConvenio, " ");
 } }
@@ -2721,7 +2769,7 @@ function PacienteFormComponent_mat_option_125_Template(rf, ctx) { if (rf & 1) {
 } if (rf & 2) {
     const nacionalidade_r22 = ctx.$implicit;
     const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("value", nacionalidade_r22)("ngModel", ctx_r8.paciente.nacionalidade);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("value", nacionalidade_r22.idNacao)("ngModel", ctx_r8.paciente.nacionalidade);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", nacionalidade_r22.nomeNacao, " ");
 } }
@@ -4427,7 +4475,7 @@ class ProntuarioComponent {
     }
 }
 ProntuarioComponent.ɵfac = function ProntuarioComponent_Factory(t) { return new (t || ProntuarioComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_paciente_paciente_service__WEBPACK_IMPORTED_MODULE_5__["PacienteService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_prontuario_service__WEBPACK_IMPORTED_MODULE_6__["ProntuarioService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_7__["ActivatedRoute"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_snackbar_service__WEBPACK_IMPORTED_MODULE_8__["SnackBarService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_7__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_4__["DatePipe"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_9__["MatDialog"])); };
-ProntuarioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ProntuarioComponent, selectors: [["app-prontuario"]], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([_angular_common__WEBPACK_IMPORTED_MODULE_4__["DatePipe"]])], decls: 98, vars: 41, consts: [[1, "container", 2, "height", "100%"], [1, "mt-4", 2, "color", "rgb(0, 100, 100)"], [1, "breadcrumb", "mb-4"], [1, "breadcrum-bitem", "active"], ["id", "nomep", "appearance", "fill", 1, "example-full-width", 2, "background-color", "rgb(250, 250, 250)"], [2, "font-size", "15px", "color", "rgb(5, 70, 61)", "background-color", "rgb(250, 250, 250)"], ["matInput", "", "disabled", "", "name", "nomePaciente", 1, "form-control", 2, "color", "rgb(5, 70, 61)", "background-color", "rgb(250, 250, 250)", 3, "ngModel", "ngModelChange"], ["id", "conve", "appearance", "fill", 1, "example-full-width", 2, "background-color", "rgb(250, 250, 250)"], ["matInput", "", "disabled", "", "name", "nomeConvenio", 1, "form-control", 2, "color", "rgb(5, 70, 61)", "background-color", "rgb(250, 250, 250)", 3, "ngModel", "ngModelChange"], ["id", "nasci", "appearance", "fill", 1, "example-full-width", 2, "background-color", "rgb(250, 250, 250)"], ["matInput", "", "type", "date", "disabled", "", "name", "dataNascimento", 1, "form-control", 2, "color", "rgb(5, 70, 61)", "background-color", "rgb(250, 250, 250)", 3, "ngModel", "ngModelChange"], ["type", "button", "class", "btn ml-3", "style", "background-color: rgb(77, 77, 49);", "mat-raised-button", "", "color", "primary", 3, "click", 4, "ngIf"], ["type", "button", "class", "btn ml-3", "style", "background-color: rgb(184, 112, 53);", "mat-raised-button", "", "color", "primary", 3, "click", 4, "ngIf"], ["mat-button", "", 3, "click"], [4, "ngIf"], [2, "size", "100%"], ["label", "Ficha"], ["mat-button", "", "style", "color: rgb(255, 255, 255); background-color: rgb(38, 95, 105)", 3, "click", 4, "ngIf"], ["mat-button", "", "style", "color: rgb(255, 255, 255); background-color: rgb(87, 9, 110)", 3, "click", 4, "ngIf"], ["type", "button", "mat-raised-button", "", "color", "primary", "routerLink", "/agenda/medico", 1, "btn", "ml-3", 2, "background-color", "rgb(22, 61, 97)"], [1, "icone", "fa", "fa-reply"], ["class", "edit", 4, "ngIf"], [1, "row"], ["style", "width: 170px; margin-left: 20px;", 4, "ngFor", "ngForOf"], [3, "src", "show-borders", "zoom"], ["label", "Laudos", 2, "height", "100%"], ["style", "margin-left: 20px;", 4, "ngFor", "ngForOf"], ["label", "Atestado e Relat\u00F3rios"], ["label", "Receitu\u00E1rio"], ["style", "width: 180px; margin-left: 20px;", 4, "ngFor", "ngForOf"], ["label", "Solicita\u00E7\u00E3o de Exames"], ["type", "button", "mat-raised-button", "", "color", "primary", 1, "btn", "ml-3", 2, "background-color", "rgb(77, 77, 49)", 3, "click"], ["aria-hidden", "false", "aria-label", "Example home icon"], ["type", "button", "mat-raised-button", "", "color", "primary", 1, "btn", "ml-3", 2, "background-color", "rgb(184, 112, 53)", 3, "click"], ["src", "https://sendlink-53591.firebaseapp.com/conf.html?room=", "name", "Jitsi", "scrolling", "no", "frameborder", "0", "marginheight", "0px", "marginwidth", "0px", "height", "900px", "width", "600px", "allowfullscreen", "", "allow", "camera; microphone", 2, "border", "0px #ffffff none"], ["mat-button", "", 2, "color", "rgb(255, 255, 255)", "background-color", "rgb(38, 95, 105)", 3, "click"], ["mat-button", "", 2, "color", "rgb(255, 255, 255)", "background-color", "rgb(87, 9, 110)", 3, "click"], [1, "edit"], ["data", "", 3, "disabled", "editor"], ["type", "button", "mat-raised-button", "", "color", "primary", 1, "btn", "ml-3", 2, "background-color", "rgb(8, 134, 71)"], [1, "icone", "fa", "fa-save"], [2, "width", "170px", "margin-left", "20px"], ["matLine", ""], ["mat-icon-button", "", 3, "click"], [2, "margin-left", "20px"], [2, "width", "180px", "margin-left", "20px"]], template: function ProntuarioComponent_Template(rf, ctx) { if (rf & 1) {
+ProntuarioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ProntuarioComponent, selectors: [["app-prontuario"]], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([_angular_common__WEBPACK_IMPORTED_MODULE_4__["DatePipe"]])], decls: 98, vars: 41, consts: [[1, "container", 2, "height", "100%"], [1, "mt-4", 2, "color", "rgb(0, 100, 100)"], [1, "breadcrumb", "mb-4"], [1, "breadcrum-bitem", "active"], ["id", "nomep", "appearance", "fill", 1, "example-full-width", 2, "background-color", "rgb(250, 250, 250)"], [2, "font-size", "15px", "color", "rgb(5, 70, 61)", "background-color", "rgb(250, 250, 250)"], ["matInput", "", "disabled", "", "name", "nomePaciente", 1, "form-control", 2, "color", "rgb(5, 70, 61)", "background-color", "rgb(250, 250, 250)", 3, "ngModel", "ngModelChange"], ["id", "conve", "appearance", "fill", 1, "example-full-width", 2, "background-color", "rgb(250, 250, 250)"], ["matInput", "", "disabled", "", "name", "nomeConvenio", 1, "form-control", 2, "color", "rgb(5, 70, 61)", "background-color", "rgb(250, 250, 250)", 3, "ngModel", "ngModelChange"], ["id", "nasci", "appearance", "fill", 1, "example-full-width", 2, "background-color", "rgb(250, 250, 250)"], ["matInput", "", "type", "date", "disabled", "", "name", "dataNascimento", 1, "form-control", 2, "color", "rgb(5, 70, 61)", "background-color", "rgb(250, 250, 250)", 3, "ngModel", "ngModelChange"], ["type", "button", "class", "btn ml-3", "style", "background-color: rgb(77, 77, 49);", "mat-raised-button", "", "color", "primary", 3, "click", 4, "ngIf"], ["type", "button", "class", "btn ml-3", "style", "background-color: rgb(184, 112, 53);", "mat-raised-button", "", "color", "primary", 3, "click", 4, "ngIf"], ["mat-button", "", "disabled", "", 3, "click"], [4, "ngIf"], [2, "size", "100%"], ["label", "Ficha"], ["mat-button", "", "style", "color: rgb(255, 255, 255); background-color: rgb(38, 95, 105)", 3, "click", 4, "ngIf"], ["mat-button", "", "style", "color: rgb(255, 255, 255); background-color: rgb(87, 9, 110)", 3, "click", 4, "ngIf"], ["type", "button", "mat-raised-button", "", "color", "primary", "routerLink", "/agenda/medico", 1, "btn", "ml-3", 2, "background-color", "rgb(22, 61, 97)"], [1, "icone", "fa", "fa-reply"], ["class", "edit", 4, "ngIf"], [1, "row"], ["style", "width: 170px; margin-left: 20px;", 4, "ngFor", "ngForOf"], [3, "src", "show-borders", "zoom"], ["label", "Laudos", 2, "height", "100%"], ["style", "margin-left: 20px;", 4, "ngFor", "ngForOf"], ["label", "Atestado e Relat\u00F3rios"], ["label", "Receitu\u00E1rio"], ["style", "width: 180px; margin-left: 20px;", 4, "ngFor", "ngForOf"], ["label", "Solicita\u00E7\u00E3o de Exames"], ["type", "button", "mat-raised-button", "", "color", "primary", 1, "btn", "ml-3", 2, "background-color", "rgb(77, 77, 49)", 3, "click"], ["aria-hidden", "false", "aria-label", "Example home icon"], ["type", "button", "mat-raised-button", "", "color", "primary", 1, "btn", "ml-3", 2, "background-color", "rgb(184, 112, 53)", 3, "click"], ["src", "https://sendlink-53591.firebaseapp.com/conf.html?room=", "name", "Jitsi", "scrolling", "no", "frameborder", "0", "marginheight", "0px", "marginwidth", "0px", "height", "900px", "width", "600px", "allowfullscreen", "", "allow", "camera; microphone", 2, "border", "0px #ffffff none"], ["mat-button", "", 2, "color", "rgb(255, 255, 255)", "background-color", "rgb(38, 95, 105)", 3, "click"], ["mat-button", "", 2, "color", "rgb(255, 255, 255)", "background-color", "rgb(87, 9, 110)", 3, "click"], [1, "edit"], ["data", "", 3, "disabled", "editor"], ["type", "button", "mat-raised-button", "", "color", "primary", 1, "btn", "ml-3", 2, "background-color", "rgb(8, 134, 71)"], [1, "icone", "fa", "fa-save"], [2, "width", "170px", "margin-left", "20px"], ["matLine", ""], ["mat-icon-button", "", 3, "click"], [2, "margin-left", "20px"], [2, "width", "180px", "margin-left", "20px"]], template: function ProntuarioComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Prontu\u00E1rio do Paciente");

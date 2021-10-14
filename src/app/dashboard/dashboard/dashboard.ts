@@ -1,6 +1,6 @@
 export var single = [
     {
-      "name": "Consulta",
+      "name": "CONSULTA EM CONSULTORIO",
       "value": 89
     },
     {
@@ -10,6 +10,14 @@ export var single = [
     {
       "name": "USG ABDOME TOTAL",
       "value": 72
+    },
+    {
+      "name": "USG ORGÃOS SUPERIORES",
+      "value": 77
+    },
+    {
+      "name": "USG ORGÃOS INFERIORES",
+      "value": 66
     }
   ];
   
@@ -53,5 +61,13 @@ export var single = [
     {
       "name": "Out",
       "value": 45
-    }
+    },
+    {
+      "name": "Nov",
+      "value": 0
+    },
+    {
+      "name": "Dez",
+      "value": 0
+    },
   ];

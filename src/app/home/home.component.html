@@ -1,23 +1,32 @@
-<div class="container">
+<div class="container" style="background-color: rgb(255, 255, 255); border-radius:10px">
     <h1 class="mt-4" style="color: rgb(0, 100, 100);">Home</h1>
-    <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item active">Bem vindo ao ClinicAll Medic, <b>Drª {{user.nomeUsuario}}</b>.</li>
+    <ol class="breadcrumb mb-4" style="background-color: rgb(211, 228, 228);">
+    
+    <li class="breadcrumb-item active" style="
+        background-color: rgb(211, 228, 228); 
+        color: rgb(0, 100, 100); 
+        ">Bem vindo ao ClinicAll Medic, <b>Drª {{user.nomeUsuario}}</b>.</li>
     </ol>
     <br><br>
     
     <div class="row">
-        <img src="assets/images/medic.png" alt="ClinicAll" style="margin-left: 50px; margin-top: -70px;">
+        <div 
+        style="background-color: rgb(211, 228, 228); border-radius:10px; margin-left: 20px;">
+        <img  src="assets/images/medic.png" alt="ClinicAll" style="margin-left: -120px; margin-top: -70px;">
+        </div>
     
         <h3 style="margin-top:00px;
                     margin-left: 20px; font-family: Helvetica, Sans-Serif; color: rgb(16, 107, 107);"> &#160; &#160;
     
     
-            <h1>ClinicAll Medic </h1><br>
+            <h1>ClinicAll Medic </h1>
             
     
             <h4 style="text-align:center; font-family: Helvetica, Sans-Serif; color: rgb(16, 107, 107); margin-top:40px;">
                 <b>Esse produto está licenciado para: <span>{{nomeFantasia}}</span></b>
             </h4>
+<br>
+            <img src="assets/images/logoclinica.png" alt="logo {{nomeFantasia}}">
         </h3>
         
     </div>

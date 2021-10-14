@@ -29,7 +29,7 @@ export class DashboardComponent implements OnInit{
   xAxisLabel: string = 'Serviços realizados';
 
   colorScheme = {
-    domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
+    domain: ['#20a8d8', '#fc6f8d', '#d0ff7d', '#f1db7a', '#908279']
   };
 
 
@@ -42,7 +42,20 @@ export class DashboardComponent implements OnInit{
    legendPosition: string = 'below';
  
    colorScheme2 = {
-     domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA', '#00FFFF', '#000000', '#B120CB', '#F30B54', '#04F896', '#301a06']
+     domain: [
+       '#5AA454', //jan
+       '#A10A28', //fev
+       '#ff6e3d', //mar
+       '#AAAAAA', //abril
+       '#00FFFF', //maio
+       '#000000', //jun
+       '#B120CB', //jul
+       '#816701', //ago
+       '#f9f586', //set
+       '#002c99', //out
+       '#9f93db', //nov
+       '#e31750', //dez
+      ]
    };
 
   constructor(
