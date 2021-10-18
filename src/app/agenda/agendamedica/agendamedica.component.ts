@@ -59,6 +59,7 @@ export class AgendamedicaComponent implements OnInit {
 
     this.searchScheduleProfessional();
     this.getUnidade();
+    
   }
     //carregar agenda do medico logado
 

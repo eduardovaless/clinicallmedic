@@ -55,7 +55,7 @@ export class LoginComponent implements OnInit{
     this.servicelogin.fazerLogin(this.usuario).subscribe((resposta)=>{
       console.log(resposta)      
       sessionStorage.setItem("user", JSON.stringify(resposta));          
-        this.router.navigate(['/home/home'])
+        this.router.navigate(['/agenda/medico'])
               
     },
     error =>{

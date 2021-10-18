@@ -3,13 +3,23 @@ import { SnackBarService } from './../../services/snackbar.service';
 import { Component, OnInit } from '@angular/core';
 import { single } from './dashboard'; 
 import { single2 } from './dashboard';
+import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
+
+
+
 export class DashboardComponent implements OnInit{
+
+  
+
+  public grafic1: boolean = true;
+  public periodo1: boolean 
+
   //serviços
   single: any[];
   view: any[] = [700, 400];
@@ -21,12 +31,12 @@ export class DashboardComponent implements OnInit{
   // SERVIÇOS
   showXAxis: boolean = true;
   showYAxis: boolean = true;
-  gradient: boolean = false;
-  showLegend: boolean = true;
+  gradient: boolean = false;  
   showXAxisLabel: boolean = true;
   yAxisLabel: string = 'Serviços';
   showYAxisLabel: boolean = true;
   xAxisLabel: string = 'Serviços realizados';
+  showLegend: boolean = true;
 
   colorScheme = {
     domain: ['#20a8d8', '#fc6f8d', '#d0ff7d', '#f1db7a', '#908279']
@@ -43,16 +53,16 @@ export class DashboardComponent implements OnInit{
  
    colorScheme2 = {
      domain: [
-       '#5AA454', //jan
-       '#A10A28', //fev
-       '#ff6e3d', //mar
-       '#AAAAAA', //abril
-       '#00FFFF', //maio
-       '#000000', //jun
-       '#B120CB', //jul
-       '#816701', //ago
-       '#f9f586', //set
-       '#002c99', //out
+       '#dc00c7', //jan
+       '#ff0064', //fev
+       '#ff822d', //mar
+       '#e0cc51', //abril
+       '#a6f198', //maio
+       '#0d122c', //jun
+       '#368ada', //jul
+       '#1ab497', //ago
+       '#55909e', //set
+       '#585886', //out
        '#9f93db', //nov
        '#e31750', //dez
       ]
@@ -108,6 +118,17 @@ export class DashboardComponent implements OnInit{
 
   onDeactivate2(data): void {
     console.log('Deactivate', JSON.parse(JSON.stringify(data)));
+  }
+
+
+  select1(){
+    this.grafic1= false;
+    this.periodo1= true;
+  }
+
+  filtrar1(){
+    this.grafic1= true;
+    this.periodo1= false;
   }
 
    }

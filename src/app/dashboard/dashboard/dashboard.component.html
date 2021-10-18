@@ -5,45 +5,96 @@
     </ol>
     <br>
 
-   
-    <div>
-        <h2 style="text-align: center;"> <b>Atendimento por Serviço</b> </h2>
-        <ngx-charts-bar-horizontal
-        [view]="view"
-        [scheme]="colorScheme"
-        [results]="single"
-        [gradient]="gradient"
-        [xAxis]="showXAxis"
-        [yAxis]="showYAxis"
-        [legend]="showLegend"
-        [showXAxisLabel]="showXAxisLabel"
-        [showYAxisLabel]="showYAxisLabel"
-        [xAxisLabel]="xAxisLabel"
-        [yAxisLabel]="yAxisLabel"
-        (select)="onSelect($event)"
-        (activate)="onActivate($event)"
-        (deactivate)="onDeactivate($event)">
-          </ngx-charts-bar-horizontal>
+    <mat-card style="height:600px; width: 800px;">
+
+      <div>
+        <h2 style="text-align: center;"> <b>Atendimento por Serviço</b>  
+          <button mat-raised-button color="accent" 
+          (click)="select1()"
+          style="margin-left: 100px;">Selecione o período</button> </h2>
+          <div class="row">
+            <h3 style="margin-left: 40px;">Período Inicial: <br> 01/10/2021 </h3>
+            <h3 style="margin-left: 40px;">Período Final: <br> 15/10/2021 </h3>
+          </div>
+          <hr>
+
+          <div *ngIf="periodo1">            
+            <div class="row">
+
+
+              <mat-form-field appearance="fill" style="margin-left: 100px;">
+                <mat-label>Data Inicial</mat-label>
+                <input matInput [matDatepicker]="picker" name="dataNascimento">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" style="margin-left: 60px;">
+              <mat-label>Data Final</mat-label>
+              <input matInput [matDatepicker]="picker2" name="dataNascimento">
+              <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+              <mat-datepicker #picker2></mat-datepicker>
+                    </mat-form-field>                  
+            </div>
+
+            <button mat-raised-button color="primary" 
+            (click)="filtrar1()"
+            style="margin-left: 322px;">Filtrar</button>
+
+          </div>
+
+        <div *ngIf="grafic1">
+          <ngx-charts-bar-horizontal
+          [view]="view"
+          [scheme]="colorScheme"
+          [results]="single"
+          [gradient]="gradient"
+          [xAxis]="showXAxis"
+          [yAxis]="showYAxis"
+          [showXAxisLabel]="showXAxisLabel"
+          [showYAxisLabel]="showYAxisLabel"
+          [xAxisLabel]="xAxisLabel"
+          [yAxisLabel]="yAxisLabel"          
+          (select)="onSelect($event)"
+          (activate)="onActivate($event)"
+          (deactivate)="onDeactivate($event)">
+         
+            </ngx-charts-bar-horizontal>
+            
+        </div>
+
     </div>
+
+    </mat-card>
+   
+   
 <br>
 <br>
   
-<div>
-      <h2 style="text-align: center; margin-top:350px"> <b>Atendimento por Mês</b> </h2>
-      <ngx-charts-pie-chart
-      [view]="view2"
-      [scheme]="colorScheme2"
-      [results]="single2"
-      [gradient]="gradient2"
-      [legend]="showLegend2"
-      [legendPosition]="legendPosition"
-      [labels]="showLabels"
-      [doughnut]="isDoughnut"
-      (select)="onSelect2($event)"
-      (activate)="onActivate2($event)"
-      (deactivate)="onDeactivate2($event)"
-      >
-      </ngx-charts-pie-chart>
-  </div>
+
+<mat-card style="width: 800px;">
+  
+  <div>
+    <h2 style="text-align: center;"> <b>Atendimento por Mês</b> </h2>
+
+    <hr>
+    <ngx-charts-pie-chart
+    [view]="view2"
+    [scheme]="colorScheme2"
+    [results]="single2"
+    [gradient]="gradient2"
+    [legend]="showLegend2"
+    [legendPosition]="legendPosition"
+    [labels]="showLabels"
+    [doughnut]="isDoughnut"
+    (select)="onSelect2($event)"
+    (activate)="onActivate2($event)"
+    (deactivate)="onDeactivate2($event)"
+    >
+    </ngx-charts-pie-chart>
+</div>
+
+</mat-card>
+
 
 </div>
