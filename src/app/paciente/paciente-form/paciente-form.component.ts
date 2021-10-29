@@ -73,7 +73,9 @@ export class PacienteFormComponent implements OnInit {
 
   onSubmit() {
     this.paciente.dataNascimento= moment().format('YYYY-MM-DD')
+
     this.paciente.validadeCarteiraConvenio= moment().format('YYYY-MM-DD')
+    
     this.service.salvar(this.paciente).subscribe( response =>{
       console.log(response);
       this.paciente= response;

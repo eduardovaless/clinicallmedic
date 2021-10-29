@@ -1,3 +1,4 @@
+import { MatCardModule } from '@angular/material/card';
 import { MemedModule } from './memed/memed.module';
 import { VideoconferenciaModule } from './videoconferencia/videoconferencia.module';
 import { DashboardModule } from './dashboard/dashboard.module';
@@ -104,7 +105,8 @@ export const MY_FORMATS = {
     DashboardModule,
     VideoconferenciaModule,
     MemedModule,
-    NgxOnlyOfficeModule
+    NgxOnlyOfficeModule,
+    MatCardModule
     
     
   ],
