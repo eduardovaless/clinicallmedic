@@ -170,11 +170,11 @@
         <!--PDF DO LAUDO-->
       <br>
       <div class="row" >
-        <div>
-          <mat-nav-list style="margin-left: 20px;" *ngFor="let documento of listPront">
-            <mat-list-item *ngIf="documento.origem=='LDMED'">
+        <div >
+          <mat-nav-list style="margin-left: 20px; position: relative;" *ngFor="let documento of listPront">
+            <mat-list-item style="position: relative;" *ngIf="documento.origem=='LDMED'">
               <mat-divider></mat-divider>
-             <span matLine>{{documento.data | date: 'dd/MM/yyyy'}}</span>
+             <span matLine  >{{documento.data | date: 'dd/MM/yyyy'}}</span>
               <button mat-icon-button (click)="visupdf(documento)">
                 <mat-icon>search</mat-icon>
               </button>

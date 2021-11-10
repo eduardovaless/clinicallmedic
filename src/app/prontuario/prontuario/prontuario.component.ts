@@ -151,6 +151,10 @@ export class ProntuarioComponent implements OnInit {
     }else {this.listPront= response};
 
     
+
+
+
+    
       console.log(response)
       console.log(this.listPront)
   

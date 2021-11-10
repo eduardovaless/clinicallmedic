@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  apiURL: 'https://aafc-2804-7f7-a287-2492-1883-bd74-3aef-e479.ngrok.io'
+  apiURL: 'http://localhost:8085'
+  //'https://d110-2804-7f7-a287-2492-843b-d4b6-1167-c4f4.ngrok.io'
 };
 
 /*
